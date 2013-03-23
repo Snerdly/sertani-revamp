@@ -97,3 +97,26 @@
 /obj/item/weapon/katana/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
 	playsound(loc, 'sound/weapons/bladeslice.ogg', 50, 1, -1)
 	return ..()
+
+/obj/item/weapon/katana
+	name = "sleek blade"
+	desc = "A sword bearing key resemblances of a katana, only much more modernized."
+	icon_state = "stun_blade"
+	item_state = "stun_blade"
+	flags = FPRINT | TABLEPASS | CONDUCT
+	slot_flags = SLOT_BELT | SLOT_BACK
+	force = 40
+	throwforce = 40
+	w_class = 3
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
+	suicide_act(mob/user)
+		viewers(user) << "\red <b>[user] is slitting \his stomach open with the [src.name]! It looks like \he's trying to commit seppuku.</b>"
+		return(BRUTELOSS)
+
+/obj/item/weapon/katana/IsShield()
+		return 1
+
+/obj/item/weapon/katana/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
+	playsound(loc, 'sound/weapons/bladeslice.ogg', 50, 1, -1)
+	return ..()
