@@ -27,7 +27,7 @@
 
 /obj/item/clothing/shoes/boots
 	name = "boots"
-	desc = "Nanotrasen-issue hard-toe safety boots."
+	desc = "Saris Industries-issue hard-toe safety boots."
 	icon_state = "secshoes"
 	item_state = "secshoes"
 	color = "hosred"

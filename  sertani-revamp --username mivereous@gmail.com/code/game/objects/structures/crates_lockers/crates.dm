@@ -44,7 +44,7 @@
 
 /obj/structure/closet/crate/contraband
 	name = "Poster crate"
-	desc = "A random assortment of posters manufactured by providers NOT listed under Nanotrasen's whitelist."
+	desc = "A random assortment of posters manufactured by providers NOT listed under Saris Industries' whitelist."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "crate"
 	density = 1

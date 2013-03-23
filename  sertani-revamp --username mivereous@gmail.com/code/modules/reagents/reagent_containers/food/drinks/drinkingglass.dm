@@ -185,7 +185,7 @@
 				if("atomicbomb")
 					icon_state = "atomicbombglass"
 					name = "Atomic Bomb"
-					desc = "Nanotrasen cannot take legal responsibility for your actions after imbibing."
+					desc = "Saris Industries cannot take legal responsibility for your actions after imbibing."
 				if("longislandicedtea")
 					icon_state = "longislandicedteaglass"
 					name = "Long Island Iced Tea"
@@ -353,7 +353,7 @@
 				if("acidspit")
 					icon_state = "acidspitglass"
 					name = "Acid Spit"
-					desc = "A drink from Nanotrasen. Made from live aliens."
+					desc = "A drink from Mazra Estates. Made from live aliens."
 				if("amasec")
 					icon_state = "amasecglass"
 					name = "Amasec"
