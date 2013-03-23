@@ -283,7 +283,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				dat += "<ul>"
 				dat += "<li><a href='byond://?src=\ref[src];choice=1'><img src=pda_notes.png> Notekeeper</a></li>"
 				dat += "<li><a href='byond://?src=\ref[src];choice=2'><img src=pda_mail.png> Messenger</a></li>"
-				//dat += "<li><a href='byond://?src=\red[src];choice=chatroom'><img src=pda_chatroom.png> Nanotrasen Relay Chat</a></li>"
+				//dat += "<li><a href='byond://?src=\red[src];choice=chatroom'><img src=pda_chatroom.png> Saris Industries Relay Chat</a></li>"
 
 				if (cartridge)
 					if (cartridge.access_clown)
@@ -425,7 +425,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				dat += "<br>"
 
 			if (5)
-				dat += "<h4><img src=pda_chatroom.png> Nanotrasen Relay Chat</h4>"
+				dat += "<h4><img src=pda_chatroom.png> Saris Industries Relay Chat</h4>"
 
 				dat += "<h4><img src=pda_menu.png> Detected Channels</h4>: <li>"
 				for(var/datum/chatroom/C in chatrooms)

@@ -110,10 +110,10 @@ obj/structure/sign/poster/New(var/serial)
 			desc += " A rebellious poster symbolizing assistant solidarity."
 		if(9)
 			name += " - Missing Gloves"
-			desc += " This poster is about the uproar that followed Nanotrasen's financial cuts towards insulated-glove purchases."
+			desc += " This poster is about the uproar that followed Saris Industries' financial cuts towards insulated-glove purchases."
 		if(10)
 			name += " - Hacking Guide"
-			desc += " This poster details the internal workings of the common Nanotrasen airlock."
+			desc += " This poster details the internal workings of the common Saris Industries airlock."
 		else
 			name = "This shit just bugged. Report it to Agouri - polyxenitopalidou@gmail.com"
 			desc = "Why are you still here?"
