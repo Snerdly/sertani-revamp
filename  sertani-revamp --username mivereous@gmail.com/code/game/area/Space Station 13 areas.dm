@@ -699,6 +699,10 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Captain's Office"
 	icon_state = "captain"
 
+/area/crew_quarters/command_staff
+	name = "\improper Command Quarters"
+	icon_state = "head_quarters"
+
 /area/crew_quarters/heads/hop
 	name = "\improper Head of Personnel's Quarters"
 	icon_state = "head_quarters"
