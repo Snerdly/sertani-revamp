@@ -9,6 +9,15 @@
 	origin_tech = "combat=2;materials=2;syndicate=8"
 	ammo_type = "/obj/item/ammo_casing/c45"
 
+/obj/item/weapon/gun/projectile/pistol/luna
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing. There's a dark circle imprinted in the grip."
+	icon_state = "Luna"
+
+/obj/item/weapon/gun/projectile/pistol/sol
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing. There's a bright circle imprinted in the grip."
+	icon_state = "Sol"
 
 
 /obj/item/weapon/gun/projectile/deagle
@@ -89,7 +98,7 @@
 	desc = "A small, easily concealable gun. Uses 9mm rounds."
 	icon_state = "pistol"
 	w_class = 2
-	max_shells = 8
+	max_shells = 7
 	caliber = "9mm"
 	silenced = 0
 	origin_tech = "combat=2;materials=2;syndicate=2"
@@ -143,6 +152,16 @@
 		icon_state = "pistol-silencer"
 	else
 		icon_state = "pistol"
+
+/obj/item/weapon/gun/projectile/pistol/luna
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing. There's a dark circle imprinted in the grip."
+	icon_state = "Luna"
+
+/obj/item/weapon/gun/projectile/pistol/sol
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing. There's a bright circle imprinted in the grip."
+	icon_state = "Sol"
 
 /obj/item/weapon/silencer
 	name = "silencer"
