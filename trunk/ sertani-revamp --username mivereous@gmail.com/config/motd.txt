@@ -9,6 +9,7 @@
 This is a roleplaying server, so don't forget to remain in character while playing. Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>3/26/2013</i>
-<br>-Several player custom items completed and commited to code.
-<br>-Added anti-depressant pill bottle to game.
-<br>-Updated the custom items config for players to spawn with their custom items.
+<br>-Work began on the new Grand Protector role
+<br>-Several player custom items completed and commited to code
+<br>-Added anti-depressant pill bottle to game
+<br>-Updated the custom items config for players to spawn with their custom items
