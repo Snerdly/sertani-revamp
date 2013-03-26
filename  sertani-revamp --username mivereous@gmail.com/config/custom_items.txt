@@ -1,5 +1,5 @@
-atomicdog92: Seth Sealis: /obj/item/clothing/suit/det_suit/fluff/leatherjack;
-mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra;
-nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter;
-serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/pistol/luna;
-serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/pistol/sol
+#For multiple objects on a single character, put a comma and a space between the objects
+#Example format --->   atomicdog92: Seth Sealis: /obj/item/clothing/suit/det_suit/fluff/leatherjack
+mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra
+nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter
+serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/pistol/luna, /obj/item/weapon/gun/projectile/pistol/sol
