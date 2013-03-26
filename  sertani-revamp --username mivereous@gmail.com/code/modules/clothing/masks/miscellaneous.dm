@@ -90,3 +90,11 @@
 	flags_inv = HIDEFACE
 	w_class = 2
 	var/voicechange = 0
+
+/obj/item/clothing/mask/collar
+	name = "collar"
+	desc = "A leather collar sized for humans and similar species. Looking at it gives you all kinds of dirty ideas..."
+	icon_state = "kinkcollar"
+	item_state = "kinkcollar"
+	flags = FPRINT|TABLEPASS
+	w_class = 1

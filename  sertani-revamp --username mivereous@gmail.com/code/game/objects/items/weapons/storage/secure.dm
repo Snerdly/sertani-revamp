@@ -174,6 +174,35 @@
 		src.add_fingerprint(user)
 		return
 
+/obj/item/weapon/storage/secure/briefcase/rachel_carter
+	name = "pink briefcase"
+	icon_state = "rachel-case"
+	item_state = "rachel-case"
+	desc = "It's a pink briefcase. On the side is an engraving that reads 'Rachel C.'"
+
+	New()
+		..()
+		new /obj/item/weapon/melee/leatherwhip(src)
+		new /obj/item/weapon/handcuffs/kinky(src)
+		new /obj/item/clothing/mask/collar(src)
+		new /obj/item/weapon/legcuffs(src)
+
+	attack_hand(mob/user as mob)
+		if ((src.loc == user) && (src.locked == 1))
+			usr << "\red [src] is locked and cannot be opened!"
+		else if ((src.loc == user) && (!src.locked))
+			playsound(src.loc, "rustle", 50, 1, -5)
+			if (user.s_active)
+				user.s_active.close(user) //Close and re-open
+			src.show_to(user)
+		else
+			..()
+			for(var/mob/M in range(1))
+				if (M.s_active == src)
+					src.close(M)
+			src.orient2hud(user)
+		src.add_fingerprint(user)
+		return
 	//I consider this worthless but it isn't my code so whatever.  Remove or uncomment.
 	/*attack(mob/M as mob, mob/living/user as mob)
 		if ((CLUMSY in user.mutations) && prob(50))
