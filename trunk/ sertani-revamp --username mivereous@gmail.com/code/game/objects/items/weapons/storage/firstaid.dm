@@ -158,6 +158,35 @@
 		new /obj/item/weapon/reagent_containers/pill/antitox( src )
 		new /obj/item/weapon/reagent_containers/pill/antitox( src )
 
+/obj/item/weapon/storage/pill_bottle/depressants
+	name = "Pill bottle (Citalopram)"
+	desc = "Pills used to help manage clinical depression."
+
+	New()
+		..()
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+
+/obj/item/weapon/storage/pill_bottle/tramadol
+	name = "Pill bottle (Tramadol)"
+	desc = "A bottle of pills used for pain management."
+
+	New()
+		..()
+
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+		new /obj/item/weapon/reagent_containers/pill/tramadol( src )
+
 /obj/item/weapon/storage/pill_bottle/inaprovaline
 	name = "Pill bottle (inaprovaline)"
 	desc = "Contains pills used to stabilize patients."

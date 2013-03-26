@@ -124,3 +124,10 @@
 
 /obj/item/weapon/handcuffs/cyborg
 	dispenser = 1
+
+
+/obj/item/weapon/handcuffs/kinky
+	name = "fuzzy handcuffs"
+	desc = "Some handcuffs covered in a pink fuzz... Kinky..."
+	icon_state = "cuff_fuzz"
+	breakouttime = 800
