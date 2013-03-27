@@ -13,7 +13,7 @@
 "am" = (/mob/living/simple_animal/hostile/faithless,/turf/simulated/shuttle/plating{tag = "icon-bcircuitoff"; icon_state = "bcircuitoff"},/area/awaymission/wwvault)
 "an" = (/obj/effect/forcefield{desc = "You can't get in. Heh."; layer = 1; name = "Blocker"},/turf/simulated/shuttle/wall,/area/awaymission/wwvault)
 "ao" = (/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)
-"ap" = (/obj/machinery/wish_granter_dark,/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)
+"ap" = (/obj/machinery/wish_granter_dark{anchored = 0},/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)
 "aq" = (/obj/structure/cult/pylon,/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)
 "ar" = (/obj/machinery/gateway{dir = 9},/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)
 "as" = (/obj/machinery/gateway{dir = 1},/turf/simulated/shuttle/plating{tag = "icon-gcircuitoff"; icon_state = "gcircuitoff"},/area/awaymission/wwvault)

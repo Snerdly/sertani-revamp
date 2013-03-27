@@ -8,6 +8,5 @@
 serveris6 - Game Master
 mivereous - Game Master
 DeathlySoul - Game Admin
-arur - Trial Admin
 mht03110 - Trial Admin
 
