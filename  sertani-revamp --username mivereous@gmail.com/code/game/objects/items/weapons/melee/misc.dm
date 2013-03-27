@@ -24,7 +24,7 @@
 	slot_flags = SLOT_BELT
 	force = 1
 	throwforce = 3
-	w_class = 3
+	w_class = 2
 	origin_tech = "material=3"
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined", "licked", "struck", "punished" )
 

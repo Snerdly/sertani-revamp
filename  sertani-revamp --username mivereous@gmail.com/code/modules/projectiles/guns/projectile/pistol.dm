@@ -9,16 +9,6 @@
 	origin_tech = "combat=2;materials=2;syndicate=8"
 	ammo_type = "/obj/item/ammo_casing/c45"
 
-/obj/item/weapon/gun/projectile/pistol/luna
-	name = "\improper M1911"
-	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing. There's a dark circle imprinted in the grip."
-	icon_state = "Luna"
-
-/obj/item/weapon/gun/projectile/pistol/sol
-	name = "\improper M1911"
-	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing. There's a bright circle imprinted in the grip."
-	icon_state = "Sol"
-
 
 /obj/item/weapon/gun/projectile/deagle
 	name = "desert eagle"
@@ -98,7 +88,7 @@
 	desc = "A small, easily concealable gun. Uses 9mm rounds."
 	icon_state = "pistol"
 	w_class = 2
-	max_shells = 7
+	max_shells = 8
 	caliber = "9mm"
 	silenced = 0
 	origin_tech = "combat=2;materials=2;syndicate=2"
@@ -153,19 +143,44 @@
 	else
 		icon_state = "pistol"
 
-/obj/item/weapon/gun/projectile/pistol/luna
-	name = "\improper M1911"
-	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing. There's a dark circle imprinted in the grip."
-	icon_state = "Luna"
-
-/obj/item/weapon/gun/projectile/pistol/sol
-	name = "\improper M1911"
-	desc = "A lovingly maintained Colt M1911, sporting cutom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing. There's a bright circle imprinted in the grip."
-	icon_state = "Sol"
-
 /obj/item/weapon/silencer
 	name = "silencer"
 	desc = "a silencer"
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "silencer"
 	w_class = 2
+
+										//Begin code for the officer's M1911.
+/obj/item/weapon/gun/projectile/pistol/m1911
+	name = "\improper M1911"
+	desc = "A vintage Colt M1911 handgun. Fires .45 caliber bullets."
+	icon_state = "M1911"
+	w_class = 2
+	max_shells = 7
+	caliber = ".45"
+	silenced = 0
+	origin_tech = "combat=2;materials=2;syndicate=2"
+	ammo_type = "/obj/item/ammo_casing/c45"
+	load_method = 2
+
+/obj/item/weapon/gun/projectile/pistol/m1911/New()
+	..()
+	empty_mag = new /obj/item/ammo_magazine/mc45/empty(src)
+	return
+
+/obj/item/weapon/gun/projectile/pistol/m1911/afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
+	..()
+	if(!loaded.len && empty_mag)
+		empty_mag.loc = get_turf(src.loc)
+		empty_mag = null
+	return
+		//Syrus Seto's two custom M1911's.
+/obj/item/weapon/gun/projectile/pistol/m1911/luna
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting custom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing, in which 'Luna' is carved neatly. There's a dark circle imprinted in the grip."
+	icon_state = "Luna"
+
+/obj/item/weapon/gun/projectile/pistol/m1911/sol
+	name = "\improper M1911"
+	desc = "A lovingly maintained Colt M1911, sporting custom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing, in which 'Sol' is carved neatly. There's a bright circle imprinted in the grip."
+	icon_state = "Sol"
