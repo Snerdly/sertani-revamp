@@ -151,7 +151,7 @@
 	w_class = 2
 
 										//Begin code for the officer's M1911.
-/obj/item/weapon/gun/projectile/pistol/m1911
+/obj/item/weapon/gun/projectile/m1911
 	name = "\improper M1911"
 	desc = "A vintage Colt M1911 handgun. Fires .45 caliber bullets."
 	icon_state = "M1911"
@@ -163,7 +163,7 @@
 	ammo_type = "/obj/item/ammo_casing/c45"
 	load_method = 2
 
-/obj/item/weapon/gun/projectile/pistol/m1911/New()
+/obj/item/weapon/gun/projectile/m1911/New()
 	..()
 	empty_mag = new /obj/item/ammo_magazine/mc45/empty(src)
 	return
@@ -175,12 +175,12 @@
 		empty_mag = null
 	return
 		//Syrus Seto's two custom M1911's.
-/obj/item/weapon/gun/projectile/pistol/m1911/luna
+/obj/item/weapon/gun/projectile/m1911/luna
 	name = "\improper M1911"
 	desc = "A lovingly maintained Colt M1911, sporting custom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing, in which 'Luna' is carved neatly. There's a dark circle imprinted in the grip."
 	icon_state = "Luna"
 
-/obj/item/weapon/gun/projectile/pistol/m1911/sol
+/obj/item/weapon/gun/projectile/m1911/sol
 	name = "\improper M1911"
 	desc = "A lovingly maintained Colt M1911, sporting custom features such as a ground down trigger guard, unique grip leathering, and a shining silver coat over the housing, in which 'Sol' is carved neatly. There's a bright circle imprinted in the grip."
 	icon_state = "Sol"

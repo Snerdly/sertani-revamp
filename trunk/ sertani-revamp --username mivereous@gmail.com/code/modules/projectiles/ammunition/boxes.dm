@@ -50,13 +50,6 @@
 	ammo_type = "/obj/item/ammo_casing/c9mm"
 	max_ammo = 30
 
-/obj/item/ammo_magazine/c45
-	name = "Ammunition Box (.45)"
-	icon_state = "9mm"
-	origin_tech = "combat=2"
-	ammo_type = "/obj/item/ammo_casing/c45"
-	max_ammo = 30
-
 /obj/item/ammo_magazine/mc45
 	name = "magazine (.45)"
 	icon_state = "45-7"
@@ -68,7 +61,12 @@
 .obj/item/ammo_magazine/mc45/empty
 	max_ammo = 0
 
-
+/obj/item/ammo_magazine/c45
+	name = "Ammunition Box (.45)"
+	icon_state = "9mm"
+	origin_tech = "combat=2"
+	ammo_type = "/obj/item/ammo_casing/c45"
+	max_ammo = 30
 
 /obj/item/ammo_magazine/a12mm
 	name = "magazine (12mm)"

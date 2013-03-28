@@ -196,7 +196,7 @@ proc/move_mining_shuttle()
 
 	hammer
 		name = "sledgehammer"
-		//icon_state = "sledgehammer" Waiting on sprite
+		icon_state = "sledgehammer"
 		desc = "A mining hammer made of reinforced metal. You feel like smashing your boss in the face with this."
 
 	silver
@@ -263,6 +263,16 @@ proc/move_mining_shuttle()
 		item_state = "jackhammer"
 		digspeed = 15
 		desc = ""
+
+	uraniumpickaxe					//Another brilliant idea by the Mazra Estates. Should've coded it to give you steady radiation damage...
+		name = "uranium pickaxe"
+		icon_state = "uranium_pickaxe"
+		item_state = "uranium_pickaxe"
+		force = 10
+		digspeed = 5
+		origin_tech = "materials=5"
+		desc = "A slightly glowing pickaxe with a black handle. This thing doesn't look safe to be around when it's swung. Or at all."
+
 
 /*****************************Shovel********************************/
 

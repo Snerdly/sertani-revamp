@@ -73,6 +73,10 @@
 	new /obj/item/weapon/wirecutters(src)
 	new /obj/item/device/t_scanner(src)
 
+/obj/item/weapon/storage/belt/utility/full/badass
+	name = "badass belt"
+	desc = "Nobody fucks with someone wearing this."
+	icon_state = "badassbelt"
 
 
 /obj/item/weapon/storage/belt/medical
