@@ -166,3 +166,11 @@
 				return
 	..()
 
+/obj/item/weapon/gun/projectile/detective/liberty
+	desc = "A cheap Martian knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds.'Liberty' can be seen carefully carved into the side of the barrel."
+	name = "Liberty"
+	icon_state = "detective"
+	max_shells = 6
+	caliber = "38"
+	origin_tech = "combat=2;materials=2"
+	ammo_type = "/obj/item/ammo_casing/c38"
