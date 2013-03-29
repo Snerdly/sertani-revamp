@@ -156,3 +156,8 @@
 		if(stalk_tick_delay <= 0)
 			src.loc = get_step_towards(src, target_mob)
 			stalk_tick_delay = 3
+
+
+
+
+
