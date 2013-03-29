@@ -1,3 +1,50 @@
+/mob/living/simple_animal/hostile/zombie
+	name = "crewmember(?)"
+	desc = "You think this is someone you know... You can't really tell with all the wounds though."
+	icon_state = "zombie"
+	icon_living = "zombie"
+	icon_dead = "zombie_dead"
+	icon_gib = "zombie_dead"
+	speak_chance = 25
+	speak = list("Mrrrm...")
+	speak_emote = list("moans")
+	emote_hear = list("moans loudly", "slurs unitelligibly", "scrapes the floor")
+	emote_see = list("stops and stares ahead for a moment", "stumbles slightly", "limps awkwardly")
+	turns_per_move = 1
+	response_help = "pokes the"
+	response_disarm = "shoves the"
+	response_harm = "smacks the"
+	speed = 2
+	stop_automated_movement_when_pulled = 0
+	maxHealth = "200"
+	health = "170"
+	harm_intent_damage = 10
+	melee_damage_lower = 15
+	melee_damage_upper = 30
+	attacktext = "grabs"
+	a_intent = "harm"
+	attack_sound = 'sound/weapons/bite.ogg'
+
+/mob/living/simple_animal/hostile/zombie/ListTargets()
+	var/list/targets = list()
+	for(var/mob/living/carbon/human/H in view(src,10))
+		targets += H
+	return targets
+
+/mob/living/simple_animal/hostile/zombie/FindTarget()
+	. = ..()
+	if(.)
+		emote("moans excitedly")
+
+/mob/living/simple_animal/hostile/snake/AttackingTarget()
+	. =..()
+	var/mob/living/L = .
+	if(istype(L))
+		L.apply_damage(rand(3,12), TOX)
+		L.Weaken(3)
+		L.visible_message("<span class='danger'>\the [src] drags down \the [L]!</span>")
+
+
 /obj/effect/blob/factory
 	name = "porous blob"
 	icon = 'icons/mob/blob.dmi'
@@ -63,4 +110,6 @@
 			factory.spores -= src
 		..()
 		del(src)
+
+
 
