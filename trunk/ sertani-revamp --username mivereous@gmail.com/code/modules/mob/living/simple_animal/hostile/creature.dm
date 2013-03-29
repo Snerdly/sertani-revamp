@@ -1,4 +1,4 @@
-/mob/living/simple_animal/hostile/creature
+../mob/living/simple_animal/hostile/creature
 	name = "creature"
 	desc = "A sanity-destroying otherthing."
 	icon = 'icons/mob/critter.dmi'
