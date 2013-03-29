@@ -52,7 +52,7 @@
 
 /obj/item/ammo_magazine/mc45
 	name = "magazine (.45)"
-	icon_state = "45-7"
+	icon_state = "45"
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/c45"
 	max_ammo = 7
