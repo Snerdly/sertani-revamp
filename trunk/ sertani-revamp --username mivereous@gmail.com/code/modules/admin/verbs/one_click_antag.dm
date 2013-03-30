@@ -26,6 +26,7 @@ client/proc/one_click_antag()
 		<a href='?src=\ref[src];makeAntag=8'>Make Space Ninja (Requires Ghosts)</a><br>
 		<a href='?src=\ref[src];makeAntag=9'>Make Aliens (Requires Ghosts)</a><br>
 		<a href='?src=\ref[src];makeAntag=10'>Make Deathsquad (Syndicate) (Requires Ghosts)</a><br>
+		<a href='?src=\ref[src];makeAntag=11'>Make Meme (Requires Ghosts)</a><br>
 		"}
 */
 	usr << browse(dat, "window=oneclickantag;size=400x400")

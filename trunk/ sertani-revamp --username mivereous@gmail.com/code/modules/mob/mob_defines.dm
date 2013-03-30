@@ -37,6 +37,8 @@
 	var/obj/screen/zone_sel/zone_sel = null
 
 	var/damageoverlaytemp = 0
+	var/emote_allowed = 1
+	var/speech_allowed = 1
 	var/computer_id = null
 	var/lastattacker = null
 	var/lastattacked = null
@@ -211,3 +213,7 @@
 	var/can_stand = 1 //Whether this mob have ability to stand
 
 	var/immune_to_ssd = 0
+
+	var/list/atom/hallucinations = list()
+	var/halloss = 0
+	var/hallucination = 0

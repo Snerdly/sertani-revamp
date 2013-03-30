@@ -34,7 +34,7 @@
 
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
-	icon_state = "9x19p"
+	icon_state = "9x19p-8"
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/c9mm"
 	max_ammo = 7
