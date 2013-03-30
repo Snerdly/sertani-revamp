@@ -43,6 +43,13 @@
 	sensor_mode = 3
 	flags = FPRINT | TABLEPASS
 
+/obj/item/clothing/under/color/orange/mazra
+	name = "prisoner's jumpsuit"
+	desc = "It's a rare form of Saris Industries prisoner-wear. It bears Mazra black and green, marking the wearer as a political prisoner of the Mazra Estates. Its suit sensors are stuck in the \"Fully On\" position."
+	icon_state = "mazra"
+	item_state = "mazra_s"
+	color = "mazra"
+
 /obj/item/clothing/under/color/pink
 	name = "pink jumpsuit"
 	icon_state = "pink"
