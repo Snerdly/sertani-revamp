@@ -25,6 +25,12 @@
 	icon_state = "horribletie"
 	color = "horribletie"
 
+/obj/item/clothing/tie/black
+	name = "dark tie"
+	desc = "A neosilk clip-on tie."
+	icon_state = "blacktie"
+	color = "blacktie"
+
 /obj/item/clothing/tie/stethoscope
 	name = "stethoscope"
 	desc = "An outdated medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing."
@@ -97,7 +103,7 @@
 
 /obj/item/clothing/tie/medal/silver/security
 	name = "robust security award"
-	desc = "An award for distinguished combat and sacrifice in defence of Saris Industries' commercial interests. Often awarded to security staff."
+	desc = "An award for distinguished combat and sacrifice in defense of Saris Industries' commercial interests. Often awarded to security staff."
 
 /obj/item/clothing/tie/medal/gold
 	name = "gold medal"

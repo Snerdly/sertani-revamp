@@ -1,7 +1,8 @@
 #For multiple objects on a single character, put a comma and a space between the objects
 #Example format --->   atomicdog92: Seth Sealis: /obj/item/clothing/suit/det_suit/fluff/leatherjack
-mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra
+mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra, /obj/item/weapon/pickaxe/uraniumpickaxe
 nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter
-serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna /obj/item/weapon/gun/projectile/m1911/sol
+serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/weapon/gun/projectile/m1911/sol
 jason456: Emma Hanson :/obj/item/weapon/storage/belt/utility/full/badass
 mht03110: Jake Green :/obj/item/weapon/gun/projectile/detective/liberty
+serveris6: Snow Seto :/obj/item/clothing/under/color/orange/mazra
