@@ -29,7 +29,8 @@ datum/objective
 				target = possible_target
 				break
 
-
+/proc/SelectObjectives(var/job,var/datum/mind/traitor,var/hijack = 0)
+//	var/list/datum/objective = list()
 
 datum/objective/assassinate
 	find_target()
@@ -585,6 +586,18 @@ datum/objective/steal
 						return 1
 		return 0
 
+
+datum/objective/meme_attune
+	proc/gen_amount_goal(var/lowbound = 4, var/highbound = 6)
+		target_amount = rand (lowbound,highbound)
+		explanation_text = "Attune [target_amount] humanoid brains."
+		return target_amount
+
+	check_completion()
+		if(owner && owner.current && istype(owner.current,/mob/living/parasite/meme) && (owner.current:indoctrinated.len >= target_amount))
+			return 1
+		else
+			return 0
 
 
 datum/objective/download

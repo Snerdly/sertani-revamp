@@ -633,6 +633,7 @@ var/list/TAGGERLOCATIONS = list("Disposals",
 #define BE_CULTIST		256
 #define BE_MONKEY		512
 #define BE_NINJA		1024
+#define BE_MEME			2048
 
 var/list/be_special_flags = list(
 	"Traitor" = BE_TRAITOR,
@@ -645,7 +646,8 @@ var/list/be_special_flags = list(
 	"pAI" = BE_PAI,
 	"Cultist" = BE_CULTIST,
 	"Monkey" = BE_MONKEY,
-	"Ninja" = BE_NINJA
+	"Ninja" = BE_NINJA,
+	"Meme" = BE_MEME
 	)
 
 #define AGE_MIN 17			//youngest a character can be
