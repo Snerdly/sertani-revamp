@@ -304,3 +304,11 @@
 	item_state = "sundress"
 	color = "sundress"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/tux
+	name = "tuxedo"
+	desc = "An elegant dark tuxedo, complete with a black bow tie."
+	icon_state = "tux"
+	item_state = "tux"
+	color = "tux"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

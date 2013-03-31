@@ -126,3 +126,16 @@
 	desc = "A high-visibility jacket worn by medical first responders."
 	icon_state = "fr_jacket_open"
 	item_state = "fr_jacket"
+
+//Dress Clothes, likely for use in a new character of mine.
+/obj/item.clothing/suit/storage/fluff/blackjacket
+	name = "silk blazer"
+	desc = "An elegant, custom tailored silk jacket to be worn with a suit, with reinforced seams. Has three silk linings within."
+	icon_state = "blazer"
+	item_state = "blazer"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	allowed = list(/obj/item)
+	max_w_class = 3
+	max_combined_w_class = 6
+	storage_slots = 3
