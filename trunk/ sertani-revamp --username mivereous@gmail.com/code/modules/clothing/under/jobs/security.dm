@@ -62,6 +62,12 @@
 	item_state = "fedora"
 	flags = FPRINT | TABLEPASS | HEADCOVERSEYES
 	flags_inv = HIDEEARS
+
+/obj/item/clothing/under/fluff/suit
+	name = "crisp suit"
+	desc = "A white button down shirt and black dress pants. Very classy."
+	icon_state = "csuit"
+	item_state = "csuit"
 /*
  * Head of Security
  */

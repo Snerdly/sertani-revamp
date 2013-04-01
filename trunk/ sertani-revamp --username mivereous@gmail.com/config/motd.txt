@@ -13,3 +13,8 @@ This is a roleplaying server, so don't forget to remain in character while playi
 <br>-All current player custom items completed and commited to code
 <br>-Added meme as a gamemode
 <br>-Updated the custom items config for players to spawn with their custom items
+<br>-Began work on the security department.
+<br>-Added Easter Eggs!
+<br>Added a bottle of tramadol to medbay.
+<br>Added a drink machine to mining.
+

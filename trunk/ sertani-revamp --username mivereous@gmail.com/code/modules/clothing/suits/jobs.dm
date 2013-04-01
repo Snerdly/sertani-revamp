@@ -134,8 +134,3 @@
 	icon_state = "blazer"
 	item_state = "blazer"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	allowed = list(/obj/item)
-	max_w_class = 3
-	max_combined_w_class = 6
-	storage_slots = 3
