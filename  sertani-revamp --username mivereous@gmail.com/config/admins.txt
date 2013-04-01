@@ -5,8 +5,9 @@
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
-serveris6 - Game Master
-mivereous - Game Master
+serveris6 - Emperor
+mivereous - Omniscient Ginger
 DeathlySoul - Game Admin
-mht03110 - Trial Admin
+mht03110 - Llama
+arur - Crusader King
 
