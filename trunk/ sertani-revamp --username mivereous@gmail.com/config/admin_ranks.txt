@@ -38,3 +38,11 @@ Game Master		+EVERYTHING
 Host			+EVERYTHING
 
 Coder			+DEBUG +VAREDIT +SERVER +SPAWN
+
+Crusader King		+MOD +SOUND
+
+Emperor			+EVERYTHING
+
+Omniscient Ginger		+EVERYTHING
+
+Llama			+MOD +ADMIN +REJUV +VAREDIT +SERVER
