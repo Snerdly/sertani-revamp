@@ -495,6 +495,14 @@
 	icon_state = "egg-yellow"
 	color = "yellow"
 
+/obj/item/weapon/reagent_containers/food/snacks/egg/mazra
+	icon_state = "egg-mazra"
+	color = "mazra"
+
+/obj/item/weapon/reagent_containers/food/snacks/egg/saris
+	icon_state = "egg-saris"
+	color = "saris"
+
 /obj/item/weapon/reagent_containers/food/snacks/friedegg
 	name = "Fried egg"
 	desc = "A fried egg, with a touch of salt and pepper."
