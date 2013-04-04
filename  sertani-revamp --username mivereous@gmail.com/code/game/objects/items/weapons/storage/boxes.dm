@@ -222,7 +222,18 @@
 		new /obj/item/weapon/reagent_containers/food/drinks/drinkingglass(src)
 		new /obj/item/weapon/reagent_containers/food/drinks/drinkingglass(src)
 
+/obj/item/weapon/storage/box/shotglasses
+	name = "box of shot glasses"
+	desc = "It has a picture of a shot glass and some confetti on it."
 
+	New()
+		..()
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
 /obj/item/weapon/storage/box/condimentbottles
 	name = "box of condiment bottles"
 	desc = "It has a large ketchup smear on it."

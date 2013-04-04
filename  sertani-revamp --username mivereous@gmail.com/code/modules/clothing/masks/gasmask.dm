@@ -86,3 +86,10 @@
 	name = "owl mask"
 	desc = "Twoooo!"
 	icon_state = "owl"
+
+/obj/item/clothing/mask/gas/execution
+	name = "execution hood"
+	desc = "An airtight nanowoven hood covering the entire head. There's a port in the mouth for an internals tank."
+	icon_state = "execution"
+	item_state = "execution"
+
