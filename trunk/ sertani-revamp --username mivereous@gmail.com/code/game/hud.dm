@@ -252,6 +252,12 @@ datum/hud/New(mob/owner)
 	if(ishuman(mymob))
 		human_hud(ui_style) // Pass the player the UI style chosen in preferences
 
+/*		spawn()
+			if((RADAR in mymob.augmentations) && mymob.radar_open)
+				mymob:start_radar()
+			else if(RADAR in mymob.augmentations)
+				mymob:place_radar_closed()
+*/
 	else if(ismonkey(mymob))
 		monkey_hud(ui_style)
 
