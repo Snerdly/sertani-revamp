@@ -2,6 +2,7 @@
 #Example format --->   atomicdog92: Seth Sealis: /obj/item/clothing/suit/det_suit/fluff/leatherjack
 mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra, /obj/item/weapon/pickaxe/uraniumpickaxe
 mivereous: Kiriel Seto: /obj/item/weapon/implanter/loyalty
+mivereous: Valerie Siskin: /obj/item/weapon/dnainjector/telemut
 nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter
 nash2525: Crystal Dellfield: /obj/item/weapon/dnainjector/stuttmut
 serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/weapon/gun/projectile/m1911/sol

@@ -315,11 +315,11 @@ the implant may become unstable and either pre-maturely inject the subject or si
 	get_data()
 		var/dat = {"
 <b>Implant Specifications:</b><BR>
-<b>Name:</b> Cybersun Industries Adrenalin Implant<BR>
+<b>Name:</b> Mazra Estates Adrenaline Implant<BR>
 <b>Life:</b> Five days.<BR>
 <b>Important Notes:</b> <font color='red'>Illegal</font><BR>
 <HR>
-<b>Implant Details:</b> Subjects injected with implant can activate a massive injection of adrenalin.<BR>
+<b>Implant Details:</b> Subjects injected with implant can activate a massive injection of adrenaline.<BR>
 <b>Function:</b> Contains nanobots to stimulate body to mass-produce Adrenalin.<BR>
 <b>Special Features:</b> Will prevent and cure most forms of brainwashing.<BR>
 <b>Integrity:</b> Implant can only be used three times before the nanobots are depleted."}

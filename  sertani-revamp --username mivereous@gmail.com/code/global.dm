@@ -70,7 +70,7 @@ var/blobevent = 0
 var/diary = null
 var/diaryofmeanpeople = null
 var/href_logfile = null
-var/station_name = "NSS Exodus"
+var/station_name = "Sertani Station 6"
 var/game_version = "Baystation12"
 var/changelog_hash = ""
 

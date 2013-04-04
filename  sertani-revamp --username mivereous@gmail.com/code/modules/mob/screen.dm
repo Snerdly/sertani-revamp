@@ -459,7 +459,13 @@
 				else
 					usr:inv3.icon_state = "inv3"
 					usr:module_active = null
+/*
+		if("radar")
+			usr:close_radar()
 
+		if("radar closed")
+			usr:start_radar()
+*/
 		else
 			DblClick()
 	return

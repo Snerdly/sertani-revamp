@@ -39,10 +39,10 @@ Host			+EVERYTHING
 
 Coder			+DEBUG +VAREDIT +SERVER +SPAWN
 
-Crusader King		+MOD +SOUND
+Crusader King		+MOD +SOUND +ADMIN
 
 Emperor			+EVERYTHING
 
 Omniscient Ginger		+EVERYTHING
 
-Llama			+MOD +ADMIN +REJUV +VAREDIT +SERVER
+Llama			+MOD +ADMIN +REJUV +VAREDIT +SERVER +SPAWN
