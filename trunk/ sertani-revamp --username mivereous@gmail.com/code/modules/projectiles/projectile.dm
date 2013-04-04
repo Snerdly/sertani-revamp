@@ -74,6 +74,13 @@
 				loc = A.loc
 				return 0// nope.avi
 
+			// check for dodge (i can't place in bullet_act because then things get wonky)
+			if((REFLEXES in M.augmentations) && (!M.stat && !M.lying))
+				if(prob(85))
+					var/message = pick("[M] skillfully dodges the [name]!", "[M] ducks, dodging the [name]!", "[M] effortlessly jumps out of the way of the [name]!", "[M] dodges the [name] in one graceful movement!", "[M] leans back, dodging the [name] narrowly!", "[M] sidesteps, avoiding the [name] narrowly.", "[M] barely weaves out of the way of the [name].")
+					M.visible_message("\red <B>[message]</B>")
+					forcedodge = 1
+
 			var/distance = get_dist(starting,loc)
 			//Lower accurancy/longer range tradeoff. Distance matters a lot here, so at
 			// close distance, actually RAISE the chance to hit.
