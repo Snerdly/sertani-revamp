@@ -1,6 +1,6 @@
 
 
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass
+
 	name = "glass"
 	desc = "Your standard drinking glass."
 	icon_state = "glass_empty"

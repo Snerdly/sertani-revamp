@@ -9,8 +9,6 @@
 This is a roleplaying server, so don't forget to remain in character while playing. Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>4/4/2013</i>
-<br>-Re-implemented nano-augmentations
-<br>-Added a bottle of tramadol to medbay
-<br>-Added a drink machine to mining
+<br>-Re-implemented nano-augmentation.
 <br>-SHOTS SHOTS SHOTS SHOTS SHOTS SHOTS, EVERYBODY
-<br>-Finished most of the work on the security department
+<br>-Finished the major work on the security department. The armory is now fit to combat a small country, and there are security officer barracks, detective's quarters, Warden's quarters, and finally, the Head of Security's apartment.
