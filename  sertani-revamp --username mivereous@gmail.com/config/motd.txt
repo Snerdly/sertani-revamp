@@ -10,5 +10,4 @@ This is a roleplaying server, so don't forget to remain in character while playi
 <br>
 <strong>Last Updated:</strong> <i>4/4/2013</i>
 <br>-Re-implemented nano-augmentation.
-<br>-SHOTS SHOTS SHOTS SHOTS SHOTS SHOTS, EVERYBODY
-<br>-Finished the major work on the security department. The armory is now fit to combat a small country, and there are security officer barracks, detective's quarters, Warden's quarters, and finally, the Head of Security's apartment.
+<br>-Hopefully quelled everyone's post project demands. I'm done coding. All work from this point is done by Mivereous.
