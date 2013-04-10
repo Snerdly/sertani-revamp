@@ -378,26 +378,26 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 			if((COLD_RESISTANCE in mutations) || (prob(1)))
 				heal_organ_damage(0,1)
 
-				// Make nanoregen heal you, -5 all damage types
+				// Make nanoregen heal you, -10 all damage types
 			if(NANOREGEN in augmentations)
 				var/healed = 0
 				if(getToxLoss())
-					adjustToxLoss(-5)
+					adjustToxLoss(-10)
 					healed = 1
 				if(getOxyLoss())
-					adjustOxyLoss(-5)
+					adjustOxyLoss(-10)
 					healed = 1
 				if(getCloneLoss())
-					adjustCloneLoss(-5)
+					adjustCloneLoss(-10)
 					healed = 1
 				if(getBruteLoss())
-					heal_organ_damage(5,0)
+					heal_organ_damage(10,0)
 					healed = 1
 				if(getFireLoss())
-					heal_organ_damage(0,5)
+					heal_organ_damage(0,10)
 					healed = 1
 				if(halloss > 0)
-					halloss -= 5
+					halloss -= 10
 					if(halloss < 0) halloss = 0
 					healed = 1
 				if(healed)

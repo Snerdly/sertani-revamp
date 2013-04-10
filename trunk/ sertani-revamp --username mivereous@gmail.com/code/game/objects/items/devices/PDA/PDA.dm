@@ -29,7 +29,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	var/tnote = null //Current Texts
 	var/last_text //No text spamming
 	var/last_honk //Also no honk spamming that's bad too
-	var/ttone = "beep" //The ringtone!
+	var/ttone = "ping" //The ringtone!
 	var/lock_code = "" // Lockcode to unlock uplink
 	var/honkamt = 0 //How many honks left when infected with honk.exe
 	var/mimeamt = 0 //How many silence left when infected with mime.exe
