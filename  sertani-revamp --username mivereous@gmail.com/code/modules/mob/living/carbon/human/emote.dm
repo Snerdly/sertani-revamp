@@ -291,13 +291,13 @@
 			message = "<B>[src]</B> grins."
 			m_type = 1
 
-		if ("cry")
+		if ("sob")
 			if(miming)
-				message = "<B>[src]</B> cries."
+				message = "<B>[src]</B> sobs."
 				m_type = 1
 			else
 				if (!muzzled)
-					message = "<B>[src]</B> cries."
+					message = "<B>[src]</B> sobs."
 					m_type = 2
 				else
 					message = "<B>[src]</B> makes a weak noise. \He frowns."

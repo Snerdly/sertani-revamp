@@ -8,6 +8,11 @@
 <br><br>
 This is a roleplaying server, so don't forget to remain in character while playing. Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<strong>Last Updated:</strong> <i>4/4/2013</i>
-<br>-Re-implemented nano-augmentation.
-<br>-Hopefully quelled everyone's post project demands. I'm done coding. All work from this point is done by Mivereous.
+<strong>Last Updated:</strong> <i>4/8/2013</i>
+<br>-Vodka shot should now have an icon
+<br>-Finished the major work on the security department
+<br>	*The armory is now fit to combat a small country
+<br>	*Security officer barracks
+<br>	*Detective's quarters
+<br>	*Warden's quarters
+<br>	*Head of Security's apartment
