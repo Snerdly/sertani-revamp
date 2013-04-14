@@ -53,6 +53,13 @@
 	item_state = "redgloves"
 	color = "red"
 
+/obj/item/clothing/gloves/fingerless
+	name = "fingerless gloves"
+	desc = "A pair of gloves, minus the fingers."
+	icon_state = "fingerless"
+	item_state = "bgloves"
+	color="brown"
+
 /obj/item/clothing/gloves/rainbow
 	name = "rainbow gloves"
 	desc = "A pair of gloves, they don't look special in any way."

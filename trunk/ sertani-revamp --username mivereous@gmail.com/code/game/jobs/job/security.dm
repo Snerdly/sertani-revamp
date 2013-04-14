@@ -163,3 +163,53 @@
 			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
 			H.equip_to_slot_or_del(new /obj/item/weapon/handcuffs(H), slot_in_backpack)
 		return 1
+
+
+
+	/datum/job/protector
+	title = "Grand Protector"
+	flag = PROTECTOR
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "all heads of staff, with priority according to rank"
+	selection_color = "#ffdddd"
+	access = list(access_security, access_sec_doors, access_brig, access_court,
+			            access_morgue, access_maint_tunnels, access_all_personal_lockers,
+			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+			            access_heads, access_hos, access_keycard_auth, access_gateway)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
+			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
+	minimal_player_age = 14
+
+	equip(var/mob/living/carbon/human/H)
+		if(!H)	return 0
+		switch(H.backbag)
+			if(2) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/security(H), slot_back)
+			if(3) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel_sec(H), slot_back)
+			if(4) H.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel(H), slot_back)
+		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/hos(H), slot_ears)
+		H.equip_to_slot_or_del(new /obj/item/clothing/under/rank/protector(H), slot_w_uniform)
+		H.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/protector(H), slot_wear_suit)
+		H.equip_to_slot_or_del(new /obj/item/weapon/katana/cyber(H), slot_belt)
+		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/combat(H), slot_shoes)
+		H.equip_to_slot_or_del(new /obj/item/device/pda/protector(H), slot_in_backpack)
+		H.equip_to_slot_or_del(new /obj/item/clothing/gloves/fingerless(H), slot_gloves)
+		H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud(H), slot_glasses)
+		H.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/m1911(H), slot_s_store)
+		if(H.backbag == 1)
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
+			H.equip_to_slot_or_del(new /obj/item/device/pda/protector(H), slot_r_hand)
+		else
+			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
+			H.equip_to_slot_or_del(new /obj/item/device/pda/protector(H.back), slot_in_backpack)
+			H.equip_to_slot_or_del(new /obj/item/clothing/head/chaplain_hood/protector(H.back), slot_in_backpack)
+
+		var/obj/item/weapon/implant/loyalty/L = new/obj/item/weapon/implant/loyalty(H)
+		L.imp_in = H
+		L.implanted = 1
+		return 1
+

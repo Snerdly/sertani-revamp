@@ -9,10 +9,7 @@
 This is a roleplaying server, so don't forget to remain in character while playing. Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>4/8/2013</i>
-<br>-Vodka shot should now have an icon
-<br>-Finished the major work on the security department
-<br>	*The armory is now fit to combat a small country
-<br>	*Security officer barracks
-<br>	*Detective's quarters
-<br>	*Warden's quarters
-<br>	*Head of Security's apartment
+<br>-Multiple bug fixes.
+<br>-Added the Grand Protector job, whitelist only.
+<br>Did some custom item work.
+<br>Several improvements to the security departments.

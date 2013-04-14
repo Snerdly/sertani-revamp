@@ -22,6 +22,11 @@ hi
  an old looking wall. On the back there is a note in black marker that reads \"Sara, Siempre pensé que eras tan linda con ese vestido. Tu hermano, Carlos.\""
 	icon_state = "sarah_calvera_1"
 
+/obj/item/fluff/snow_seto //serveris6: Snow Seto
+	name = "family photograph"
+	desc = "A photo, slightly wrinkled with age. There's a smiling teen dressed in black with bleached hair standing next to a girl looking around the age of twelve, also with bleached hair. Written on the back, in neat handwriting, you can see \"Not giving up yet. Stay strong. Love you and always here for you, Syrus\""
+	icon_state = "setophotograph"
+
 /obj/item/fluff/angelo_wilkerson_1 //fniff: Angleo Wilkerson
 	name = "fancy watch"
 	desc = "An old and expensive pocket watch. Engraved on the bottom is \"Odium est Source De Dolor\". On the back, there is an engraving that does not match the bottom and looks more recent.\
@@ -92,8 +97,8 @@ hi
 	icon_state = "fancypen"
 
 /obj/item/weapon/pen/fluff/fountainpen //paththegreat: Eli Stevens
-	name = "Engraved Fountain Pen"
-	desc = "An expensive looking pen with the initials E.S. engraved into the side."
+	name = "Fountain Pen"
+	desc = "An expensive looking pen."
 	icon = 'custom_items.dmi'
 	icon_state = "fountainpen"
 
@@ -113,6 +118,12 @@ hi
 	icon = 'custom_items.dmi'
 	icon_state = "smallnotetext"
 	item_state = "smallnotetext"
+
+/obj/item/weapon/clipboard/fluff/journal
+	name = "journal"
+	desc = "A black notebook, with slots for pages to fit into."
+	icon_state = "johnathan_notebook"
+
 
 /obj/item/weapon/storage/fluff/maye_daye_1 //morrinn: Maye Day
 	name = "pristine lunchbox"

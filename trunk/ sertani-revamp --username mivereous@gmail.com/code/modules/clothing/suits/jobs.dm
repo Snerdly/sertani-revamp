@@ -58,6 +58,17 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
+//Grand Protector
+/obj/item/clothing/suit/storage/protector
+	name = "armored overcoat"
+	desc = "An old 21st century overcoat, with thick torso armor. It's primarily black, but features dark purple highlights."
+	icon_state = "protector_coat"
+	item_state = "protector_coat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
+
 //Detective
 /obj/item/clothing/suit/storage/det_suit
 	name = "coat"

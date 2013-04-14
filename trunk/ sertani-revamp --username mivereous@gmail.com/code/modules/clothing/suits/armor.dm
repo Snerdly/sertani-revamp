@@ -31,6 +31,14 @@
 	icon_state = "warden_jacket"
 	item_state = "armor"
 
+/obj/item/clothing/suit/armor/vest/protector
+	name = "armored overcoat"
+	desc = "An old 21st century overcoat, with thick torso armor. It's primarily black, but features dark purple highlights."
+	icon_state = "protector_coat"
+	item_state = "protector_coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	armor = list(melee = 50, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+
 
 /obj/item/clothing/suit/armor/riot
 	name = "Riot Suit"

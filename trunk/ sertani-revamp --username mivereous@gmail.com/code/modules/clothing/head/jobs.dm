@@ -33,6 +33,12 @@
 	icon_state = "chaplain_hood"
 	flags = FPRINT|TABLEPASS|HEADCOVERSEYES|BLOCKHAIR
 
+/obj/item/clothing/head/chaplain_hood/protector
+	name = "thick hood"
+	desc = "It's hood that covers the head, and about half of the face. Dark purple highlights streak across the back."
+	icon_state = "chaplain_hood"
+
+
 //Chaplain
 /obj/item/clothing/head/nun_hood
 	name = "nun hood"
