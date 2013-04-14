@@ -3,6 +3,7 @@
  *		Security
  *		Detective
  *		Head of Security
+ *		Grand Protector
  */
 
 /*
@@ -33,6 +34,15 @@
 	item_state = "r_suit"
 	color = "redshirt2"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/rank/protector
+	name = "protector's attire"
+	desc = "A security officer's uniform, slightly modified and redesigned. It designates the wearer as the station's elite bodyguard."
+	icon_state = "protector"
+	item_state = "protector"
+	color = "protector"
+	armor = list(melee = 10, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 
 /*

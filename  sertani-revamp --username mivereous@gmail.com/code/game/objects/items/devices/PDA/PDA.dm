@@ -94,6 +94,11 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	default_cartridge = /obj/item/weapon/cartridge/hop
 	icon_state = "pda-hop"
 
+/obj/item/device/pda/protector
+	default_cartridge = /obj/item/weapon/cartridge/security
+	icon_state = "pda-syn"
+	note = "As the Grand Protector of the station, it is your duty to ensure the safety and wellbeing of all station heads of staff. You report directly to the head of security, but are to obey orders given by any head of staff, with priority of protecting and obeying according to command. You are not security. You do not capture criminals. You tail heads of staff, and execute would-be assassins on the spot. You are an elite bodyguard."
+
 /obj/item/device/pda/heads/hos
 	default_cartridge = /obj/item/weapon/cartridge/hos
 	icon_state = "pda-hos"
