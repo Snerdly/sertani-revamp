@@ -236,7 +236,7 @@
 	else if (!station_captured && !malf_dead && !station_was_nuked && crew_evacuated)
 		feedback_set_details("round_end_result","halfwin - evacuated")
 		world << "<FONT size = 3><B>Neutral Victory</B></FONT>"
-		world << "<B>The Corporation has lose [station_name()]! All survived personnel will be fired!</B>"
+		world << "<B>The Corporation has lost [station_name()]! All survived personnel will be fired!</B>"
 
 	else if (!station_captured && !malf_dead && !station_was_nuked && !crew_evacuated)
 		feedback_set_details("round_end_result","nalfwin - interrupted")

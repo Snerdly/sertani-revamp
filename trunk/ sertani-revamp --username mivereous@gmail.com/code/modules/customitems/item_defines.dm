@@ -124,7 +124,6 @@ hi
 	desc = "A black notebook, with slots for pages to fit into."
 	icon_state = "johnathan_notebook"
 
-
 /obj/item/weapon/storage/fluff/maye_daye_1 //morrinn: Maye Day
 	name = "pristine lunchbox"
 	desc = "A pristine stainless steel lunch box. The initials M.D. are engraved on the inside of the lid."
@@ -554,7 +553,7 @@ hi
 	name = "NT-SID jumpsuit"
 	desc = "A Saris Industries Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 
-	icon = 'icons/obj/custom_items.dmi'
+	icon = 'custom_items.dmi'
 	icon_state = "jane_sid_suit"
 	item_state = "jane_sid_suit"
 	color = "jane_sid_suit"

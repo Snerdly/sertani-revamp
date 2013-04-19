@@ -179,3 +179,23 @@
 	New()
 		access = get_all_centcom_access()
 		..()
+
+/obj/item/weapon/card/id/siskin_id //mivereous: Valerie Siskin
+	name = "scratched up ID (Geneticist)"
+	desc = "A scratched and worn identification card; it appears too damaged to inferface with any technology. You can barely make out one letter: \"S\"."
+	icon = 'custom_items.dmi'
+	icon_state = "ethan_way_1"
+	w_class = 1.0
+/*
+/obj/item/weapon/card/id/siskin_id/attack_self(mob/user as mob)
+		if (!user.ckey == "mivereous" || !user.ckey == "serveris6") //Because this can end up in the wrong hands, let's make it useless for them!
+			user << "\blue You flip \the [src] between your fingers."
+		if(user)	user.hallucination += 70
+
+/obj/item/weapon/card/id/siskin_id/attack(mob/M as mob, mob/user as mob)
+	if (user.ckey == "mivereous" && user.real_name == "Valerie Siskin") //Because this can end up in the wrong hands, let's make it useless for them!
+		user << "You don't know why, but you think you should get rid of this. Now."
+		sleep(40)
+		user << "\red ...but it's probably too late now..."
+
+	*/

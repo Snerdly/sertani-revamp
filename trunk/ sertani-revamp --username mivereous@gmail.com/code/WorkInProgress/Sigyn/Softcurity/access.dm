@@ -217,6 +217,11 @@
 			            access_teleporter, access_heads, access_tech_storage, access_security, access_sec_doors, access_brig, access_atmospherics,
 			            access_maint_tunnels, access_bar, access_janitor, access_kitchen, access_robotics, access_armory, access_hydroponics,
 			            access_theatre, access_research, access_hos, access_RC_announce, access_forensics_lockers, access_keycard_auth, access_gateway)
+		if("Grand Protector")
+			return list(access_medical, access_morgue, access_tox, access_tox_storage, access_chemistry, access_genetics, access_court,
+			            access_teleporter, access_heads, access_tech_storage, access_security, access_sec_doors, access_brig, access_atmospherics,
+			            access_maint_tunnels, access_bar, access_janitor, access_kitchen, access_robotics, access_armory, access_hydroponics,
+			            access_theatre, access_research, access_hos, access_RC_announce, access_forensics_lockers, access_keycard_auth, access_gateway)
 		if("Head of Personnel")
 			return list(access_security, access_sec_doors, access_brig, access_court, access_forensics_lockers,
 			            access_tox, access_tox_storage, access_chemistry, access_medical, access_genetics, access_engine,
@@ -499,7 +504,7 @@
 	return list("Assistant", "Captain", "Head of Personnel", "Bartender", "Chef", "Botanist", "Quartermaster", "Cargo Technician",
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Librarian", "Lawyer", "Chaplain", "Chief Engineer", "Station Engineer",
 				"Atmospheric Technician", "Roboticist", "Chief Medical Officer", "Medical Doctor", "Chemist", "Geneticist", "Virologist",
-				"Research Director", "Scientist", "Head of Security", "Warden", "Detective", "Security Officer")
+				"Research Director", "Scientist", "Head of Security", "Warden", "Detective", "Security Officer", "Grand Protector")
 
 /proc/get_all_centcom_jobs()
 	return list("VIP Guest","Custodian","Thunderdome Overseer","Intel Officer","Medical Officer","Death Commando","Research Officer","BlackOps Commander","Supreme Commander")

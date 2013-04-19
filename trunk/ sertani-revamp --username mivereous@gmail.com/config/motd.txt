@@ -1,15 +1,14 @@
 <h1>Welcome to Sertani Station 6!</h1>
 <br>
-<strong>Check out the <a href="http://sertani.webs.com/">forums</a>!</strong>
+<strong>Check out the <a href="http://sertani.webs.com/">forums</a> and <a href="http://steamcommunity.com/groups/sarisindustries">Steam group</a>!</strong>
 <br>
--<i>This server is running <a href="http://baystation12.net/">Baystation 12's</a> modification of the <a href="http://nanotrasen.com/">/tg/station13</a> SS13 code.</i>
-<br><br>
 <strong>Rules and roleplaying tips:</strong> <a href="http://baystation12.net/wiki/index.php/Rules">http://baystation12.net/wiki/index.php/Rules</a> or the Rules command.
 <br><br>
-This is a roleplaying server, so don't forget to remain in character while playing. Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
+This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. 
+<br>We also tend to run <a href="http://sertani.webs.com/apps/forums/topics/show/8820780-events">custom events</a> from time to time. 
+<br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<strong>Last Updated:</strong> <i>4/8/2013</i>
-<br>-Multiple bug fixes.
-<br>-Added the Grand Protector job, whitelist only.
-<br>Did some custom item work.
-<br>Several improvements to the security departments.
+<strong>Last Updated:</strong> <i>4/16/2013</i>
+<br>-Multiple bug fixes
+<br>-Fixed invisible drinking glasses
+<br>-Added the Grand Protector job (working on the whitelist)

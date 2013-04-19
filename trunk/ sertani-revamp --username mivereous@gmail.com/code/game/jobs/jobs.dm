@@ -3,16 +3,16 @@ var/const/ENGSEC			=(1<<0)
 
 var/const/CAPTAIN			=(1<<0)
 var/const/HOS				=(1<<1)
-var/const/PROTECTOR			=(1<<2)
-var/const/WARDEN			=(1<<3)
-var/const/DETECTIVE			=(1<<4)
-var/const/OFFICER			=(1<<5)
-var/const/CHIEF				=(1<<6)
-var/const/ENGINEER			=(1<<7)
-var/const/ATMOSTECH			=(1<<8)
-var/const/ROBOTICIST		=(1<<9)
-var/const/AI				=(1<<10)
-var/const/CYBORG			=(1<<11)
+var/const/WARDEN			=(1<<2)
+var/const/DETECTIVE			=(1<<3)
+var/const/OFFICER			=(1<<4)
+var/const/CHIEF				=(1<<5)
+var/const/ENGINEER			=(1<<6)
+var/const/ATMOSTECH			=(1<<7)
+var/const/ROBOTICIST		=(1<<8)
+var/const/AI				=(1<<9)
+var/const/CYBORG			=(1<<10)
+var/const/PROTECTOR			=(1<<11)
 
 
 var/const/MEDSCI			=(1<<1)
@@ -59,6 +59,7 @@ var/list/command_positions = list(
 	"Captain",
 	"Head of Personnel",
 	"Head of Security",
+	"Grand Protector",
 	"Chief Engineer",
 	"Research Director",
 	"Chief Medical Officer"
@@ -110,7 +111,9 @@ var/list/security_positions = list(
 	"Head of Security",
 	"Warden",
 	"Detective",
-	"Security Officer"
+	"Security Officer",
+	"Grand Protector"
+
 )
 
 

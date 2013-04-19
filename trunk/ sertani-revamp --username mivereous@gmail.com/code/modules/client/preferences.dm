@@ -362,7 +362,7 @@ datum/preferences
 
 		user << browse(dat, "window=preferences;size=560x580")
 
-	proc/SetChoices(mob/user, limit = 17, list/splitJobs = list("Chief Engineer"), width = 550, height = 550)
+	proc/SetChoices(mob/user, limit = 17, list/splitJobs = list("Chief Medical Officer"), width = 550, height = 550)
 		if(!job_master)
 			return
 
@@ -925,7 +925,7 @@ datum/preferences
 							backbag = backbaglist.Find(new_backbag)
 
 					if("nt_relation")
-						var/new_relation = input(user, "Choose your relation to NT. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
+						var/new_relation = input(user, "Choose your relation to SI. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
 						if(new_relation)
 							nanotrasen_relation = new_relation
 
