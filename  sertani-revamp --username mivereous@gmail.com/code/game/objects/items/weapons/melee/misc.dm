@@ -17,7 +17,7 @@
 
 /obj/item/weapon/melee/leatherwhip
 	name = "leather whip"
-	desc = "A dakr brown whip crafted from elegantly tanned leather. It looks like it would sting."
+	desc = "A dark brown whip crafted from elegantly tanned leather. It looks like it would sting."
 	icon_state = "whip"
 	item_state = "whip"
 	flags = FPRINT | TABLEPASS

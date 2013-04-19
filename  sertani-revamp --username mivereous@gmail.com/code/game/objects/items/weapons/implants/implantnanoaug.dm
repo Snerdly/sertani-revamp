@@ -1,9 +1,11 @@
 /obj/item/weapon/implant/nanoaug
 	name = "nanoaug"
+	icon = 'icons/obj/items.dmi'
 	desc = "A nano-robotic biological augmentation implant."
 	var/augmentation
 	var/augment_text = "You feel strange..."
 	var/activation_emote = "fart"
+
 
 	get_data()
 		var/dat = {"
@@ -41,6 +43,7 @@
 				H.start_radar()
 		return
 */
+
 
 /obj/item/weapon/implant/nanoaug/strength
 	name = "Superhuman Strength"
@@ -114,7 +117,7 @@
 
 
 /obj/item/weapon/implanter/nanoaug/strength
-	name = "Nanoaugmentation Implaner (Superhuman Strength)"
+	name = "Nanoaugmentation Implanter (Superhuman Strength)"
 
 /obj/item/weapon/implanter/nanoaug/strength/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/strength( src )
@@ -122,7 +125,7 @@
 	update()
 
 /obj/item/weapon/implanter/nanoaug/radar
-	name = "Nanoaugmentation Implaner (Short-range Psionic Radar)"
+	name = "Nanoaugmentation Implanter (Short-range Psionic Radar)"
 
 /obj/item/weapon/implanter/nanoaug/radar/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/radar( src )
@@ -130,7 +133,7 @@
 	update()
 
 /obj/item/weapon/implanter/nanoaug/electrichands
-	name = "Nanoaugmentation Implaner (Electric Hands)"
+	name = "Nanoaugmentation Implanter (Electric Hands)"
 
 /obj/item/weapon/implanter/nanoaug/electrichands/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/electrichands( src )
@@ -138,7 +141,7 @@
 	update()
 /*
 /obj/item/weapon/implanter/nanoaug/eswordsynth
-	name = "Nanoaugmentation Implaner (Energy Blade Synthesizer)"
+	name = "Nanoaugmentation Implanter (Energy Blade Synthesizer)"
 
 /obj/item/weapon/implanter/nanoaug/eswordsynth/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/eswordsynth( src )
@@ -146,7 +149,7 @@
 	update()
 */
 /obj/item/weapon/implanter/nanoaug/rebreather
-	name = "Nanoaugmentation Implaner (Bioelectric Rebreather)"
+	name = "Nanoaugmentation Implanter (Bioelectric Rebreather)"
 
 /obj/item/weapon/implanter/nanoaug/rebreather/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/rebreather( src )
@@ -154,7 +157,7 @@
 	update()
 
 /obj/item/weapon/implanter/nanoaug/dermalarmor
-	name = "Nanoaugmentation Implaner (Skin-intergrated Dermal Armor)"
+	name = "Nanoaugmentation Implanter (Skin-intergrated Dermal Armor)"
 
 /obj/item/weapon/implanter/nanoaug/dermalarmor/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/dermalarmor( src )
@@ -162,7 +165,7 @@
 	update()
 
 /obj/item/weapon/implanter/nanoaug/reflexes
-	name = "Nanoaugmentation Implaner (Combat Reflexes)"
+	name = "Nanoaugmentation Implanter (Combat Reflexes)"
 
 /obj/item/weapon/implanter/nanoaug/reflexes/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/reflexes( src )
@@ -170,7 +173,7 @@
 	update()
 
 /obj/item/weapon/implanter/nanoaug/nanoregen
-	name = "Nanoaugmentation Implaner (Regenerative Nanobots)"
+	name = "Nanoaugmentation Implanter (Regenerative Nanobots)"
 
 /obj/item/weapon/implanter/nanoaug/nanoregen/New()
 	src.imp = new /obj/item/weapon/implant/nanoaug/nanoregen( src )

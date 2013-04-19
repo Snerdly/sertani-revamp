@@ -72,7 +72,7 @@ mob/living/parasite/meme/Life()
 
 	// recover meme points slowly
 	var/gain = 5
-	if(dormant) gain = 15 // dormant recovers points faster
+	if(dormant) gain = 20 // dormant recovers points faster
 
 	meme_points = min(meme_points + gain, MAXIMUM_MEME_POINTS)
 
@@ -194,12 +194,12 @@ mob/living/parasite/meme/proc/select_indoctrinated(var/title, var/message)
 // A meme can make people hear things with the thought ability
 mob/living/parasite/meme/verb/Thought()
 	set category = "Meme"
-	set name	 = "Thought(30)"
+	set name	 = "Thought(25)"
 	set desc     = "Implants a thought into the target, making them think they heard someone talk."
 
-	if(meme_points < 30)
+	if(meme_points < 25)
 		// just call use_points() to give the standard failure message
-		use_points(30)
+		use_points(25)
 		return
 
 	var/list/candidates = indoctrinated.Copy()
@@ -217,7 +217,7 @@ mob/living/parasite/meme/verb/Thought()
 	if(!message) return
 
 	// Use the points at the end rather than the beginning, because the user might cancel
-	if(!use_points(30)) return
+	if(!use_points(25)) return
 
 	message = say_quote(message)
 	var/rendered = "<span class='game say'><span class='name'>[speaker]</span> <span class='message'>[message]</span></span>"
@@ -343,13 +343,13 @@ mob/living/parasite/meme/verb/Joy()
 // Cause the target to hallucinate.
 mob/living/parasite/meme/verb/Hallucinate()
 	set category = "Meme"
-	set name	 = "Hallucinate(450)"
+	set name	 = "Hallucinate(300)"
 	set desc     = "Makes your host hallucinate, has a short delay."
 
 	var/mob/target = select_indoctrinated("Hallucination", "Who should hallucinate?")
 
 	if(!target) return
-	if(!use_points(450)) return
+	if(!use_points(300)) return
 
 	target.hallucination += 100
 
@@ -376,7 +376,7 @@ mob/living/parasite/meme/verb/SubtleJump(mob/living/carbon/human/target as mob i
 	if(!use_points(250)) return
 
 	for(var/mob/M in view(1, host))
-		M.show_message("<B>[host]</B> chuckles softly.",2) // 2 stands for hearable message
+		M.show_message("<B>[host]</B> coughs!",2) // 2 stands for hearable message
 
 	// Find out whether the target can hear
 	if(target.disabilities & 32 || target.ear_deaf)
@@ -415,7 +415,7 @@ mob/living/parasite/meme/verb/ObviousJump(mob/living/carbon/human/target as mob 
 	if(!use_points(750)) return
 
 	for(var/mob/M in view(host)+src)
-		M.show_message("<B>[host]</B> laughs, almost psychotically, before shaking themself out of it.",2) // 2 stands for hearable message
+		M.show_message("<B>[host]</B> turns pale a moment.",2) // 2 stands for hearable message
 
 	// Find out whether the target can hear
 	if(target.disabilities & 32 || target.ear_deaf)
@@ -460,7 +460,7 @@ mob/living/parasite/meme/verb/AttunedJump(mob/living/carbon/human/target as mob 
 // ATTUNE a mob, adding it to the indoctrinated list
 mob/living/parasite/meme/verb/Attune()
 	set category = "Meme"
-	set name	 = "Attune(300)"
+	set name	 = "Attune(200)"
 	set desc     = "Change the host's brain structure, making it easier for you to manipulate him."
 
 	if(host in src.indoctrinated)
@@ -468,7 +468,7 @@ mob/living/parasite/meme/verb/Attune()
 		return
 
 	if(!host) return
-	if(!use_points(300)) return
+	if(!use_points(200)) return
 
 	src.indoctrinated.Add(host)
 
