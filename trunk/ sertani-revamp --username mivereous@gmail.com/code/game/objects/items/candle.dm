@@ -6,7 +6,7 @@
 	item_state = "candle1"
 	w_class = 1
 
-	var/wax = 200
+	var/wax = 800
 	var/lit = 0
 	proc
 		light(var/flavor_text = "\red [usr] lights the [name].")

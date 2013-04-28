@@ -1,11 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\game\objects\items\weapons\cards_ids.dm;code\modules\admin\verbs\striketeam.dm;code\modules\customitems\item_defines.dm;code\game\gamemodes\changeling\changeling_powers.dm
-LAST_COMPILE_VERSION: 498.1150
-DIR: code code\__HELPERS code\controllers code\datums code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game code\game\gamemodes code\game\gamemodes\changeling code\game\gamemodes\events code\game\jobs code\game\jobs\job code\game\objects code\game\objects\effects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\PDA code\game\objects\items\weapons code\game\objects\structures code\game\objects\structures\crates_lockers code\modules code\modules\admin code\modules\client code\modules\customitems code\modules\mob code\modules\mob\living code\modules\mob\living\parasite code\modules\mob\new_player code\modules\reagents\reagent_containers code\modules\reagents\reagent_containers\food code\modules\reagents\reagent_containers\food\drinks icons icons\obj maps maps\RandomZLevels 
+WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\game\objects\items\weapons\weaponry.dm;icons\obj\weapons.dmi;code\modules\clothing\under\jobs\security.dm;icons\mob\suit.dmi;code\game\objects\items\weapons\cards_ids.dm
+LAST_COMPILE_VERSION: 498.1163
+UPDATE_OBJ_TREE: ON
+DIR: code code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game code\game\objects code\game\objects\items code\game\objects\items\weapons code\modules code\modules\clothing code\modules\clothing\under code\modules\clothing\under\jobs icons icons\mob icons\obj maps 
 FILE: code\game\objects\items\weapons\cards_ids.dm
-LAST_COMPILE_TIME: 1366221681
+LAST_COMPILE_TIME: 1367168917
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

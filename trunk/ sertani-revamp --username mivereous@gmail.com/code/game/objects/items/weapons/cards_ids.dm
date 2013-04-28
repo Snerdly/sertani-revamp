@@ -199,3 +199,16 @@
 		user << "\red ...but it's probably too late now..."
 
 	*/
+
+/obj/item/weapon/card/id/syrus_id
+	name = "Syrus Seto's ID Card (Head of Security)"
+	desc = "A worn identification card. It still seems functional, although well out of its intended shift."
+	icon = 'custom_items.dmi'
+	icon_state = "ethan_way_1"
+	registered name = "Syrus Seto"
+	assignment = "Head of Security"
+	New()
+		access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
+			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
