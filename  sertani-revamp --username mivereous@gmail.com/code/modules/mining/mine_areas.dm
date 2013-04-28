@@ -29,6 +29,10 @@
 	name = "Mining Station Port Wing"
 	icon_state = "mining_living"
 
+/area/mine/syrushideout
+	name = "Hideout"
+	icon_state = "mining_living"
+
 /area/mine/eva
 	name = "Mining Station EVA"
 	icon_state = "mining_eva"

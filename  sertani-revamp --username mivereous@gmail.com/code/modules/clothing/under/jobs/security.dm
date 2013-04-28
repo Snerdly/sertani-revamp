@@ -131,3 +131,10 @@
 	icon_state = "jensencoat"
 	item_state = "jensencoat"
 	flags_inv = 0
+
+/obj/item/clothing/suit/armor/hos/jensen/aryus
+	name = "tattered trenchcoat"
+	desc = "A trenchcoat riddled with bulletholes, tears, burn marks, and blast points. A conduit of character to say the least."
+	icon_state = "jensencoat"
+	item_state = "aryuscoat"
+	armor = list(melee = 45, bullet = 20, laser = 30, energy = 5, bomb = 10, bio = 0, rad = 0)
