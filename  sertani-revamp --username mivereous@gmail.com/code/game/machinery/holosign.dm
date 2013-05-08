@@ -35,6 +35,7 @@
 	name = "bar holosign"
 	desc = "Small wall-mounted holographic projector. This one reads CLOSED. Too bad!"
 	on_icon = "closed"
+	id = 68
 
 ////////////////////SWITCH///////////////////////////////////////
 
