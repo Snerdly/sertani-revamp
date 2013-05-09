@@ -8,7 +8,7 @@ This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain i
 <br>We also tend to run <a href="http://sertani.webs.com/apps/forums/topics/show/8820780-events">custom events</a> from time to time. 
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<strong>Last Updated:</strong> <i>4/16/2013</i>
-<br>-Multiple bug fixes
-<br>-Fixed invisible drinking glasses
-<br>-Added the Grand Protector job (working on the whitelist)
+<strong>Last Updated:</strong> <i>5/8/2013</i>
+<br>-Re-designed the bar. Please leave your feedback on our forums.
+<br>-Corrected several mapping errors concerning the Grand Protector Office.
+<br>-Work to begin shortly on Residential Engineering Facilities.
