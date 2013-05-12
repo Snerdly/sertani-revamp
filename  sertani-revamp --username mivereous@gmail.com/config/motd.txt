@@ -9,6 +9,6 @@ This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain i
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>5/8/2013</i>
-<br>-Re-designed the bar. Please leave your feedback on our forums.
-<br>-Corrected several mapping errors concerning the Grand Protector Office.
-<br>-Work to begin shortly on Residential Engineering Facilities.
+<br>-Added Engineering Apartments.
+<br>-Added Grand Protector Quarters
+<br>-Added some custom items to people.

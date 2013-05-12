@@ -351,6 +351,10 @@
 	name = "paper- Memo"
 	info = "Dear esteemed human resources officer, <BR><BR> Your corgi has been moved to your apartment in the command sector due to multiple assassination attempts in the past year. We apologize for any inconvenience.<BR>Sincerly,<BR>Saris Industries Supply & Management Department"
 
+/obj/item/weapon/paper/carlpoem
+	name = "paper- Important"
+	info = " Life for all it has been is good. Every encounter, every event worth experiencing. <BR>I believe in my god, my country and my fellow man. <BR>I believe in the worth of every individual and that human dignity is worth every sacrifice necessary to maintain it. <BR>I am the soldier of righteousness, I am the warrior of humanity. I am the goodness of my life. <BR>If I die before my time, yet live beyond my expectation, let it be said that my life was good and that I was true to myself, my god, my country, and my fellow man. <BR>There are no regrets, no petty hatred, only a contempt. I have lived, I have contributed, I have loved. <BR>This is the essence of my existence. This is the worth of my life."
+
 /obj/item/weapon/paper/crumpled
 	name = "paper scrap"
 	icon_state = "scrap"
