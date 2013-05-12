@@ -10,5 +10,6 @@ serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/wea
 serveris6: Snow Seto: /obj/item/clothing/under/color/orange/mazra, /obj/item/fluff/snow_seto
 serveris6: Aryus Teso: /obj/item/clothing/suit/armor/hos/jensen/aryus, /obj/item/weapon/card/id/syrus_id
 jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
-mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty
+mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
+mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
 arur: Gunner Logue: /obj/item/weapon/pen/sleepypen
