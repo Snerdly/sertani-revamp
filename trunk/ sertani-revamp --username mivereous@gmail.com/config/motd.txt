@@ -5,10 +5,11 @@
 <strong>Rules and roleplaying tips:</strong> <a href="http://baystation12.net/wiki/index.php/Rules">http://baystation12.net/wiki/index.php/Rules</a> or the Rules command.
 <br><br>
 This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. 
-<br>We also tend to run <a href="http://sertani.webs.com/apps/forums/topics/show/8820780-events">custom events</a> from time to time. 
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<strong>Last Updated:</strong> <i>5/8/2013</i>
-<br>-Added Engineering Apartments.
+<strong>Last Updated:</strong> <i>5/12/2013</i>
+<br>-Re-designed the bar, please leave your feedback on our forums
+<br>-Corrected several mapping errors concerning the Grand Protector Office
+<br>-Added Engineering Apartments
 <br>-Added Grand Protector Quarters
-<br>-Added some custom items to people.
+<br>-Added some custom items to people
