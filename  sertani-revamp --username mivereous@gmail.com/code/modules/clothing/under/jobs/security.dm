@@ -73,11 +73,12 @@
 	flags = FPRINT | TABLEPASS | HEADCOVERSEYES
 	flags_inv = HIDEEARS
 
-/obj/item/clothing/under/suit
-	name = "crisp suit"
-	desc = "A white button down shirt and black dress pants. Very classy."
+/obj/item/clothing/under/schoolsuit
+	name = "schoolboy suit"
+	desc = "A white button down shirt, that seems to have had a logo, which was torn off. All that's visible is 'The **** School.' Comes with black dress pants. Very classy."
 	icon_state = "csuit"
 	item_state = "csuit"
+	color= "csuit"
 /*
  * Head of Security
  */

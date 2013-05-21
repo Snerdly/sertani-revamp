@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\game\jobs\job\engineering.dm;code\game\jobs\access.dm;code\game\jobs\job\medical.dm;code\modules\paperwork\paper.dm
+WINDOW: code\modules\customitems\item_defines.dm;maps\tgstation.2.1.0.0.1.dmm;icons\obj\clothing\suits.dmi;icons\mob\suit.dmi;code\game\gamemodes\events\ninja_abilities.dm;code\modules\clothing\spacesuits\ninja.dm;baystation12.dme
 LAST_COMPILE_VERSION: 498.1163
 UPDATE_OBJ_TREE: ON
-DIR: code code\ATMOSPHERICS\components\unary code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game code\game\area code\game\jobs code\game\jobs\job code\game\machinery code\modules code\modules\mob code\modules\mob\living code\modules\paperwork maps 
-FILE: maps\tgstation.2.1.0.0.1.dmm
-LAST_COMPILE_TIME: 1368374222
+DIR: code code\ATMOSPHERICS\components\unary code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game code\game\area code\game\gamemodes code\game\gamemodes\events code\game\jobs code\game\jobs\job code\game\machinery code\modules code\modules\clothing code\modules\clothing\spacesuits code\modules\customitems icons icons\mob icons\obj icons\obj\clothing maps 
+FILE: code\modules\clothing\spacesuits\ninja.dm
+LAST_COMPILE_TIME: 1369174697
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

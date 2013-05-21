@@ -12,4 +12,6 @@ serveris6: Aryus Teso: /obj/item/clothing/suit/armor/hos/jensen/aryus, /obj/item
 jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
 mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
 mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
-arur: Gunner Logue: /obj/item/weapon/pen/sleepypen
+arur: Adriana Posson: /obj/item/clothing/suit/storage/labcoat/seto/ana
+Sgt North: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan
+Sgt North: Nick Tath : /obj/item/clothing/suit/storage/labcoat/seto
