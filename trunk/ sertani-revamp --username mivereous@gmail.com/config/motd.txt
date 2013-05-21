@@ -8,6 +8,6 @@ This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain i
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>5/21/2013</i>
-<br>-Minor fixes on previous updates.
-<br>-Added a shielding system to the singularity field. This is trial run. Feedback belongs on the forum.
+<br>-Minor fixes on previous updates
+<br>-Added a shielding system to the singularity field. This is trial run. Feedback belongs on the forum
 
