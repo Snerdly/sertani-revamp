@@ -627,6 +627,25 @@ hi
 	w_class = 1
 	slot_flags = SLOT_MASK
 
+////// Jewelled locket - Adriana Posson - Arur
+/obj/item/clothing/tie/fluff/adriana_locket
+	name = "jewelled locket"
+	desc = "A small locket, covered in some sort of diamond, hung by some sort of fiber cord. Inside the locket is a holo-photo of a dark brown haired man dressed in black standing next to a brunnete, whom is dressed mostly in black, but wearing a white labcoat identifying her as an officer of the Saris Exploration Team, with 'Gannat Station 1' visibly on the wall behind them."
+	icon = 'custom_items.dmi'
+	icon_state = "adriana_locket"
+	item_state = "adriana_locket"
+	color = "adriana_locket"
+	slot_flags = 0
+	flags = FPRINT|TABLEPASS
+	w_class = 1
+	slot_flags = SLOT_MASK
+
+	attack_self(mob/user)
+		if(user.r_hand == src || user.l_hand == src)
+			for(var/mob/O in viewers(user, null))
+				O.show_message(text("\blue [] clicks open the [] and looks at it for a moment, and closes it again.", user, src), 1)
+		return
+
 //////  Medallion - Nasir Khayyam - Jamini
 
 /obj/item/clothing/tie/fluff/nasir_khayyam_1

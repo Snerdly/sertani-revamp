@@ -59,6 +59,13 @@
 			if("labgreen")
 				src.icon_state = "labgreen_open"
 				usr << "You unbutton the labcoat."
+			if("setocoat_open")
+				src.icon_state = "setocoat"
+				usr << "You button up the labcoat."
+			if("setocoat")
+				src.icon_state = "setocoat_open"
+				usr << "You unbutton the labcoat."
+
 			else
 				usr << "You attempt to button-up the velcro on your [src], before promptly realising how retarded you are."
 				return
@@ -95,3 +102,17 @@
 	name = "Scientist Labcoat"
 	desc = "A suit that protects against minor chemical spills. Has a purple stripe on the shoulder."
 	icon_state = "labcoat_tox_open"
+
+/obj/item/clothing/suit/storage/labcoat/seto
+	name = "SETO Labcoat"
+	desc = "A custom tailored labcoat issued to Saris Exploration Team Members. Has dark crimson highlights."
+	icon_state = "setocoat_open"
+	item_state = "setocoat"
+
+/obj/item/clothing/suit/storage/labcoat/seto/ana
+	name = "SETO Labcoat"
+	desc = "A custom tailored labcoat issued to Saris Exploration Officer Adriana Posson, as evidenced by the stiching on the front. Has dark crimson highlights."
+
+/obj/item/clothing/suit/storage/labcoat/seto/nathan
+	name = "SETO Labcoat"
+	desc = "A custom tailored labcoat issued to Saris Exploration Member Nathan Nath, as evidenced by the stiching on the front. Has dark crimson highlights."

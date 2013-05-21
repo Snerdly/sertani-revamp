@@ -355,6 +355,10 @@
 	name = "paper- Important"
 	info = " Life for all it has been is good. Every encounter, every event worth experiencing. <BR>I believe in my god, my country and my fellow man. <BR>I believe in the worth of every individual and that human dignity is worth every sacrifice necessary to maintain it. <BR>I am the soldier of righteousness, I am the warrior of humanity. I am the goodness of my life. <BR>If I die before my time, yet live beyond my expectation, let it be said that my life was good and that I was true to myself, my god, my country, and my fellow man. <BR>There are no regrets, no petty hatred, only a contempt. I have lived, I have contributed, I have loved. <BR>This is the essence of my existence. This is the worth of my life."
 
+/obj/item/weapon/paper/naupactus
+	name = "paper-  Naupactus Project"
+	info = "Thank you for supporting this test run of the new Saris Industries Naupactus Defense System (SINDS).<BR> This being a test run, your loadout has been restricted. In the open perimeter of your station's gravitational singularity field, you will find nine (9) shield generators awaiting your installation. <BR> Installation of the generators is simple. All you need do is firmly secure them to the vehicle, and engage the shields. <BR> The shields themselves have proven to last an indefinte period, however are far from industructable. After a certain amount of force, the shield will begin to break down. To restore the field, one must simply reset the generator. <BR> NOTICE. <BR><BR> THE GENERATORS ARE STILL IN AN EXPERIMENTAL STAGE, AND MAY BE PRONE TO MALFUNCTION. BASIC MAINTANENCE PROTOCOLS MUST BE OBSERVED.<BR> IN THE EVENT OF A MALFUNCTIONING GENERATOR, ONE NEED ONLY OPEN THE MAINTANENCE PANEL, AND REPLACE THE WIRING. <BR><BR> Comments or concerns? <BR><BR>Alan Simmons<BR><BR>Sertani Engineering Director<BR><BR>Sertani Central Command Station<BR><BR>Office B-2"
+
 /obj/item/weapon/paper/crumpled
 	name = "paper scrap"
 	icon_state = "scrap"

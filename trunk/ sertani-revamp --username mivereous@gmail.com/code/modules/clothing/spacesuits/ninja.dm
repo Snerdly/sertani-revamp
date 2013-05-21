@@ -57,3 +57,13 @@
 	var/obj/effect/overlay/hologram//Is the AI hologram on or off? Visible only to the wearer of the suit. This works by attaching an image to a blank overlay.
 	var/flush = 0//If an AI purge is in progress.
 	var/s_control = 1//If user in control of the suit.
+
+//Specialized space ninja armor for Space Ninja Felix. Probably won't use this very often. Only for admin bussing and such. I might end up adding new abilities exclusive to this if I can ever get off my ass and learn to code properly.
+
+
+/*obj/item/clothing/suit/space/space_ninja/seto
+	name = "customized ninja suit"
+	desc = "A unique, vaccum-proof suit of nano-enhanced armor designed specifically for Spider Clan assassins. This one, however, has clearly had some major modifications both in appearence and technology."
+	icon_state = "felixninja"
+	item_state = "*/
+
