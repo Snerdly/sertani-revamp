@@ -5,13 +5,13 @@
 ADDRESS localhost
 
 # MySQL server port (default is 3306)
-PORT 3306
+PORT 6073
 
 # Database the population, death, karma, etc. tables may be found in
-DATABASE tgstation
+DATABASE sertani6
 
 # Username/Login used to access the database
-LOGIN mylogin
+LOGIN username
 
 # Password used to access the database
 PASSWORD mypassword

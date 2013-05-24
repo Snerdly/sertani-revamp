@@ -5,7 +5,7 @@
 "ae" = (/turf/simulated/wall,/area/awaymission/labs/cave)
 "af" = (/turf/simulated/floor/plating,/area/awaymission/labs/cave)
 "ag" = (/obj/structure/rack,/turf/simulated/floor/plating,/area/awaymission/labs/cave)
-"ah" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/plating,/area/awaymission/labs/cave)
+"ah" = (/obj/machinery/light{dir = 1},/obj/item/mecha_parts/chassis/phazon,/turf/simulated/floor/plating,/area/awaymission/labs/cave)
 "ai" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor/plating,/area/awaymission/labs/cave)
 "aj" = (/obj/structure/closet/secure_closet/engineering_personal,/turf/simulated/floor/plating,/area/awaymission/labs/cave)
 "ak" = (/obj/machinery/vending/tool,/turf/simulated/floor/plating,/area/awaymission/labs/cave)

@@ -7,7 +7,13 @@
 This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. 
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<strong>Last Updated:</strong> <i>5/21/2013</i>
-<br>-Minor fixes on previous updates
-<br>-Added a shielding system to the singularity field. This is trial run. Feedback belongs on the forum
+<strong>Last Updated:</strong> <i>5/24/2013</i>
+<br>-Fixed Grand Protector's Quarters door name and required access
+<br>-Replaced the Security Camera computer in Forensics with a Security Records one
+<br>-Phazon mechas are now able to be built with corresponding circuitboards 
+<br>*Will look like a Durand when being built, basically built the same way, minus the Durand Armor
+<br>*Phazon mecha parts are granted to special members of staff, such as heads, as well as a couple of others
+<br>*Phazon mecha can only be completed by gathering the remaining part from certain Gateway missions (not all of them contain the remaining bits!)
+<br>-Added a shielding system to the singularity field. 
+<br>*This is trial run for the shielding system, feedback belongs on the forum
 
