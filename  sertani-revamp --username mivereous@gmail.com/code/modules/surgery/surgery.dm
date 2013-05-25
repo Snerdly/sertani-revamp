@@ -38,7 +38,7 @@
 		var/datum/organ/external/affected = target.get_organ(target_zone)
 		if (can_infect && affected)
 			spread_germs_to_organ(affected, user)
-		if (ishuman(user) && prob(60))
+		if (ishuman(user) && prob(20))
 			var/mob/living/carbon/human/H = user
 			if (blood_level)
 				H.bloody_hands(target,0)

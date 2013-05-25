@@ -16,9 +16,9 @@
 	response_harm   = "hits the"
 	var/obj/item/weapon/grab/G
 	var/observed = 0
-	var/allow_escape = 0	//set this to 1 for src to drop it's target next Life() call and try to escape
+	var/allow_escape = 1	//set this to 1 for src to drop it's target next Life() call and try to escape
 	var/hibernate = 0
-	var/random_escape_chance = 0.5
+	var/random_escape_chance = 0.8
 
 /mob/living/simple_animal/sculpture/proc/GrabMob(var/mob/living/target)
 	if(target && target != src && ishuman(target))

@@ -14,12 +14,12 @@
 	response_disarm = "pushes the"
 	response_harm = "hits the"
 	speed = 4
-	maxHealth = 250
-	health = 250
+	maxHealth = 15
+	health = 15
 
 	harm_intent_damage = 5
-	melee_damage_lower = 8
-	melee_damage_upper = 12
+	melee_damage_lower = 3
+	melee_damage_upper = 5
 	attacktext = "attacks"
 	attack_sound = 'sound/weapons/bite.ogg'
 
@@ -71,7 +71,7 @@
 /mob/living/simple_animal/hostile/mimic/crate/DestroySurroundings()
 	..()
 	if(prob(90))
-		icon_state = "[initial(icon_state)]open"
+		icon_state = initial(icon_state)
 	else
 		icon_state = initial(icon_state)
 
@@ -131,8 +131,8 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 
 /mob/living/simple_animal/hostile/mimic/copy
 
-	health = 100
-	maxHealth = 100
+	health = 15
+	maxHealth = 15
 	var/mob/living/creator = null // the creator
 	var/destroy_objects = 0
 	var/knockdown_people = 0

@@ -1,11 +1,9 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\modules\mob\living\simple_animal\friendly\spiderbot.dm;code\modules\mob\living\simple_animal\friendly\farm_animals.dm;code\game\vehicles\vehicle.dm;code\game\mecha\combat\combat.dm;code\game\mecha\mecha_construction_paths.dm;icons\mecha\mech_construction.dmi;code\game\mecha\combat\phazon.dm;code\game\mecha\mecha_parts.dm;code\game\mecha\mecha.dm;code\game\mecha\mech_bay.dm;code\game\mecha\mech_fabricator.dm;code\game\mecha\mecha_control_console.dm;code\game\magic\archived_book.dm;code\game\magic\Uristrunes.dm;code\modules\admin\verbs\randomverbs.dm;code\modules\admin\verbs\mapping.dm;code\modules\admin\admin_verbs.dm;code\modules\admin\holder2.dm;code\modules\admin\verbs\cinematic.dm;code\defines\procs\statistics.dm;code\defines\procs\sd_Alert.dm;code\defines\procs\dbcore.dm;code\defines\procs\command_alert.dm;code\defines\procs\captain_announce.dm;code\defines\procs\AStar.dm;code\controllers\verbs.dm
 LAST_COMPILE_VERSION: 498.1150
-DIR: code\ATMOSPHERICS\components\unary code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game\jobs\job code\game\machinery\camera code\game\mecha\combat code\modules\mob\living code\modules\mob\living\blob code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly code\WorkInProgress\Uristqwerty maps\RandomZLevels 
-FILE: code\controllers\verbs.dm
-LAST_COMPILE_TIME: 1369376786
+DIR: code\ATMOSPHERICS\components\unary code\datums\diseases\advance code\datums\diseases\advance\symptoms code\game\jobs\job code\game\machinery\camera code\modules\mob\living code\modules\mob\living\blob code\modules\mob\living\simple_animal\friendly code\modules\mob\living\simple_animal\hostile 
+LAST_COMPILE_TIME: 1369487658
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
