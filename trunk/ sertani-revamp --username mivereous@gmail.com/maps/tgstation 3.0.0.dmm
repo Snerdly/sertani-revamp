@@ -3088,7 +3088,7 @@
 "bht" = (/obj/structure/stool/bed/chair{dir = 4},/turf/simulated/shuttle/floor{icon_state = "floor3"},/area/shuttle/escape/centcom)
 "bhu" = (/obj/structure/stool/bed/chair{dir = 8},/turf/simulated/shuttle/floor{icon_state = "floor3"},/area/shuttle/escape/centcom)
 "bhv" = (/obj/machinery/door/airlock/centcom{name = "Security Outpost"; opacity = 1; req_access_txt = "109"},/turf/unsimulated/floor{icon_state = "floor"},/area/centcom)
-"bhw" = (/obj/structure/stool/bed/chair{dir = 1},/tplatter{pixel_x = 32},/obj/effect/decal/cleanable/blood/splatter{pixel_x = 32},/obj/effect/decal/cleanable/blood/splatter,/turf/unsimulated/floor{icon_state = "floor"},/area/centcom)
+"bhw" = (/obj/structure/stool/bed/chair{dir = 1},/oplatter{pixel_x = 32},/obj/effect/decal/cleanable/blood/splatter{pixel_x = 32},/obj/effect/decal/cleanable/blood/splatter,/turf/unsimulated/floor{icon_state = "floor"},/area/centcom)
 "bho" = (/turf/simulated/shuttle/wall{tag = "icon-swall3"; icon_state = "swall3"; dir = 2},/area/shuttle/escape/centcom)
 "bhp" = (/obj/machinery/computer/atmos_alert,/turf/simulated/shuttle/floor{icon_state = "floor3"},/area/shuttle/escape/centcom)
 "bhq" = (/obj/structure/stool/bed/chair{dir = 8},/turf/simulated/shuttle/floor,/area/shuttle/escape/centcom)

@@ -75,7 +75,7 @@ LOG_PDA
 ## default probablity is 1, increase to make that mode more likely to be picked
 ## set to 0 to disable that mode
 ## Cult mode is in alpha test, enable at your own risk
-PROBABILITY EXTENDED 1
+PROBABILITY EXTENDED 0
 PROBABILITY TRAITOR 3
 PROBABILITY METEOR 0
 PROBABILITY MALFUNCTION 0
@@ -83,15 +83,15 @@ PROBABILITY BLOB 0
 PROBABILITY NUCLEAR 0
 PROBABILITY SANDBOX 0
 PROBABILITY WIZARD 0
-PROBABILITY RESTRUCTURING 0
+PROBABILITY RESTRUCTURING 1
 PROBABILITY REVOLUTION 2
 PROBABILITY CHANGELING 1
-PROBABILITY CULT 2
+PROBABILITY CULT 0
 PROBABILITY MONKEY 0
 PROBABILITY TRAITORCHAN 1
 PROBABILITY EXTEND-A-TRAITORMONGOUS 1
-PROBABILITY EPIDEMIC 0
-PROBABILITY MEME 1
+PROBABILITY EPIDEMIC 1
+PROBABILITY MEME 2
 
 ## Hash out to disable random events during the round.
 ALLOW_RANDOM_EVENTS
@@ -209,7 +209,7 @@ GATEWAY_DELAY 6000
 NUDGE_SCRIPT_PATH nudge.py
 
 ## Comment this to unrestrict the number of alien players allowed in the round. The number represents the number of alien players for every human player.
-ALIEN_PLAYER_RATIO 0.4
+ALIEN_PLAYER_RATIO 0.5
 
 ##Remove the # to let ghosts spin chairs
 GHOST_INTERACTION

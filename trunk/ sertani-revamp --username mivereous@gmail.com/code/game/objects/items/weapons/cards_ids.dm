@@ -205,10 +205,19 @@
 	desc = "A worn identification card. It still seems functional, although well out of its intended shift."
 	icon = 'custom_items.dmi'
 	icon_state = "ethan_way_1"
-	registered name = "Syrus Seto"
+	registered_name = "Syrus Seto"
 	assignment = "Head of Security"
 	New()
 		access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
+
+/obj/item/weapon/card/id/set_id
+	name = "\improper Saris Exploration Team GatePass"
+	desc = "An ID card worn by those hired or volunteering for exploration teams."
+	icon = 'card.dmi'
+	icon_state = "data"
+	assignment = "Saris Exploration Team"
+	New()
+		access = list(access_gateway)
