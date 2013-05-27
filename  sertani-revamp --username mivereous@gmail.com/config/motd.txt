@@ -8,13 +8,8 @@ This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain i
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <strong>Last Updated:</strong> <i>5/24/2013</i>
-<br>-Fixed Grand Protector's Quarters door name and required access
 <br>-Now only a 20% chance of spreading germs in surgery, rather than 60%
-<br>-Put some costume spawners throughout the station
-<br>-Removed the wall blocking the Kitchen island...thingie...
-<br>-Added some special seeds to special places
-<br>-Replaced the Security Camera computer in Forensics with a Security Records one
-<br>-Teleporter mecha equipment now requires Bluespace 8 in Research to develope, rather than Bluespace 10
+<br>-Added Saris Exploration Team GatePasses to R&D
 <br>-Phazon mechas are now able to be built with corresponding circuitboards - Phazon Main, Phazon Phase, and Phazon Peripherals
 <br>*Will look like a <a href="http://baystation12.net/wiki/index.php?title=Guide_to_robotics#Durand">Durand</a> when being built, basically built the same way, minus the Durand Armor
 <br>*Phazon mecha parts are granted to special members of staff, such as heads, as well as a couple of others

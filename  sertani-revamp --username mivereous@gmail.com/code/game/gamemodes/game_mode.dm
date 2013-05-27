@@ -74,7 +74,7 @@ Implants;
 /obj/item/weapon/cloaking_device:4:Cloaking Device;	//Replacing cloakers with thermals.	-Pete
 */
 
-/datum/game_mode/proc/announce() //to be calles when round starts
+/datum/game_mode/proc/announce() //to be called when round starts
 	world << "<B>Notice</B>: [src] did not define announce()"
 
 

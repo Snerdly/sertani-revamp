@@ -5,7 +5,7 @@
 // To remove a rev (from brainwashing or w/e), call ticker.mode:remove_revolutionary(_THE_PLAYERS_MIND_),
 // this will also check they're not a head, so it can just be called freely
 // If the rev icons start going wrong for some reason, ticker.mode:update_all_rev_icons() can be called to correct them.
-// If the game somtimes isn't registering a win properly, then ticker.mode.check_win() isn't being called somewhere.
+// If the game sometimes isn't registering a win properly, then ticker.mode.check_win() isn't being called somewhere.
 
 /datum/game_mode
 	var/list/datum/mind/head_revolutionaries = list()
