@@ -120,6 +120,7 @@ datum/mind
 			"traitor", // "traitorchan",
 			"monkey",
 			"malfunction",
+			"meme",
 		)
 		var/text = ""
 
