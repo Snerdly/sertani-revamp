@@ -224,6 +224,8 @@ mob/living/parasite/meme/verb/Thought()
 	target.show_message(rendered)
 
 	usr << "<i>You make [target] hear:</i> [rendered]"
+	log_admin("[src.key] made [target] hear: [rendered]")
+	message_admins("[src.key] made [target] hear: [rendered]")
 
 // Mutes the host
 mob/living/parasite/meme/verb/Mute()
@@ -243,6 +245,8 @@ mob/living/parasite/meme/verb/Mute()
 
 		host << "\red Your tongue feels numb.. You lose your ability to speak."
 		usr << "\red Your host can't speak anymore."
+		log_admin("[src.key] has meme-muted [src.host]")
+		message_admins("[src.key] has meme-muted [src.host]")
 
 		host.speech_allowed = 0
 
@@ -251,6 +255,8 @@ mob/living/parasite/meme/verb/Mute()
 		host.speech_allowed = 1
 		host << "\red Your tongue has feeling again.."
 		usr << "\red [host] can speak again."
+		log_admin("[src.host] can speak again")
+		message_admins("[src.host] can speak again")
 
 // Makes the host unable to emote
 mob/living/parasite/meme/verb/Paralyze()
@@ -270,6 +276,8 @@ mob/living/parasite/meme/verb/Paralyze()
 
 		host << "\red Your body feels numb.. You lose your ability to use body language."
 		usr << "\red Your host can't use body language anymore."
+		log_admin("[src.key] has meme-paralyzed [src.host]")
+		message_admins("[src.key] has meme-paralyzed [src.host]")
 
 		host.emote_allowed = 0
 
@@ -278,6 +286,40 @@ mob/living/parasite/meme/verb/Paralyze()
 		host.emote_allowed = 1
 		host << "\red Your body has feeling again.."
 		usr << "\red [host] can use body language again."
+		log_admin("[src.host] can emote again")
+		message_admins("[src.host] can emote again")
+
+
+// Makes the host unable to move
+mob/living/parasite/meme/verb/Freeze()
+	set category = "Meme"
+	set name	 = "Freeze(500)"
+	set desc     = "Prevents your host from moving for a while."
+
+	if(!src.host) return
+	if(!host.canmove)
+		usr << "\red Your host already can't move.."
+		return
+	if(!use_points(500)) return
+
+	spawn
+		// backup the host incase we switch hosts after using the verb
+		var/mob/host = src.host
+
+		host << "\red Your body feels frozen.. You lose your ability to move."
+		usr << "\red Your host can't move anymore."
+		log_admin("[src.key] has meme-frozen [src.host]")
+		message_admins("[src.key] has meme-frozen [src.host]")
+
+		host.paralysis = 500
+
+		sleep(1200)
+
+		host.paralysis = 0
+		host << "\red Your body untenses again.."
+		usr << "\red [host] can move again."
+		log_admin("[src.host] is unfrozen")
+		message_admins("[src.host] is unfrozen")
 
 
 
@@ -300,6 +342,8 @@ mob/living/parasite/meme/verb/Agony()
 		host << "\red <font size=5>You feel excrutiating pain all over your body! It is so bad you can't think or articulate yourself properly..</font>"
 
 		usr << "<b>You send a jolt of agonizing pain through [host], they should be unable to concentrate on anything else for half a minute.</b>"
+		log_admin("[src.key] has agonied [src.host]")
+		message_admins("[src.key] has agonied [src.host]")
 
 		host.emote("scream")
 
@@ -332,6 +376,8 @@ mob/living/parasite/meme/verb/Joy()
 		host.slurring = max(host.slurring, 10)
 
 		usr << "<b>You stimulate [host.name]'s brain, injecting waves of endorphines and dopamine into the tissue. They should now forget all their worries, particularly relating to you, for around a minute."
+		log_admin("[src.key] has used joy on [src.host]")
+		message_admins("[src.key] has used joy on [src.host]")
 
 		host << "\red You are feeling wonderful! Your head is numb and drowsy, and you can't help forgetting all the worries in the world."
 
@@ -351,15 +397,17 @@ mob/living/parasite/meme/verb/Hallucinate()
 	if(!target) return
 	if(!use_points(300)) return
 
-	target.hallucination += 100
+	target.hallucination += 80
 
 	usr << "<b>You make [target] hallucinate.</b>"
+	log_admin("[src.key] has made [target] hallucinate")
+	message_admins("Oh, well, that sucks.")
 
 // Jump to a closeby target through a whisper
 mob/living/parasite/meme/verb/SubtleJump(mob/living/carbon/human/target as mob in world)
 	set category = "Meme"
 	set name	 = "Subtle Jump(250)"
-	set desc     = "Move to a closeby human through a whisper."
+	set desc     = "Move to a closeby human."
 
 	if(!istype(target, /mob/living/carbon/human) || !target.mind)
 		src << "<b>You can't jump to this creature..</b>"
@@ -376,7 +424,7 @@ mob/living/parasite/meme/verb/SubtleJump(mob/living/carbon/human/target as mob i
 	if(!use_points(250)) return
 
 	for(var/mob/M in view(1, host))
-		M.show_message("<B>[host]</B> coughs!",2) // 2 stands for hearable message
+		M.show_message("<B>[host]</B> clears their throat quietly.",2) // 2 stands for hearable message
 
 	// Find out whether the target can hear
 	if(target.disabilities & 32 || target.ear_deaf)
@@ -398,7 +446,7 @@ mob/living/parasite/meme/verb/SubtleJump(mob/living/carbon/human/target as mob i
 mob/living/parasite/meme/verb/ObviousJump(mob/living/carbon/human/target as mob in world)
 	set category = "Meme"
 	set name	 = "Obvious Jump(750)"
-	set desc     = "Move to any mob in view through a shout."
+	set desc     = "Move to any mob in view."
 
 	if(!istype(target, /mob/living/carbon/human) || !target.mind)
 		src << "<b>You can't jump to this creature..</b>"
@@ -415,7 +463,7 @@ mob/living/parasite/meme/verb/ObviousJump(mob/living/carbon/human/target as mob 
 	if(!use_points(750)) return
 
 	for(var/mob/M in view(host)+src)
-		M.show_message("<B>[host]</B> turns pale a moment.",2) // 2 stands for hearable message
+		M.show_message("<B>[host]</B> stares at [target].",2) // 2 stands for hearable message
 
 	// Find out whether the target can hear
 	if(target.disabilities & 32 || target.ear_deaf)
@@ -473,7 +521,7 @@ mob/living/parasite/meme/verb/Attune()
 	src.indoctrinated.Add(host)
 
 	usr << "<b>You successfully indoctrinated [host]."
-	host << "\red Your head feels a bit roomier.."
+	host << "\red You feel sick..."
 
 	log_admin("[src.key] has attuned [host]")
 	message_admins("[src.key] has attuned [host]")
@@ -491,6 +539,8 @@ mob/living/parasite/meme/verb/Analgesic()
 	if(!use_points(500)) return
 
 	usr << "<b>You inject drugs into [host]."
+	log_admin("[src.key] has injected [host] with analgesic")
+	message_admins("[src.key] has injected [host] with analgesic")
 	host << "\red You feel your body strengthen and your pain subside.."
 	host.analgesic = 60
 	while(host.analgesic > 0)
@@ -534,7 +584,7 @@ mob/living/parasite/meme/verb/Possession()
 		log_admin("[meme_mind.key] has taken possession of [host]([host_mind.key])")
 		message_admins("[meme_mind.key] has taken possession of [host]([host_mind.key])")
 
-		sleep(600)
+		sleep(900) //minute and a half
 
 		log_admin("[meme_mind.key] has lost possession of [host]([host_mind.key])")
 		message_admins("[meme_mind.key] has lost possession of [host]([host_mind.key])")

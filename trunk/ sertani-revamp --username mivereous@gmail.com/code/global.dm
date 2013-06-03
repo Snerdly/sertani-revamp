@@ -71,7 +71,7 @@ var/diary = null
 var/diaryofmeanpeople = null
 var/href_logfile = null
 var/station_name = "Sertani Station 6"
-var/game_version = "Baystation12"
+var/game_version = "RolePlay Server"
 var/changelog_hash = ""
 
 var/datum/air_tunnel/air_tunnel1/SS13_airtunnel = null

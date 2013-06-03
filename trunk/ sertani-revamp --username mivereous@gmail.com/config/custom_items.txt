@@ -7,11 +7,10 @@ nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter
 nash2525: Eve Larson: /obj/item/clothing/head/kitty, /obj/item/clothing/under/blackskirt
 nash2525: Crystal Dellfield: /obj/item/weapon/dnainjector/stuttmut
 serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/weapon/gun/projectile/m1911/sol
-serveris6: Snow Seto: /obj/item/clothing/under/color/orange/mazra, /obj/item/fluff/snow_seto
+serveris6: Snow Seto: /obj/item/fluff/snow_seto
 serveris6: Aryus Teso: /obj/item/clothing/suit/armor/hos/jensen/aryus, /obj/item/weapon/card/id/syrus_id
 jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
+sgtnorth: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan
 mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
 mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
-arur: Adriana Posson: /obj/item/clothing/suit/storage/labcoat/seto/ana
-Sgt North: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan
-Sgt North: Nick Tath : /obj/item/clothing/suit/storage/labcoat/seto
+arur: Adriana Posson: /obj/item/clothing/suit/storage/labcoat/seto/ana,  /obj/item/clothing/tie/fluff/adriana_locket
