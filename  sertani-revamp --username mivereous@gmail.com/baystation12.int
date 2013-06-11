@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\modules\mob\living\parasite\meme.dm;code\modules\awaymissions\exile.dm;code\modules\awaymissions\corpse.dm;code\modules\assembly\mousetrap.dm;code\modules\assembly\infrared.dm;code\js\menus.dm;code\js\byjax.dm;code\game\verbs\AI_status.dm
+WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\modules\mob\living\parasite\meme.dm;code\modules\awaymissions\exile.dm;code\modules\awaymissions\corpse.dm;code\modules\assembly\mousetrap.dm;code\modules\assembly\infrared.dm;code\js\menus.dm;code\js\byjax.dm;code\game\verbs\AI_status.dm;icons\obj\clothing\suits.dmi;icons\obj\clothing\uniforms.dmi;icons\mob\uniform.dmi;icons\mob\suit.dmi
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\ATMOSPHERICS\components\unary code\datums code\datums\helper_datums code\game code\game\gamemodes code\game\gamemodes\cult code\game\gamemodes\extended code\game\gamemodes\revolution code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\verbs code\modules\assembly code\modules\awaymissions code\modules\client code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\brain code\modules\mob\living\carbon\human code\modules\mob\living\parasite icons icons\obj maps 
-FILE: code\game\verbs\AI_status.dm
+DIR: code\ATMOSPHERICS\components\unary code\datums code\datums\helper_datums code\game code\game\gamemodes code\game\gamemodes\cult code\game\gamemodes\extended code\game\gamemodes\revolution code\game\objects code\game\objects\items code\game\verbs code\js code\modules code\modules\assembly code\modules\awaymissions code\modules\mob code\modules\mob\living code\modules\mob\living\parasite icons icons\mob icons\obj icons\obj\clothing 
+FILE: icons\obj\clothing\uniforms.dmi
 LAST_COMPILE_TIME: 1370243347
 AUTO_FILE_DIR: ON
 */
