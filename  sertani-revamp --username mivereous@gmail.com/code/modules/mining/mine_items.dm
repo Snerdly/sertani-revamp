@@ -193,10 +193,14 @@ proc/move_mining_shuttle()
 	var/digspeed = 40 //moving the delay to an item var so R&D can make improved picks. --NEO
 	origin_tech = "materials=1;engineering=1"
 	attack_verb = list("hit", "pierced", "sliced", "attacked")
+	var/drill_sound = 'sound/weapons/Genhit.ogg'
+	var/drill_verb = "picking"
+
+	var/excavation_amount = 100
 
 	hammer
 		name = "sledgehammer"
-		icon_state = "sledgehammer"
+		//icon_state = "sledgehammer" Waiting on sprite
 		desc = "A mining hammer made of reinforced metal. You feel like smashing your boss in the face with this."
 
 	silver
@@ -272,7 +276,6 @@ proc/move_mining_shuttle()
 		digspeed = 5
 		origin_tech = "materials=5"
 		desc = "A slightly glowing pickaxe with a black handle. This thing doesn't look safe to be around when it's swung. Or at all."
-
 
 /*****************************Shovel********************************/
 

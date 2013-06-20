@@ -101,7 +101,7 @@
 						/obj/item/mecha_parts/mecha_equipment/tool/sleeper,
 						/obj/item/mecha_parts/mecha_equipment/tool/syringe_gun,
 						/obj/item/mecha_parts/chassis/firefighter,
-						/obj/item/mecha_parts/mecha_equipment/repair_droid,
+						///obj/item/mecha_parts/mecha_equipment/repair_droid,
 						/obj/item/mecha_parts/mecha_equipment/generator,
 						///obj/item/mecha_parts/mecha_equipment/jetpack, //TODO MECHA JETPACK SPRITE MISSING
 						/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,
@@ -368,7 +368,7 @@
 	src.desc = initial(src.desc)
 	if(being_built)
 		src.being_built.Move(get_step(src,SOUTH))
-		src.visible_message("\icon[src] <b>[src]</b> beeps, \"The [src.being_built] is complete\".")
+		src.visible_message("\icon[src] <b>[src]</b> beeps, \"The following has been completed: [src.being_built] is built\".")
 		src.being_built = null
 	src.updateUsrDialog()
 	return 1
@@ -550,7 +550,7 @@
 		switch(screen)
 			if("main")
 				left_part = output_available_resources()+"<hr>"
-				left_part += "<a href='?src=\ref[src];sync=1'>Sync with R&D servers</a> | <a href='?src=\ref[src];auto_sync=1'>[sync?"Dis":"En"]able auto sync</a><hr>"
+				left_part += "<a href='?src=\ref[src];sync=1'>Sync with R&D servers</a><hr>"
 				for(var/part_set in part_sets)
 					left_part += "<a href='?src=\ref[src];part_set=[part_set]'>[part_set]</a> - \[<a href='?src=\ref[src];partset_to_queue=[part_set]'>Add all parts to queue\]<br>"
 			if("parts")
@@ -646,9 +646,6 @@
 		queue = list()
 		src.sync()
 		return update_queue_on_page()
-	if(href_list["auto_sync"])
-		src.sync = !src.sync
-		//pr_auto_sync.toggle()
 	if(href_list["part_desc"])
 		var/obj/part = filter.getObj("part_desc")
 		if(part)
@@ -659,14 +656,6 @@
 	if(href_list["remove_mat"] && href_list["material"])
 		temp = "Ejected [remove_material(href_list["material"],text2num(href_list["remove_mat"]))] of [href_list["material"]]<br><a href='?src=\ref[src];clear_temp=1'>Return</a>"
 	src.updateUsrDialog()
-	return
-
-/obj/machinery/mecha_part_fabricator/process()
-	if (stat & (NOPOWER|BROKEN))
-		return
-	if(sync)
-		spawn(-1)
-			sync(1)
 	return
 
 /obj/machinery/mecha_part_fabricator/proc/remove_material(var/mat_string, var/amount)

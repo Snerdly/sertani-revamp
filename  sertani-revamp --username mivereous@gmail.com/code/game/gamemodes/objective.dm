@@ -29,8 +29,7 @@ datum/objective
 				target = possible_target
 				break
 
-/proc/SelectObjectives(var/job,var/datum/mind/traitor,var/hijack = 0)
-//	var/list/datum/objective = list()
+
 
 datum/objective/assassinate
 	find_target()
@@ -185,7 +184,7 @@ datum/objective/anti_revolution/demote
 	find_target()
 		..()
 		if(target && target.current)
-			explanation_text = "[target.current.real_name], the [target.assigned_role]  has been classified as harmful to Saris Industries' goals. Demote \him[target.current] to assistant."
+			explanation_text = "[target.current.real_name], the [target.assigned_role]  has been classified as harmful to NanoTrasen's goals. Demote \him[target.current] to assistant."
 		else
 			explanation_text = "Free Objective"
 		return target
@@ -193,7 +192,7 @@ datum/objective/anti_revolution/demote
 	find_target_by_role(role, role_type=0)
 		..(role, role_type)
 		if(target && target.current)
-			explanation_text = "[target.current.real_name], the [!role_type ? target.assigned_role : target.special_role] has been classified as harmful to Saris Industries' goals. Demote \him[target.current] to assistant."
+			explanation_text = "[target.current.real_name], the [!role_type ? target.assigned_role : target.special_role] has been classified as harmful to NanoTrasen's goals. Demote \him[target.current] to assistant."
 		else
 			explanation_text = "Free Objective"
 		return target
@@ -337,7 +336,7 @@ datum/objective/silence
 
 
 datum/objective/escape
-	explanation_text = "Escape on the shuttle or an escape pod alive."
+	explanation_text = "Escape on the shuttle or an escape pod alive and free."
 
 
 	check_completion()
@@ -354,6 +353,10 @@ datum/objective/escape
 			return 0
 
 		if(istype(location, /turf/simulated/shuttle/floor4)) // Fails tratiors if they are in the shuttle brig -- Polymorph
+			if(istype(owner.current, /mob/living/carbon))
+				var/mob/living/carbon/C = owner.current
+				if (!C.handcuffed)
+					return 1
 			return 0
 
 		var/area/check_area = location.loc
@@ -585,10 +588,9 @@ datum/objective/steal
 					if(istype(I, steal_target))
 						return 1
 		return 0
-
-
+/*
 datum/objective/meme_attune
-	proc/gen_amount_goal(var/lowbound = 4, var/highbound = 6)
+	proc/gen_amount_goal(var/lowbound = 3, var/highbound = 6)
 		target_amount = rand (lowbound,highbound)
 		explanation_text = "Attune [target_amount] humanoid brains."
 		return target_amount
@@ -598,8 +600,7 @@ datum/objective/meme_attune
 			return 1
 		else
 			return 0
-
-
+*/
 datum/objective/download
 	proc/gen_amount_goal()
 		target_amount = rand(10,20)

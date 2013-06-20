@@ -234,6 +234,7 @@
 		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
 		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
 		new /obj/item/weapon/reagent_containers/food/drinks/shotglass(src)
+
 /obj/item/weapon/storage/box/condimentbottles
 	name = "box of condiment bottles"
 	desc = "It has a large ketchup smear on it."

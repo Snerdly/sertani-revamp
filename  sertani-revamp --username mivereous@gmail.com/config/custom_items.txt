@@ -13,4 +13,6 @@ jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
 sgtnorth: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan
 mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
 mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
-arur: Adriana Posson: /obj/item/clothing/suit/storage/labcoat/seto/ana,  /obj/item/clothing/tie/fluff/adriana_locket
+arur: Adriana Teso: /obj/item/clothing/suit/storage/labcoat/seto/ana,  /obj/item/clothing/tie/fluff/adriana_locket
+bar27262: Adolf Wilhelm: /obj/item/clothing/under/fluff/adolfwehrmacht
+nalarac: Ann Green: /obj/item/clothing/gloves/nal_gloves

@@ -71,7 +71,7 @@
 		var/datum/objective/anti_revolution/demote/obj = new
 		obj.owner = head
 		obj.target = target
-		obj.explanation_text = "[target.current.real_name], the [target.assigned_role]  has been classified as harmful to Saris Industries' goals. Demote them to assistant."
+		obj.explanation_text = "[target.current.real_name], the [target.assigned_role]  has been classified as harmful to NanoTrasen's goals. Demote them to assistant."
 		head.objectives += obj
 
 
@@ -100,7 +100,7 @@
 	var/obj_count = 1
 	if (you_are)
 		head_mind.current << "\blue It looks like this shift CentComm has some special orders for you.. check your objectives."
-		head_mind.current << "\blue Note that you can ignore these objectives, but resisting SI's orders probably means demotion or worse."
+		head_mind.current << "\blue Note that you can ignore these objectives, but resisting NT's orders probably means demotion or worse."
 	for(var/datum/objective/objective in head_mind.objectives)
 		head_mind.current << "<B>Objective #[obj_count]</B>: [objective.explanation_text]"
 		head_mind.special_role = "Corrupt Head"

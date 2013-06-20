@@ -1178,69 +1178,69 @@
 					list("key"=/obj/item/weapon/weldingtool,
 							"backkey"=/obj/item/weapon/wrench,
 							"desc"="External armor is wrenched."),
-					 //2
-					 list("key"=/obj/item/weapon/wrench,
+					//2
+					list("key"=/obj/item/weapon/wrench,
 					 		"backkey"=/obj/item/weapon/crowbar,
 					 		"desc"="External armor is installed."),
-					 //3
-					 list("key"=/obj/item/stack/sheet/metal,
+					//3
+					list("key"=/obj/item/stack/sheet/metal,
 					 		"backkey"=/obj/item/weapon/screwdriver,
 					 		"desc"="Advanced capacitor is secured"),
-					 //4
-					 list("key"=/obj/item/weapon/screwdriver,
+					//4
+					list("key"=/obj/item/weapon/screwdriver,
+							"backkey"=/obj/item/weapon/crowbar,
+							"desc"="Advanced capacitor is installed"),
+					//5
+					list("key"=/obj/item/weapon/stock_parts/capacitor/adv,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="Advanced scanner module is secured"),
+					//6
+					list("key"=/obj/item/weapon/screwdriver,
 					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Advanced capacitor is installed"),
-					 //5
-					 list("key"=/obj/item/weapon/stock_parts/capacitor/adv,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Advanced scanner module is secured"),
-					 //6
-					 list("key"=/obj/item/weapon/screwdriver,
-					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Advanced scanner module is installed"),
-					 //7
-					 list("key"=/obj/item/weapon/stock_parts/scanning_module/adv,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Targeting module is secured"),
-					 //8
-					 list("key"=/obj/item/weapon/screwdriver,
-					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Targeting module is installed"),
-					 //9
-					 list("key"=/obj/item/weapon/circuitboard/mecha/phazon/phase,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Peripherals control module is secured"),
-					 //10
-					 list("key"=/obj/item/weapon/screwdriver,
-					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Peripherals control module is installed"),
-					 //11
-					 list("key"=/obj/item/weapon/circuitboard/mecha/phazon/peripherals,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="Central control module is secured"),
-					 //12
-					 list("key"=/obj/item/weapon/screwdriver,
-					 		"backkey"=/obj/item/weapon/crowbar,
-					 		"desc"="Central control module is installed"),
-					 //13
-					 list("key"=/obj/item/weapon/circuitboard/mecha/phazon/main,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="The wiring is adjusted"),
-					 //14
-					 list("key"=/obj/item/weapon/wirecutters,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="The wiring is added"),
-					 //15
-					 list("key"=/obj/item/weapon/cable_coil,
-					 		"backkey"=/obj/item/weapon/screwdriver,
-					 		"desc"="The hydraulic systems are active."),
-					 //16
-					 list("key"=/obj/item/weapon/screwdriver,
-					 		"backkey"=/obj/item/weapon/wrench,
-					 		"desc"="The hydraulic systems are connected."),
-					 //17
-					 list("key"=/obj/item/weapon/wrench,
-					 		"desc"="The hydraulic systems are disconnected.")
+							"desc"="Advanced scanner module is installed"),
+					//7
+					list("key"=/obj/item/weapon/stock_parts/scanning_module/adv,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="Targeting module is secured"),
+					//8
+					list("key"=/obj/item/weapon/screwdriver,
+							"backkey"=/obj/item/weapon/crowbar,
+							"desc"="Targeting module is installed"),
+					//9
+					list("key"=/obj/item/weapon/circuitboard/mecha/phazon/phase,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="Peripherals control module is secured"),
+					//10
+					list("key"=/obj/item/weapon/screwdriver,
+							"backkey"=/obj/item/weapon/crowbar,
+							"desc"="Peripherals control module is installed"),
+					//11
+					list("key"=/obj/item/weapon/circuitboard/mecha/phazon/peripherals,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="Central control module is secured"),
+					//12
+					list("key"=/obj/item/weapon/screwdriver,
+							"backkey"=/obj/item/weapon/crowbar,
+							"desc"="Central control module is installed"),
+					//13
+					list("key"=/obj/item/weapon/circuitboard/mecha/phazon/main,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="The wiring is adjusted"),
+					//14
+					list("key"=/obj/item/weapon/wirecutters,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="The wiring is added"),
+					//15
+					list("key"=/obj/item/weapon/cable_coil,
+							"backkey"=/obj/item/weapon/screwdriver,
+							"desc"="The hydraulic systems are active."),
+					//16
+					list("key"=/obj/item/weapon/screwdriver,
+							"backkey"=/obj/item/weapon/wrench,
+							"desc"="The hydraulic systems are connected."),
+					//17
+					list("key"=/obj/item/weapon/wrench,
+							"desc"="The hydraulic systems are disconnected.")
 					)
 
 
@@ -1388,7 +1388,6 @@
 		..()
 		feedback_inc("mecha_phazon_created",1)
 		return
-
 
 /datum/construction/mecha/odysseus_chassis
 	steps = list(list("key"=/obj/item/mecha_parts/part/odysseus_torso),//1

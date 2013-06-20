@@ -122,6 +122,7 @@
 
 //Plasma fire properties
 #define PLASMA_MINIMUM_BURN_TEMPERATURE		100+T0C
+#define PLASMA_FLASHPOINT 					246+T0C
 #define PLASMA_UPPER_TEMPERATURE			1370+T0C
 #define PLASMA_MINIMUM_OXYGEN_NEEDED		2
 #define PLASMA_MINIMUM_OXYGEN_PLASMA_RATIO	20
@@ -303,6 +304,7 @@ var/MAX_EXPLOSION_RANGE = 14
 // mob/var/list/mutations
 
 #define STRUCDNASIZE 27
+#define UNIDNASIZE 13
 
 	// Generic mutations:
 #define	TK				1
@@ -329,24 +331,11 @@ var/MAX_EXPLOSION_RANGE = 14
 #define SHOCKWAVE		19 	// attack a nearby tile and cause a massive shockwave, knocking most people on their asses (25%)
 #define ELECTRICITY		20 	// ability to shoot electric attacks (15%)
 
-
-// mob/var/list/augmentations
-
-	// Nanoaugmentations:
-#define SUPRSTR			21 	// super strength (hulk powers)
-#define RADAR			22 	// on-screen mob radar
-#define ELECTRICHANDS	23 	// electric hands
-#define ESWORDSYNTH		24 	// esword synthesizer
-#define REBREATHER		25 	// removes the need to breathe
-#define DERMALARMOR		26 	// 35% damage decrease
-#define REFLEXES		27 	// dodge 50% of projectiles
-#define NANOREGEN		28 	// regenerative nanobots, -3 all damage types per second
-
 	//2spooky
 #define SKELETON 29
 #define PLANT 30
 
-	// Other Mutations:
+// Other Mutations:
 #define mNobreath		100 	// no need to breathe
 #define mRemote			101 	// remote viewing
 #define mRegen			102 	// health regen
@@ -438,6 +427,7 @@ var/list/global_mutations = list() // list of hidden mutation things
 #define WEAKEN		"weaken"
 #define PARALYZE	"paralize"
 #define IRRADIATE	"irradiate"
+#define AGONY		"agony" // Added in PAIN!
 #define STUTTER		"stutter"
 #define EYE_BLUR	"eye_blur"
 #define DROWSY		"drowsy"
@@ -594,6 +584,7 @@ var/list/TAGGERLOCATIONS = list("Disposals",
 #define ORGAN_SPLINTED 256
 #define SALVED 512
 #define ORGAN_DEAD 1024
+#define ORGAN_MUTATED 2048
 
 #define ROUNDSTART_LOGOUT_REPORT_TIME 6000 //Amount of time (in deciseconds) after the rounds starts, that the player disconnect report is issued.
 
@@ -632,6 +623,8 @@ var/list/TAGGERLOCATIONS = list("Disposals",
 #define CHAT_PRAYER		256
 #define CHAT_RADIO		512
 #define CHAT_ATTACKLOGS	1024
+#define CHAT_DEBUGLOGS	2048
+
 
 #define TOGGLES_DEFAULT (SOUND_ADMINHELP|SOUND_MIDI|SOUND_AMBIENCE|SOUND_LOBBY|CHAT_OOC|CHAT_DEAD|CHAT_GHOSTEARS|CHAT_GHOSTSIGHT|CHAT_PRAYER|CHAT_RADIO|CHAT_ATTACKLOGS)
 
@@ -678,3 +671,12 @@ var/list/be_special_flags = list(
 
 #define LEFT 1
 #define RIGHT 2
+
+// for secHUDs and medHUDs and variants. The number is the location of the image on the list hud_list of humans.
+#define HEALTH_HUD		1 // dead, alive, sick, health status
+#define STATUS_HUD		2 // a simple line rounding the mob's number health
+#define ID_HUD			3 // the job asigned to your ID
+#define WANTED_HUD		4 // wanted, released, parroled, security status
+#define IMPLOYAL_HUD	5 // loyality implant
+#define IMPCHEM_HUD		6 // chemical implant
+#define IMPTRACK_HUD	7 // tracking implant

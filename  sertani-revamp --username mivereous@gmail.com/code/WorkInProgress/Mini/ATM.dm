@@ -15,7 +15,7 @@ log transactions
 /obj/item/weapon/card/id/var/money = 2000
 
 /obj/machinery/atm
-	name = "Saris Industries Automatic Teller Machine"
+	name = "NanoTrasen Automatic Teller Machine"
 	desc = "For all your monetary needs!"
 	icon = 'terminals.dmi'
 	icon_state = "atm"
@@ -108,16 +108,16 @@ log transactions
 
 /obj/machinery/atm/attack_hand(mob/user as mob)
 	if(istype(user, /mob/living/silicon))
-		user << "\red Artificial unit recognized. Artificial units do not currently receive monetary compensation, as per Saris Industries regulation #1005."
+		user << "\red Artificial unit recognized. Artificial units do not currently receive monetary compensation, as per NanoTrasen regulation #1005."
 		return
 	if(get_dist(src,user) <= 1)
 		//check to see if the user has low security enabled
 		scan_user(user)
 
 		//js replicated from obj/machinery/computer/card
-		var/dat = "<h1>Saris Industries Automatic Teller Machine</h1>"
+		var/dat = "<h1>NanoTrasen Automatic Teller Machine</h1>"
 		dat += "For all your monetary needs!<br>"
-		dat += "<i>This terminal is</i> [machine_id]. <i>Report this code when contacting Saris Industries IT Support</i><br/>"
+		dat += "<i>This terminal is</i> [machine_id]. <i>Report this code when contacting NanoTrasen IT Support</i><br/>"
 		dat += "Card: <a href='?src=\ref[src];choice=insert_card'>[held_card ? held_card.name : "------"]</a><br><br>"
 
 		if(ticks_left_locked_down > 0)
@@ -194,7 +194,7 @@ log transactions
 			dat += "<input type='submit' value='Submit'><br>"
 			dat += "</form>"
 		else
-			dat += "<span class='warning'>Unable to connect to accounts database, please retry and if the issue persists contact Saris Industries IT support.</span>"
+			dat += "<span class='warning'>Unable to connect to accounts database, please retry and if the issue persists contact NanoTrasen IT support.</span>"
 			reconnect_database()
 
 		user << browse(dat,"window=atm;size=550x650")
@@ -206,10 +206,12 @@ log transactions
 		switch(href_list["choice"])
 			if("transfer")
 				if(authenticated_account && linked_db)
-					var/target_account_number = text2num(href_list["target_acc_number"])
 					var/transfer_amount = text2num(href_list["funds_amount"])
-					var/transfer_purpose = href_list["purpose"]
-					if(transfer_amount <= authenticated_account.money)
+					if(transfer_amount <= 0)
+						alert("That is not a valid amount.")
+					else if(transfer_amount <= authenticated_account.money)
+						var/target_account_number = text2num(href_list["target_acc_number"])
+						var/transfer_purpose = href_list["purpose"]
 						if(linked_db.charge_to_account(target_account_number, authenticated_account.owner_name, transfer_purpose, machine_id, transfer_amount))
 							usr << "\icon[src]<span class='info'>Funds transfer successful.</span>"
 							authenticated_account.money -= transfer_amount
@@ -284,7 +286,9 @@ log transactions
 					previous_account_number = tried_account_num
 			if("withdrawal")
 				var/amount = max(text2num(href_list["funds_amount"]),0)
-				if(authenticated_account && amount > 0)
+				if(amount <= 0)
+					alert("That is not a valid amount.")
+				else if(authenticated_account && amount > 0)
 					if(amount <= authenticated_account.money)
 						playsound(src, 'chime.ogg', 50, 1)
 

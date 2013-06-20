@@ -54,7 +54,7 @@
 /obj/item/device/eftpos/attack_self(mob/user as mob)
 	if(get_dist(src,user) <= 1)
 		var/dat = "<b>[eftpos_name]</b><br>"
-		dat += "<i>This terminal is</i> [machine_id]. <i>Report this code when contacting Saris Industries IT Support</i><br>"
+		dat += "<i>This terminal is</i> [machine_id]. <i>Report this code when contacting NanoTrasen IT Support</i><br>"
 		if(transaction_locked)
 			dat += "<a href='?src=\ref[src];choice=toggle_lock'>Reset[transaction_paid ? "" : " (authentication required)"]</a><br><br>"
 
@@ -101,7 +101,11 @@
 			if("change_code")
 				var/attempt_code = input("Re-enter the current EFTPOS access code", "Confirm old EFTPOS code") as num
 				if(attempt_code == access_code)
-					access_code = input("Enter a new access code for this device", "Enter new EFTPOS code") as num
+					var/trycode = input("Enter a new access code for this device (4-6 digits, numbers only)", "Enter new EFTPOS code") as num
+					if(trycode >= 1000 && trycode <= 999999)
+						access_code = trycode
+					else
+						alert("That is not a valid code!")
 					print_reference()
 				else
 					usr << "\icon[src]<span class='warning'>Incorrect code entered.</span>"
@@ -124,7 +128,11 @@
 			if("trans_purpose")
 				transaction_purpose = input("Enter reason for EFTPOS transaction", "Transaction purpose")
 			if("trans_value")
-				transaction_amount = input("Enter amount for EFTPOS transaction", "Transaction amount") as num
+				var/try_num = input("Enter amount for EFTPOS transaction", "Transaction amount") as num
+				if(try_num < 0)
+					alert("That is not a valid amount!")
+				else
+					transaction_amount = try_num
 			if("toggle_lock")
 				if(transaction_locked)
 					var/attempt_code = input("Enter EFTPOS access code", "Reset Transaction") as num
@@ -199,11 +207,11 @@
 						T.time = worldtime2text()
 						linked_account.transaction_log.Add(T)
 					else
-						usr << "\icon[src]<span class='warning'>You don't have that much money!<span>"
+						usr << "\icon[src]<span class='warning'>You don't have that much money!</span>"
 				else
 					usr << "\icon[src]<span class='warning'>Unable to access account. Check security settings and try again.</span>"
 			else
-				usr << "\icon[src]<span class='warning'>EFTPOS is not connected to an account.<span>"
+				usr << "\icon[src]<span class='warning'>EFTPOS is not connected to an account.</span>"
 	else
 		..()
 

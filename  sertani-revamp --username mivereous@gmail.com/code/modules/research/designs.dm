@@ -595,7 +595,7 @@ datum/design/posibrain
 
 	build_type = PROTOLATHE
 	materials = list("$metal" = 2000, "$glass" = 1000, "$silver" = 1000, "$gold" = 500, "$plasma" = 500, "$diamond" = 100)
-	build_path = "/obj/item/device/posibrain"
+	build_path = "/obj/item/device/mmi/posibrain"
 
 ///////////////////////////////////
 //////////Mecha Module Disks///////
@@ -781,7 +781,7 @@ datum/design/mech_teleporter
 	desc = "An exosuit module that allows exosuits to teleport to any position in view."
 	id = "mech_teleporter"
 	build_type = MECHFAB
-	req_tech = list("bluespace" = 8, "magnets" = 5)
+	req_tech = list("bluespace" = 10, "magnets" = 5)
 	build_path = "/obj/item/mecha_parts/mecha_equipment/teleporter"
 	category = "Exosuit Equipment"
 
@@ -1321,6 +1321,14 @@ datum/design/synthetic_flash
 	build_path = "/obj/item/device/flash/synthetic"
 	category = "Misc"
 
+datum/design/nanopaste
+	name = "nanopaste"
+	desc = "A tube of paste containing swarms of repair nanites. Very effective in repairing robotic machinery."
+	id = "nanopaste"
+	req_tech = list("materials" = 4, "engineering" = 3)
+	build_type = PROTOLATHE
+	materials = list("$metal" = 7000, "$glass" = 7000)
+	build_path = "/obj/item/stack/nanopaste"
 /////////////////////////////////////////
 /////////////////Weapons/////////////////
 /////////////////////////////////////////

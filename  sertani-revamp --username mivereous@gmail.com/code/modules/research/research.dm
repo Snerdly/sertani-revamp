@@ -225,7 +225,7 @@ datum/tech/programming
 
 datum/tech/syndicate
 	name = "Illegal Technologies Research"
-	desc = "The study of technologies that violate Nanotrassen regulations."
+	desc = "The study of technologies that violate standard Saris Industries regulations."
 	id = "syndicate"
 
 /*

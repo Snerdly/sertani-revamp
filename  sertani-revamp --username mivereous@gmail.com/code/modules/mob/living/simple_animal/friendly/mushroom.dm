@@ -14,4 +14,3 @@
 	response_disarm = "gently pushes aside the"
 	response_harm   = "whacks the"
 	harm_intent_damage = 5
-

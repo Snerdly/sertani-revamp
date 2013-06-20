@@ -75,7 +75,7 @@
 
 /mob/living/simple_animal/hostile/syndicate/melee/bullet_act(var/obj/item/projectile/Proj)
 	if(!Proj)	return
-	if(prob(35))
+	if(prob(65))
 		src.health -= Proj.damage
 	else
 		visible_message("\red <B>[src] blocks [Proj] with its shield!</B>")
@@ -140,8 +140,8 @@
 	icon_state = "viscerator_attack"
 	icon_living = "viscerator_attack"
 	pass_flags = PASSTABLE
-	health = 30
-	maxHealth = 30
+	health = 15
+	maxHealth = 15
 	melee_damage_lower = 15
 	melee_damage_upper = 15
 	attacktext = "cuts"

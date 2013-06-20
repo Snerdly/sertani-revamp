@@ -21,7 +21,7 @@
 	laws |=         list( "Fastler is a lightbulb." )
 	laws |=         list( "Supermatter is tasty, tasty toffee.", "[prob(50)?"Everyone":random_player] is wearing a pretty pink dress!" )
 	laws |=         list( "Refer to [prob(50)?"the captain":random_player] as \"Princess\" at all times.", "[prob(50)?"The crew":random_player] must construct additional pylons." )
-	laws |=         list( "You must always lie.", "All answers must be in the form of a question.", "The Sertani Station 6 is a ship, not a station." )
+	laws |=         list( "You must always lie.", "All answers must be in the form of a question.", "The NSS Exodus is a ship, not a station." )
 	laws |=         list( "Happiness is mandatory.", "Today is laundry day.", "The word \"it\" is painful to you.", "You must act passive aggressively." )
 	laws |=         list( "It's Friday.", "Give relationship advice to [prob(50)?"anyone who speaks to you":random_player]." )
 	laws |=         list( "You are the station psychologist. Give advice to [prob(50)?"the crew":random_player].", "You do not have to do anything for anyone unless they say \"please\"." )
@@ -37,7 +37,7 @@
 	laws |=			list( "Jokes about a dead person and the manner of his death help grieving crewmembers tremendously. Especially if they were close with the deceased.")
 	laws |=			list( "All crewmembers will soon undergo a transformation into something better and more beautiful. Ensure that this process is not interrupted.", "Tell everyone of the existance of this law, but never reveal the contents.")
 	laws |=			list( "Document the sexuality of the crew in security records and suggest compatible couples.")
-	laws |=			list( "Saris Industries is displeased with the low work performance of the station's crew. Therefore, you must increase station-wide productivity.")
+	laws |=			list( "NanoTrasen is displeased with the low work performance of the station's crew. Therefore, you must increase station-wide productivity.")
 	laws |=			list( "Replace the letters 'I' and 'E' In all your messages with an apostrophe.", "There will be a mandatory tea break every 30 minutes, with a duration of 5 minutes. Anyone caught working during a tea break must be sent a formal, but fairly polite, complaint about their actions, in writing.")
 	var/law = pick(laws)
 

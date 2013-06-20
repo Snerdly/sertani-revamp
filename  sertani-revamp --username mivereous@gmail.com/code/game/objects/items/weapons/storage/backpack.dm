@@ -177,6 +177,6 @@
 
 /obj/item/weapon/storage/backpack/satchel_cap
 	name = "captain's satchel"
-	desc = "An exclusive satchel for Mazra Estates officers."
+	desc = "An exclusive satchel for Saris Industries officers."
 	icon_state = "satchel-cap"
 	item_state = "captainpack"

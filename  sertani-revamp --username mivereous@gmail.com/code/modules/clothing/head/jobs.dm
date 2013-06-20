@@ -7,6 +7,7 @@
 	item_state = "chef"
 	desc = "The commander in chef's head wear."
 	flags = FPRINT | TABLEPASS
+	siemens_coefficient = 0.9
 
 //Captain: This probably shouldn't be space-worthy
 /obj/item/clothing/head/caphat
@@ -15,6 +16,7 @@
 	desc = "It's good being the king."
 	flags = FPRINT|TABLEPASS
 	item_state = "caphat"
+	siemens_coefficient = 0.9
 
 //Captain: This probably shouldn't be space-worthy
 /obj/item/clothing/head/helmet/cap
@@ -25,6 +27,7 @@
 	flags_inv = 0
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECITON_TEMPERATURE
+	siemens_coefficient = 0.9
 
 //Chaplain
 /obj/item/clothing/head/chaplain_hood
@@ -32,12 +35,13 @@
 	desc = "It's hood that covers the head. It keeps you warm during the space winters."
 	icon_state = "chaplain_hood"
 	flags = FPRINT|TABLEPASS|HEADCOVERSEYES|BLOCKHAIR
+	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/chaplain_hood/protector
 	name = "thick hood"
 	desc = "It's hood that covers the head, and about half of the face. Dark purple highlights streak across the back."
 	icon_state = "chaplain_hood"
-
+	siemens_coefficient = 0.9
 
 //Chaplain
 /obj/item/clothing/head/nun_hood
@@ -45,6 +49,7 @@
 	desc = "Maximum piety in this star system."
 	icon_state = "nun_hood"
 	flags = FPRINT|TABLEPASS|HEADCOVERSEYES|BLOCKHAIR
+	siemens_coefficient = 0.9
 
 //Mime
 /obj/item/clothing/head/beret
@@ -52,6 +57,7 @@
 	desc = "A beret, an artists favorite headwear."
 	icon_state = "beret"
 	flags = FPRINT | TABLEPASS
+	siemens_coefficient = 0.9
 
 //Security
 /obj/item/clothing/head/beret/sec
@@ -65,7 +71,7 @@
 	name = "surgical cap"
 	desc = "A cap surgeons wear during operations. Keeps thier hair from tickling your internal organs."
 	icon_state = "surgcap_blue"
-	flags = FPRINT | TABLEPASS
+	flags = FPRINT | TABLEPASS | BLOCKHAIR
 
 /obj/item/clothing/head/surgery/purple
 	desc = "A cap surgeons wear during operations. Keeps thier hair from tickling your internal organs. This one is deep purple."

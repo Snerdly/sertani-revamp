@@ -18,6 +18,7 @@ var/list/department_radio_keys = list(
 	  ":k" = "skrell",		"#k" = "skrell",		".k" = "skrell",
 	  ":j" = "tajaran",		"#j" = "tajaran",		".j" = "tajaran",
 	  ":o" = "soghun",		"#o" = "soghun",		".o" = "soghun",
+	  ":v" = "vox",			"#v" = "vox",			".v" = "vox",
 
 	  ":R" = "right hand",	"#R" = "right hand",	".R" = "right hand",
 	  ":L" = "left hand",	"#L" = "left hand",		".L" = "left hand",
@@ -37,6 +38,7 @@ var/list/department_radio_keys = list(
 	  ":K" = "skrell",		"#K" = "skrell",		".K" = "skrell",
 	  ":J" = "tajaran",		"#J" = "tajaran",		".J" = "tajaran",
 	  ":O" = "soghun",		"#O" = "soghun",		".O" = "soghun",
+	  ":V" = "vox",			"#V" = "vox",			".V" = "vox",
 
 	  //kinda localization -- rastaf0
 	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
@@ -54,7 +56,10 @@ var/list/department_radio_keys = list(
 	  ":ô" = "alientalk",	"#ô" = "alientalk",		".ô" = "alientalk",
 	  ":å" = "Syndicate",	"#å" = "Syndicate",		".å" = "Syndicate",
 	  ":é" = "Supply",		"#é" = "Supply",		".é" = "Supply",
-	  ":ï" = "changeling",	"#ï" = "changeling",	".ï" = "changeling"
+	  ":ï" = "changeling",	"#ï" = "changeling",	".ï" = "changeling",
+	  ":ë" = "skrell",		"#ë" = "skrell",		".ë" = "skrell",
+	  ":î" = "tajaran",		"#î" = "tajaran",		".î" = "tajaran",
+	  ":ù" = "soghun",		"#ù" = "soghun",		".ù" = "soghun"
 )
 
 /mob/living/proc/binarycheck()
@@ -142,6 +147,9 @@ var/list/department_radio_keys = list(
 			// Check changed so that parrots can use headsets. Other simple animals do not have ears and will cause runtimes.
 			// And borgs -Sieve
 
+	if(src.stunned > 2 || (traumatic_shock > 61 && prob(50)))
+		message_mode = "" //Stunned people shouldn't be able to physically turn on their radio/hold down the button to speak into it
+
 	if (!message)
 		return
 
@@ -179,12 +187,15 @@ var/list/department_radio_keys = list(
 	var/is_speaking_skrell = 0
 	var/is_speaking_soghun = 0
 	var/is_speaking_taj = 0
+	var/is_speaking_vox = 0
+	var/is_speaking_radio = 0
 
 	switch (message_mode)
 		if ("headset")
 			if (src:ears)
 				src:ears.talk_into(src, message)
 				used_radios += src:ears
+				is_speaking_radio = 1
 
 			message_range = 1
 			italics = 1
@@ -194,6 +205,7 @@ var/list/department_radio_keys = list(
 			if (src:ears)
 				src:ears.talk_into(src, message, 1)
 				used_radios += src:ears
+				is_speaking_radio = 1
 
 			message_range = 1
 			italics = 1
@@ -202,6 +214,7 @@ var/list/department_radio_keys = list(
 			if (r_hand)
 				r_hand.talk_into(src, message)
 				used_radios += src:r_hand
+				is_speaking_radio = 1
 
 			message_range = 1
 			italics = 1
@@ -210,6 +223,7 @@ var/list/department_radio_keys = list(
 			if (l_hand)
 				l_hand.talk_into(src, message)
 				used_radios += src:l_hand
+				is_speaking_radio = 1
 
 			message_range = 1
 			italics = 1
@@ -218,6 +232,7 @@ var/list/department_radio_keys = list(
 			for (var/obj/item/device/radio/intercom/I in view(1, null))
 				I.talk_into(src, message)
 				used_radios += I
+				is_speaking_radio = 1
 
 			message_range = 1
 			italics = 1
@@ -244,6 +259,7 @@ var/list/department_radio_keys = list(
 				if (src:ears)
 					src:ears.talk_into(src, message, message_mode)
 					used_radios += src:ears
+					is_speaking_radio = 1
 			else if(istype(src, /mob/living/silicon/robot))
 				if (src:radio)
 					src:radio.talk_into(src, message, message_mode)
@@ -269,6 +285,10 @@ var/list/department_radio_keys = list(
 		if ("skrell")
 			if(skrell_talk_understand || universal_speak)
 				is_speaking_skrell = 1
+
+		if ("vox")
+			if(vox_talk_understand || universal_speak)
+				is_speaking_vox = 1
 
 		if("changeling")
 			if(mind && mind.changeling)
@@ -357,7 +377,7 @@ var/list/department_radio_keys = list(
 
 	for (var/M in listening)
 		if(hascall(M,"say_understands"))
-			if (M:say_understands(src) && !is_speaking_skrell && !is_speaking_soghun && !is_speaking_taj)
+			if (M:say_understands(src) && !is_speaking_skrell && !is_speaking_soghun && !is_speaking_vox && !is_speaking_taj)
 				heard_a += M
 			else if(ismob(M))
 				if(is_speaking_skrell && (M:skrell_talk_understand || M:universal_speak))
@@ -365,6 +385,8 @@ var/list/department_radio_keys = list(
 				else if(is_speaking_soghun && (M:soghun_talk_understand || M:universal_speak))
 					heard_a += M
 				else if(is_speaking_taj && (M:tajaran_talk_understand || M:universal_speak))
+					heard_a += M
+				else if(is_speaking_vox && (M:vox_talk_understand || M:universal_speak))
 					heard_a += M
 				else
 					heard_b += M
@@ -375,21 +397,24 @@ var/list/department_radio_keys = list(
 	var/image/speech_bubble = image('icons/mob/talk.dmi',src,"h[speech_bubble_test]")
 	spawn(30) del(speech_bubble)
 
+	for(var/mob/M in hearers(5, src))
+		if(M != src && is_speaking_radio)
+			M:show_message("<span class='notice'>[src] talks into [used_radios.len ? used_radios[1] : "radio"]</span>")
+
 	var/rendered = null
 	if (length(heard_a))
-		var/message_a = say_quote(message,is_speaking_soghun,is_speaking_skrell,is_speaking_taj)
+		var/message_a = say_quote(message,is_speaking_soghun,is_speaking_skrell,is_speaking_taj,is_speaking_vox)
 
 		if (italics)
 			message_a = "<i>[message_a]</i>"
 
 		rendered = "<span class='game say'><span class='name'>[GetVoice()]</span>[alt_name] <span class='message'>[message_a]</span></span>"
-
 		for (var/M in heard_a)
 			if(hascall(M,"show_message"))
 				var/deaf_message = ""
 				var/deaf_type = 1
 				if(M != src)
-					deaf_message = "<span class='name'>[name][alt_name]</span> talks but you cannot hear them."
+					deaf_message = "<span class='name'>[name]</span>[alt_name] talks but you cannot hear them."
 				else
 					deaf_message = "<span class='notice'>You cannot hear yourself!</span>"
 					deaf_type = 2 // Since you should be able to hear yourself without looking
@@ -403,12 +428,12 @@ var/list/department_radio_keys = list(
 			message_b = voice_message
 		else
 			message_b = stars(message)
-			message_b = say_quote(message_b)
+			message_b = say_quote(message_b,is_speaking_soghun,is_speaking_skrell,is_speaking_taj,is_speaking_vox)
 
 		if (italics)
 			message_b = "<i>[message_b]</i>"
 
-		rendered = "<span class='game say'><span class='name'>[voice_name]</span> <span class='message'>[message_b]</span></span>"
+		rendered = "<span class='game say'><span class='name'>[name]</span>[alt_name] <span class='message'>[message_b]</span></span>" //Voice_name isn't too useful. You'd be able to tell who was talking presumably.
 
 
 		for (var/M in heard_b)
@@ -437,9 +462,10 @@ var/list/department_radio_keys = list(
 			del(B)
 		*/
 
-	//talking crystals
-	for(var/obj/item/weapon/talkingcrystal/O in view(3,src))
-		O.catchMessage(message,src)
+	//talking items
+	for(var/obj/item/weapon/O in view(3,src))
+		if(O.listening_to_players)
+			O.catchMessage(message, src)
 
 	log_say("[name]/[key] : [message]")
 

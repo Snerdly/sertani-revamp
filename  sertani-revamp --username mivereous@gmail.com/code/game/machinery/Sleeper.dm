@@ -322,26 +322,6 @@
 		return
 
 
-	proc/inject_kelotane(mob/living/user as mob)
-		if(src.occupant && src.occupant.reagents)
-			if(src.occupant.reagents.get_reagent_amount("kelotane") + 20 <= 40)
-				src.occupant.reagents.add_reagent("kelotane", 20)
-			user << text("Occupant now has [] units of Kelotane in his/her bloodstream.", src.occupant.reagents.get_reagent_amount("dexalin"))
-		else
-			user << "There's no occupant in the sleeper or the subject rejects the chemicals!"
-		return
-
-
-	proc/inject_tramadol(mob/living/user as mob)
-		if(src.occupant && src.occupant.reagents)
-			if(src.occupant.reagents.get_reagent_amount("tramadol") + 20 <= 40)
-				src.occupant.reagents.add_reagent("tramadol", 20)
-			user << text("Occupant now has [] units of pain relievers in his/her bloodstream.", src.occupant.reagents.get_reagent_amount("dexalin"))
-		else
-			user << "There's no occupant in the sleeper or the subject rejects the chemicals!"
-		return
-
-
 	proc/check(mob/living/user as mob)
 		if(src.occupant)
 			user << text("\blue <B>Occupant ([]) Statistics:</B>", src.occupant)

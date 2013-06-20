@@ -21,21 +21,24 @@
 "u" = (/obj/machinery/atmospherics/pipe/simple/supply/visible{tag = "icon-intact-b (WEST)"; icon_state = "intact-b"; dir = 8},/turf/simulated/floor,/area)
 "v" = (/obj/machinery/atmospherics/pipe/simple/supply/visible{tag = "icon-intact-b (NORTHWEST)"; icon_state = "intact-b"; dir = 9},/turf/simulated/floor,/area)
 "w" = (/obj/machinery/atmospherics/pipe/simple/supply/visible,/turf/simulated/floor,/area)
-"x" = (/obj/machinery/atmospherics/pipe/simple/supply/visible{tag = "icon-intact-b (NORTH)"; icon_state = "intact-b"; dir = 1},/turf/space,/area)
-"y" = (/obj/machinery/atmospherics/pipe/manifold/general/visible{tag = "icon-manifold-r (WEST)"; icon_state = "manifold-r"; dir = 8},/turf/space,/area)
-"z" = (/obj/machinery/atmospherics/pipe/simple/supply/visible,/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{icon_state = "intact-r"; dir = 4},/turf/space,/area)
-"A" = (/obj/machinery/atmospherics/pipe/simple/supply/visible,/turf/space,/area)
-"B" = (/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
-"C" = (/turf/space,/area)
-"D" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; external_pressure_bound = 101.325; on = 1; pressure_checks = 0; pump_direction = 0},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
-"E" = (/obj/machinery/power/supermatter/shard,/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
-"F" = (/obj/machinery/atmospherics/pipe/vent{dir = 1},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
-"G" = (/turf/simulated/wall/cult,/area)
-"H" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/wall,/area)
-"I" = (/obj/machinery/door/poddoor{id = "syndicate"; name = "Outer Airlock"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
-"J" = (/turf/simulated/wall,/area)
-"K" = (/obj/machinery/atmospherics/pipe/vent{dir = 1},/turf/simulated/floor/plating/airless,/area)
-"L" = (/turf/simulated/floor/plating/airless,/area)
+"x" = (/obj/machinery/atmospherics/pipe/simple/supply/visible{tag = "icon-intact-b (NORTH)"; icon_state = "intact-b"; dir = 1},/turf/simulated/wall/heatshield,/area)
+"y" = (/obj/machinery/atmospherics/pipe/manifold/general/visible{tag = "icon-manifold-r (WEST)"; icon_state = "manifold-r"; dir = 8},/turf/simulated/wall/heatshield,/area)
+"z" = (/obj/machinery/atmospherics/pipe/simple/supply/visible,/obj/machinery/atmospherics/pipe/simple/scrubbers/visible{icon_state = "intact-r"; dir = 4},/turf/simulated/wall/heatshield,/area)
+"A" = (/obj/machinery/atmospherics/pipe/simple/supply/visible,/turf/simulated/wall/heatshield,/area)
+"B" = (/obj/machinery/atmospherics/unary/thermal_plate{dir = 1},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"C" = (/turf/simulated/wall/heatshield,/area)
+"D" = (/obj/machinery/emitter{anchored = 1; dir = 4; state = 2},/turf/simulated/floor,/area)
+"E" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; external_pressure_bound = 101.325; on = 1; pressure_checks = 0; pump_direction = 0},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"F" = (/obj/machinery/power/supermatter/shard,/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"G" = (/obj/machinery/atmospherics/pipe/vent{dir = 1},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"H" = (/obj/machinery/emitter{anchored = 1; dir = 8; state = 2},/turf/simulated/floor,/area)
+"I" = (/turf/simulated/wall/cult,/area)
+"J" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/wall,/area)
+"K" = (/obj/machinery/door/poddoor{id = "syndicate"; name = "Outer Airlock"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"L" = (/turf/simulated/wall,/area)
+"M" = (/turf/space,/area)
+"N" = (/obj/machinery/atmospherics/pipe/vent{dir = 1},/turf/simulated/floor/plating/airless,/area)
+"O" = (/turf/simulated/floor/plating/airless,/area)
 
 (1,1,1) = {"
 abbcbbb
@@ -44,7 +47,7 @@ dklmnio
 pqrstuv
 iwxyzji
 iAxBACi
-iADEFCi
-GHIIIJG
-CKCCCLC
+DAEFGCH
+IJKKKLI
+MNMMMOM
 "}

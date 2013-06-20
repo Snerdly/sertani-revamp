@@ -122,6 +122,10 @@ proc/get_id_photo(var/mob/living/carbon/human/H)
 			icobase = 'icons/mob/human_races/r_lizard.dmi'
 		if("Skrell")
 			icobase = 'icons/mob/human_races/r_skrell.dmi'
+
+		if("Vox")
+			icobase = 'icons/mob/human_races/r_vox.dmi'
+
 		else
 			icobase = 'icons/mob/human_races/r_human.dmi'
 
@@ -147,6 +151,9 @@ proc/get_id_photo(var/mob/living/carbon/human/H)
 			preview_icon.Blend(rgb(-H.s_tone,  -H.s_tone,  -H.s_tone), ICON_SUBTRACT)
 
 	var/icon/eyes_s = new/icon("icon" = 'icons/mob/human_face.dmi', "icon_state" = "eyes_s")
+	if(H.get_species()=="Vox")
+		eyes_s = new/icon("icon" = 'icons/mob/human_face.dmi', "icon_state" = "vox_eyes_s")
+
 	eyes_s.Blend(rgb(H.r_eyes, H.g_eyes, H.b_eyes), ICON_ADD)
 
 	var/datum/sprite_accessory/hair_style = hair_styles_list[H.h_style]
@@ -191,7 +198,7 @@ proc/get_id_photo(var/mob/living/carbon/human/H)
 			clothes_s = new /icon('icons/mob/uniform.dmi', "miner_s")
 			clothes_s.Blend(new /icon('icons/mob/feet.dmi', "black"), ICON_UNDERLAY)
 		if("Lawyer")
-			clothes_s = new /icon('icons/mob/uniform.dmi', "lawyer_blue_s")
+			clothes_s = new /icon('icons/mob/uniform.dmi', "internalaffairs_s")
 			clothes_s.Blend(new /icon('icons/mob/feet.dmi', "brown"), ICON_UNDERLAY)
 		if("Chaplain")
 			clothes_s = new /icon('icons/mob/uniform.dmi', "chapblack_s")

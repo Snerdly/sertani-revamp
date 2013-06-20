@@ -10,6 +10,7 @@
 	ammo_type = "/obj/item/ammo_casing/c45"
 
 
+
 /obj/item/weapon/gun/projectile/deagle
 	name = "desert eagle"
 	desc = "A robust handgun that uses .50 AE ammo"
@@ -150,7 +151,7 @@
 	icon_state = "silencer"
 	w_class = 2
 
-										//Begin code for the officer's M1911.
+											//Begin code for the officer's M1911.
 /obj/item/weapon/gun/projectile/m1911
 	name = "\improper M1911"
 	desc = "A vintage Colt M1911 handgun. Fires .45 caliber bullets."
@@ -174,7 +175,7 @@
 		empty_mag.loc = get_turf(src.loc)
 		empty_mag = null
 	return
-		//Syrus Seto's two custom M1911's.
+//Syrus Seto's two custom M1911's.
 /obj/item/weapon/gun/projectile/m1911/luna
 	name = "\improper M1911"
 	desc = "A lovingly maintained Colt M1911, sporting custom features such as a ground down trigger guard, unique grip leathering, and a dark coat over the housing, in which 'Luna' is carved neatly. There's a dark circle imprinted in the grip."

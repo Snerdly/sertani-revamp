@@ -119,7 +119,7 @@
 
 /obj/item/weapon/card/id/syndicate
 	name = "agent card"
-	access = list(access_maint_tunnels, access_syndicate)
+	access = list(access_maint_tunnels, access_syndicate, access_external_airlocks)
 	origin_tech = "syndicate=3"
 
 /obj/item/weapon/card/id/syndicate/afterattack(var/obj/item/weapon/O as obj, mob/user as mob)
@@ -156,7 +156,7 @@
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
 	assignment = "Syndicate Overlord"
-	access = list(access_syndicate)
+	access = list(access_syndicate, access_external_airlocks)
 
 /obj/item/weapon/card/id/captains_spare
 	name = "captain's spare ID"
@@ -181,43 +181,32 @@
 		..()
 
 /obj/item/weapon/card/id/siskin_id //mivereous: Valerie Siskin
-	name = "scratched up ID (Geneticist)"
-	desc = "A scratched and worn identification card; it appears too damaged to inferface with any technology. You can barely make out one letter: \"S\"."
-	icon = 'custom_items.dmi'
-	icon_state = "ethan_way_1"
-	w_class = 1.0
-/*
-/obj/item/weapon/card/id/siskin_id/attack_self(mob/user as mob)
-		if (!user.ckey == "mivereous" || !user.ckey == "serveris6") //Because this can end up in the wrong hands, let's make it useless for them!
-			user << "\blue You flip \the [src] between your fingers."
-		if(user)	user.hallucination += 70
-
-/obj/item/weapon/card/id/siskin_id/attack(mob/M as mob, mob/user as mob)
-	if (user.ckey == "mivereous" && user.real_name == "Valerie Siskin") //Because this can end up in the wrong hands, let's make it useless for them!
-		user << "You don't know why, but you think you should get rid of this. Now."
-		sleep(40)
-		user << "\red ...but it's probably too late now..."
-
-	*/
+		name = "scratched up ID (Geneticist)"
+		desc = "A scratched and worn identification card; it appears too damaged to inferface with any technology. You can barely make out one letter: \"S\"."
+		icon = 'custom_items.dmi'
+		icon_state = "ethan_way_1"
+		w_class = 1.0
+		New()
+				access = list(access_siskin, access_genetics, access_medical, access_morgue, access_robotics)
 
 /obj/item/weapon/card/id/syrus_id
-	name = "Syrus Seto's ID Card (Head of Security)"
-	desc = "A worn identification card. It still seems functional, although well out of its intended shift."
-	icon = 'custom_items.dmi'
-	icon_state = "ethan_way_1"
-	registered_name = "Syrus Seto"
-	assignment = "Head of Security"
-	New()
-		access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
-			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
-			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
-			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
+		name = "Syrus Seto's ID Card (Head of Security)"
+		desc = "A worn identification card. It still seems functional, although well out of its intended shift."
+		icon = 'custom_items.dmi'
+		icon_state = "ethan_way_1"
+		registered_name = "Syrus Seto"
+		assignment = "Head of Security"
+		New()
+				access = list(access_security, access_sec_doors, access_brig, access_armory, access_court,
+					            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+					            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+					            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 
 /obj/item/weapon/card/id/set_id
-	name = "\improper Saris Exploration Team GatePass"
-	desc = "An ID card worn by those hired or volunteering for exploration teams."
-	icon = 'card.dmi'
-	icon_state = "data"
-	assignment = "Saris Exploration Team"
-	New()
-		access = list(access_gateway)
+		name = "\improper Saris Exploration Team GatePass"
+		desc = "An ID card worn by those hired or volunteering for exploration teams."
+		icon = 'card.dmi'
+		icon_state = "data"
+		assignment = "Saris Exploration Team"
+		New()
+				access = list(access_gateway)

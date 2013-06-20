@@ -37,7 +37,7 @@
 	icon_state = "9x19p-8"
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/c9mm"
-	max_ammo = 7
+	max_ammo = 8
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/mc9mm/empty
@@ -58,7 +58,7 @@
 	max_ammo = 7
 	multiple_sprites = 1
 
-.obj/item/ammo_magazine/mc45/empty
+obj/item/ammo_magazine/mc45/empty
 	max_ammo = 0
 
 /obj/item/ammo_magazine/c45
@@ -67,6 +67,8 @@
 	origin_tech = "combat=2"
 	ammo_type = "/obj/item/ammo_casing/c45"
 	max_ammo = 30
+
+
 
 /obj/item/ammo_magazine/a12mm
 	name = "magazine (12mm)"

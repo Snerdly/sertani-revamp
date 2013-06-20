@@ -173,37 +173,3 @@
 	New()
 		..()
 		reagents.add_reagent("blackpepper", 20)
-
-/obj/item/weapon/reagent_containers/food/condiment/ketchup
-	name = "ketchup bottle"
-	desc = "The perfect thing for that stack of space fries."
-	icon_state = "ketchup"
-	possible_transfer_amounts = list(1,20) //for clown turning the lid off
-	amount_per_transfer_from_this = 1
-	volume = 50
-	New()
-		..()
-		reagents.add_reagent("ketchup", 50)
-
-/obj/item/weapon/reagent_containers/food/condiment/capsaicin
-	name = "Hot sauce"
-	desc = "You can almost TASTE the stomach ulcers now!"
-	icon_state = "hotsauce"
-	possible_transfer_amounts = list(1,20) //for clown turning the lid off
-	amount_per_transfer_from_this = 1
-	volume = 50
-	New()
-		..()
-		reagents.add_reagent("capsaicin", 50)
-
-/obj/item/weapon/reagent_containers/food/condiment/soysauce
-	name = "Soy sauce"
-	desc = "A salty soy-based flavoring."
-	icon_state = "soysauce"
-	possible_transfer_amounts = list(1,20) //for clown turning the lid off
-	amount_per_transfer_from_this = 1
-	volume = 50
-	New()
-		..()
-		reagents.add_reagent("soysauce", 50)
-

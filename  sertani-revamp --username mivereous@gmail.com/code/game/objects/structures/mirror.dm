@@ -93,13 +93,3 @@
 		return
 	user.visible_message("<span class='danger'>[user] smashes [src]!</span>")
 	shatter()
-
-
-/obj/structure/mirror/broken
-	name = "broken mirror"
-	desc = "Is this real?.."
-	icon = 'icons/obj/watercloset.dmi'
-	icon_state = "mirror_broke"
-	density = 0
-	anchored = 1
-	shattered = 1
