@@ -14,12 +14,12 @@
 	response_disarm = "pushes the"
 	response_harm = "hits the"
 	speed = 4
-	maxHealth = 15
-	health = 15
+	maxHealth = 250
+	health = 250
 
 	harm_intent_damage = 5
-	melee_damage_lower = 3
-	melee_damage_upper = 5
+	melee_damage_lower = 8
+	melee_damage_upper = 12
 	attacktext = "attacks"
 	attack_sound = 'sound/weapons/bite.ogg'
 
@@ -71,13 +71,13 @@
 /mob/living/simple_animal/hostile/mimic/crate/DestroySurroundings()
 	..()
 	if(prob(90))
-		icon_state = initial(icon_state)
+		icon_state = "[initial(icon_state)]open"
 	else
 		icon_state = initial(icon_state)
 
 /mob/living/simple_animal/hostile/mimic/crate/ListTargets()
 	if(attempt_open)
-		return view(src, 10)
+		return ..()
 	return view(src, 1)
 
 /mob/living/simple_animal/hostile/mimic/crate/FindTarget()
@@ -131,8 +131,8 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 
 /mob/living/simple_animal/hostile/mimic/copy
 
-	health = 15
-	maxHealth = 15
+	health = 100
+	maxHealth = 100
 	var/mob/living/creator = null // the creator
 	var/destroy_objects = 0
 	var/knockdown_people = 0
@@ -149,7 +149,8 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 
 /mob/living/simple_animal/hostile/mimic/copy/ListTargets()
 	// Return a list of targets that isn't the creator
-	return view(src, 7) - creator
+	. = ..()
+	return . - creator
 
 /mob/living/simple_animal/hostile/mimic/copy/proc/CopyObject(var/obj/O, var/mob/living/creator)
 

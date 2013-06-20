@@ -8,6 +8,7 @@
 	var/log_access = 0					// log login/logout
 	var/log_say = 0						// log client say
 	var/log_admin = 0					// log admin actions
+	var/log_debug = 1					// log debug output
 	var/log_game = 0					// log game events
 	var/log_vote = 0					// log voting
 	var/log_whisper = 0					// log client whisper
@@ -31,8 +32,8 @@
 //	var/enable_authentication = 0		// goon authentication
 	var/del_new_on_log = 1				// del's new players if they log before they spawn in
 	var/feature_object_spell_system = 0 //spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard
-	var/traitor_scaling = 1 		//if amount of traitors scales based on amount of players
-	var/protect_roles_from_antagonist = 1// If security and such can be tratior/cult/other
+	var/traitor_scaling = 0 			//if amount of traitors scales based on amount of players
+	var/protect_roles_from_antagonist = 0// If security and such can be tratior/cult/other
 	var/continous_rounds = 0			// Gamemodes which end instantly will instead keep on going until the round ends by escape shuttle or nuke.
 	var/allow_Metadata = 0				// Metadata is supported.
 	var/popup_admin_pm = 0				//adminPMs to non-admins show in a pop-up 'reply' window when set to 1.
@@ -50,7 +51,7 @@
 	var/hostedby = null
 	var/respawn = 1
 	var/guest_jobban = 1
-	var/usewhitelist = 1
+	var/usewhitelist = 0
 	var/kick_inactive = 0				//force disconnect for inactive players
 	var/load_jobs_from_txt = 0
 	var/ToRban = 0
@@ -64,7 +65,7 @@
 	var/server
 	var/banappeals
 	var/wikiurl = "http://baystation12.net/wiki/index.php?title=Main_Page"
-	var/forumurl = "http://sertani.webs.com/"
+	var/forumurl = "http://baystation12.net/forums/"
 
 	//Alert level description
 	var/alert_desc_green = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
@@ -114,7 +115,7 @@
 	var/use_recursive_explosions //Defines whether the server uses recursive or circular explosions.
 
 	var/assistant_maint = 0 //Do assistants get maint access?
-	var/gateway_delay = 6000 //How long the gateway takes before it activates. Default is ten minutes.
+	var/gateway_delay = 18000 //How long the gateway takes before it activates. Default is half an hour.
 	var/ghost_interaction = 0
 
 
@@ -192,6 +193,9 @@
 
 				if ("log_admin")
 					config.log_admin = 1
+
+				if ("log_debug")
+					config.log_debug = text2num(value)
 
 				if ("log_game")
 					config.log_game = 1

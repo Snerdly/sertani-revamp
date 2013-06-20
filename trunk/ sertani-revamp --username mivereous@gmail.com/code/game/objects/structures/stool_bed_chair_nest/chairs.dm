@@ -121,8 +121,3 @@
 
 /obj/structure/stool/bed/chair/office/dark
 	icon_state = "officechair_dark"
-
-/obj/structure/stool/bed/chair/execution
-	name = "execution post"
-	desc = "This looks like the end for you..."
-	icon_state = "target_stake"

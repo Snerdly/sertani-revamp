@@ -14,6 +14,20 @@
 //	mouse_drag_pointer = MOUSE_ACTIVE_POINTER	//???
 	var/rigged = 0
 
+/obj/structure/closet/pcrate
+	name = "plastic crate"
+	desc = "A rectangular plastic crate."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "plasticcrate"
+	density = 1
+	icon_opened = "plasticcrateopen"
+	icon_closed = "plasticcrate"
+	req_access = null
+	opened = 0
+	flags = FPRINT
+//	mouse_drag_pointer = MOUSE_ACTIVE_POINTER	//???
+	var/rigged = 0
+
 /obj/structure/closet/crate/internals
 	desc = "A internals crate."
 	name = "Internals crate"
@@ -44,7 +58,7 @@
 
 /obj/structure/closet/crate/contraband
 	name = "Poster crate"
-	desc = "A random assortment of posters manufactured by providers NOT listed under Saris Industries' whitelist."
+	desc = "A random assortment of posters manufactured by providers NOT listed under Saris Industries's whitelist."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "crate"
 	density = 1
@@ -169,11 +183,35 @@
 	name = "large crate"
 	desc = "A hefty metal crate with an electronic locking system."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "largecrate"
-	icon_opened = "largecrateopen"
-	icon_closed = "largecrate"
-	redlight = "largecrater"
-	greenlight = "largecrateg"
+	icon_state = "largemetal"
+	icon_opened = "largemetalopen"
+	icon_closed = "largemetal"
+	redlight = "largemetalr"
+	greenlight = "largemetalg"
+
+/obj/structure/closet/crate/secure/large/close()
+	//we can hold up to one large item
+	var/found = 0
+	for(var/obj/structure/S in src.loc)
+		if(S == src)
+			continue
+		if(!S.anchored)
+			found = 1
+			S.loc = src
+			break
+	if(!found)
+		for(var/obj/machinery/M in src.loc)
+			if(!M.anchored)
+				M.loc = src
+				break
+	..()
+
+//fluff variant
+/obj/structure/closet/crate/secure/large/reinforced
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
 
 /obj/structure/closet/crate/secure
 	desc = "A secure crate."
@@ -192,10 +230,26 @@
 	name = "large crate"
 	desc = "A hefty metal crate."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "largecrate"
-	icon_opened = "largecrateopen"
-	icon_closed = "largecrate"
-	density = 1
+	icon_state = "largemetal"
+	icon_opened = "largemetalopen"
+	icon_closed = "largemetal"
+
+/obj/structure/closet/crate/large/close()
+	//we can hold up to one large item
+	var/found = 0
+	for(var/obj/structure/S in src.loc)
+		if(S == src)
+			continue
+		if(!S.anchored)
+			found = 1
+			S.loc = src
+			break
+	if(!found)
+		for(var/obj/machinery/M in src.loc)
+			if(!M.anchored)
+				M.loc = src
+				break
+	..()
 
 /obj/structure/closet/crate/hydroponics
 	name = "Hydroponics crate"

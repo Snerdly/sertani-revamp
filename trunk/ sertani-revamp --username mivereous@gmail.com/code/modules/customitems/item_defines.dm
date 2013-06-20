@@ -1,3 +1,4 @@
+hi
 // Add custom items you give to people here, and put their icons in custom_items.dmi
 // Remember to change 'icon = 'custom_items.dmi'' for items not using /obj/item/fluff as a base
 // Clothing item_state doesn't use custom_items.dmi. Just add them to the normal clothing files.
@@ -15,16 +16,16 @@
 	desc = "A family photograph of a couple and a young child, Written on the back it says \"See you soon Dad -Roy\"."
 	icon_state = "wes_solari_1"
 
+/obj/item/fluff/snow_seto //serveris6: Snow Seto
+	name = "family photograph"
+	desc = "A photo, slightly wrinkled with age. There's a smiling teen dressed in black with bleached hair standing next to a girl looking around the age of twelve, also with bleached hair. Written on the back, in neat handwriting, you can see \"Not giving up yet. Stay strong. Love you and always here for you, Syrus\""
+	icon_state = "setophotograph"
+
 /obj/item/fluff/sarah_calvera_1 //fniff: Sarah Calvera
 	name = "old photo"
 	desc = "Looks like it was made on a really old, cheap camera. Low quality. The camera shows a young hispanic looking girl with red hair wearing a white dress is standing in front of\
  an old looking wall. On the back there is a note in black marker that reads \"Sara, Siempre pensé que eras tan linda con ese vestido. Tu hermano, Carlos.\""
 	icon_state = "sarah_calvera_1"
-
-/obj/item/fluff/snow_seto //serveris6: Snow Seto
-	name = "family photograph"
-	desc = "A photo, slightly wrinkled with age. There's a smiling teen dressed in black with bleached hair standing next to a girl looking around the age of twelve, also with bleached hair. Written on the back, in neat handwriting, you can see \"Not giving up yet. Stay strong. Love you and always here for you, Syrus\""
-	icon_state = "setophotograph"
 
 /obj/item/fluff/angelo_wilkerson_1 //fniff: Angleo Wilkerson
 	name = "fancy watch"
@@ -96,14 +97,14 @@
 	icon_state = "fancypen"
 
 /obj/item/weapon/pen/fluff/fountainpen //paththegreat: Eli Stevens
-	name = "Fountain Pen"
-	desc = "An expensive looking pen."
+	name = "Engraved Fountain Pen"
+	desc = "An expensive looking pen with the initials E.S. engraved into the side."
 	icon = 'custom_items.dmi'
 	icon_state = "fountainpen"
 
 /obj/item/fluff/victor_kaminsky_1 //chinsky: Victor Kaminski
 	name = "golden detective's badge"
-	desc = "Saris Industries Security Department detective's badge, made from gold. Badge number is 564."
+	desc = "NanoTrasen Security Department detective's badge, made from gold. Badge number is 564."
 	icon_state = "victor_kaminsky_1"
 
 /obj/item/fluff/victor_kaminsky_1/attack_self(mob/user as mob)
@@ -117,11 +118,6 @@
 	icon = 'custom_items.dmi'
 	icon_state = "smallnotetext"
 	item_state = "smallnotetext"
-
-/obj/item/weapon/clipboard/fluff/journal
-	name = "journal"
-	desc = "A black notebook, with slots for pages to fit into."
-	icon_state = "johnathan_notebook"
 
 /obj/item/weapon/storage/fluff/maye_daye_1 //morrinn: Maye Day
 	name = "pristine lunchbox"
@@ -143,6 +139,14 @@
 	icon_state = "bluezippo"
 	icon_on = "bluezippoon"
 	icon_off = "bluezippo"
+
+/obj/item/weapon/lighter/zippo/fluff/michael_guess_1 //Dragor23: Michael Guess
+	name = "engraved lighter"
+	desc = "A golden lighter, engraved with some ornaments and a G."
+	icon = 'custom_items.dmi'
+	icon_state = "guessip"
+	icon_on = "guessipon"
+	icon_off = "guessip"
 
 /obj/item/weapon/lighter/zippo/fluff/riley_rohtin_1 //rawrtaicho: Riley Rohtin
 	name = "Riley's black zippo"
@@ -201,11 +205,22 @@
 	icon = 'custom_items.dmi'
 	desc = "A modified detective's camera, painted in bright orange. On the back you see \"Have fun\" written in small accurate letters with something black."
 	icon_state = "orangecamera"
+	icon_on = "orangecamera"
+	icon_off = "camera_off"
+	pictures_left = 30
+
+/obj/item/device/camera/fluff/oldcamera //magmaram: Maria Crash
+	name = "Old Camera"
+	icon = 'custom_items.dmi'
+	desc = "An old, slightly beat-up digital camera, with a cheap photo printer taped on. It's a nice shade of blue."
+	icon_state = "oldcamera"
+	icon_on = "oldcamera"
+	icon_off = "oldcamera_off"
 	pictures_left = 30
 
 /obj/item/weapon/card/id/fluff/lifetime	//fastler: Fastler Greay; it seemed like something multiple people would have
 	name = "Lifetime ID Card"
-	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of Saris Industries. It sparkles blue."
+	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of NanoTrasen. It sparkles blue."
 	icon = 'custom_items.dmi'
 	icon_state = "lifetimeid"
 
@@ -326,13 +341,6 @@
 	icon = 'custom_items.dmi'
 	icon_state = "odysseus_spec_id"
 
-/obj/item/weapon/card/id/fluff/ian_colm_1 //Roaper: Ian Colm
-	name = "Technician"
-	desc = "An old ID with the words 'Ian Colm's Technician ID' printed on it.."
-	icon = 'custom_items.dmi'
-	icon_state = "technician_id"
-
-
 /obj/item/weapon/clipboard/fluff/mcreary_journal //sirribbot: James McReary
 	name = "McReary's journal"
 	desc = "A journal with a warning sticker on the front cover. The initials \"J.M.\" are written on the back."
@@ -361,6 +369,14 @@
 	desc = "A kit containing all the needed tools and parts to turn an APLU Ripley into a Titan's Fist worker mech."
 	icon = 'custom_items.dmi'
 	icon_state = "royce_kit"
+
+////// Ripley customisation kit - Sven Fjeltson - Mordeth221
+
+/obj/item/weapon/fluff/sven_fjeltson_1
+  name = "Mercenary APLU kit"
+  desc = "A kit containing all the needed tools and parts to turn an APLU Ripley into an old Mercenaries APLU."
+  icon = 'custom_items.dmi'
+  icon_state = "sven_kit"
 
 //////////////////////////////////
 //////////// Clothing ////////////
@@ -410,12 +426,6 @@
 	desc = "A very oddly shaped pair of goggles with bits of wire poking out the sides. A soft humming sound emanates from it."
 	icon = 'custom_items.dmi'
 	icon_state = "uzenwa_sissra_1"
-
-/obj/item/clothing/glasses/welding/fluff/ian_colm_2 //roaper: Ian Colm
-	name = "Ian's Goggles"
-	desc = "A pair of goggles used in the application of welding."
-	icon = 'custom_items.dmi'
-	icon_state = "ian_colm_1"
 
 ////// Medical eyepatch - Thysse Ezinwa - Jadepython
 /obj/item/clothing/glasses/eyepatch/fluff/thysse_1
@@ -468,6 +478,17 @@
 	icon = 'custom_items.dmi'
 	icon_state = "edvin_telephosphor_1"
 
+/obj/item/clothing/head/hardhat/fluff/neil_patterson_1 //superboredguy: Neil Patterson
+	name = "Engineering Cap"
+	desc = "Much safer than a hard helmet."
+	icon = 'custom_items.dmi'
+	icon_state = "neilpatterson0_hat"
+
+/obj/item/clothing/head/fluff/krinnhat //Shirotyrant: Krinn Seeskale
+	name = "saucepan hat"
+	desc = "This hat is the shiniest shiny Krinn has ever owned."
+	icon = 'custom_items.dmi'
+	icon_state = "krinn_hat"
 //////////// Suits ////////////
 
 /obj/item/clothing/suit/storage/labcoat/fluff/pink //spaceman96: Trenna Seber
@@ -504,6 +525,14 @@
 	icon = 'custom_items.dmi'
 	icon_state = "deus_blueshield"
 	item_state = "deus_blueshield"
+
+/obj/item/clothing/suit/fluff/oldscarf //Writerer2: Javaria Zara
+	name = "old scarf"
+	desc = "An old looking scarf, it seems to be fairly worn."
+	icon = 'clothing/suits.dmi'
+	icon_state = "mantle-unathi"
+	item_state = "mantle-unathi"
+	body_parts_covered = UPPER_TORSO
 
 //////////// Uniforms ////////////
 
@@ -546,13 +575,21 @@
 	item_state = "ara_bar_uniform"
 	color = "ara_bar_uniform"
 
+/obj/item/clothing/under/fluff/callum_suit //roaper: Callum Leamus
+	name = "knockoff suit"
+	desc = "A knockoff of a suit commonly worn by the upper class."
+	icon = 'custom_items.dmi'
+	icon_state = "callum_suit"
+	item_state = "callum_suit"
+	color = "callum_suit"
+
 /////// NT-SID Suit //Zuhayr: Jane Doe
 
 /obj/item/clothing/under/fluff/jane_sidsuit
 	name = "NT-SID jumpsuit"
-	desc = "A Saris Industries Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
+	desc = "A NanoTrasen Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 
-	icon = 'custom_items.dmi'
+	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "jane_sid_suit"
 	item_state = "jane_sid_suit"
 	color = "jane_sid_suit"
@@ -725,12 +762,12 @@
 
 ///// Colt Peacemaker - Ana Ka'Rimah - SueTheCake
 
-/obj/item/weapon/gun/energy/stunrevolver/fluff/ana_peacemaker
+//obj/item/weapon/gun/energy/stunrevolver/fluff/ana_peacemaker
 
-	name = "Peacemaker"
+/*	name = "Peacemaker"
 	desc = "A nickel-plated revolver with pearl grips. It has a certain Old West flair!"
 	icon = 'custom_items.dmi'
-	icon_state = "peacemaker"
+	icon_state = "peacemaker"*/
 
 ///// Well-used baton - Oen'g Issek - Donofnyc3
 

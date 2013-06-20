@@ -20,6 +20,10 @@ var/global/list/special_roles = list( //keep synced with the defines BE_* in set
 
 var/const/MAX_SAVE_SLOTS = 10
 
+//used for alternate_option
+#define GET_RANDOM_JOB 0
+#define BE_ASSISTANT 1
+#define RETURN_TO_LOBBY 2
 
 datum/preferences
 	//doohickeys for savefiles
@@ -32,7 +36,6 @@ datum/preferences
 	var/muted = 0
 	var/last_ip
 	var/last_id
-
 
 	//game-preferences
 	var/lastchangelog = ""				//Saved changlog filesize to detect if there was a change
@@ -80,9 +83,8 @@ datum/preferences
 	var/job_engsec_med = 0
 	var/job_engsec_low = 0
 
-		// Want randomjob if preferences already filled - Donkie
-	var/userandomjob = 1 //defaults to 1 for fewer assistants
-
+	//Keeps track of preferrence for not getting any wanted jobs
+	var/alternate_option = 0
 
 	var/used_skillpoints = 0
 	var/skill_specialization = null
@@ -253,6 +255,7 @@ datum/preferences
 		dat += "Blood Type: <a href='byond://?src=\ref[user];preference=b_type;task=input'>[b_type]</a><br>"
 		dat += "Skin Tone: <a href='?_src_=prefs;preference=s_tone;task=input'>[-s_tone + 35]/220<br></a>"
 		//dat += "Skin pattern: <a href='byond://?src=\ref[user];preference=skin_style;task=input'>Adjust</a><br>"
+		dat += "Needs Glasses: <a href='?_src_=prefs;preference=disabilities'><b>[disabilities == 0 ? "No" : "Yes"]</b></a><br>"
 		dat += "Limbs: <a href='byond://?src=\ref[user];preference=limbs;task=input'>Adjust</a><br>"
 
 		//display limbs below
@@ -441,7 +444,14 @@ datum/preferences
 
 		HTML += "</center></table>"
 
-		HTML += "<center><br><u><a href='?_src_=prefs;preference=job;task=random'><font color=[userandomjob ? "green>Get random job if preferences unavailable" : "red>Be assistant if preference unavailable"]</font></a></u></center><br>"
+		switch(alternate_option)
+			if(GET_RANDOM_JOB)
+				HTML += "<center><br><u><a href='?_src_=prefs;preference=job;task=random'><font color=green>Get random job if preferences unavailable</font></a></u></center><br>"
+			if(BE_ASSISTANT)
+				HTML += "<center><br><u><a href='?_src_=prefs;preference=job;task=random'><font color=red>Be assistant if preference unavailable</font></a></u></center><br>"
+			if(RETURN_TO_LOBBY)
+				HTML += "<center><br><u><a href='?_src_=prefs;preference=job;task=random'><font color=purple>Return to lobby if prefernce unavailable</font></a></u></center><br>"
+
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=reset'>\[Reset\]</a></center>"
 		HTML += "</tt>"
 
@@ -641,7 +651,12 @@ datum/preferences
 					ResetJobs()
 					SetChoices(user)
 				if("random")
-					userandomjob = !userandomjob
+					if(alternate_option == GET_RANDOM_JOB || alternate_option == BE_ASSISTANT)
+						alternate_option += 1
+					else if(alternate_option == RETURN_TO_LOBBY)
+						alternate_option = 0
+					else
+						return 0
 					SetChoices(user)
 				if ("alt_title")
 					var/datum/job/job = locate(href_list["job"])
@@ -778,6 +793,10 @@ datum/preferences
 							if(is_alien_whitelisted(user, "Skrell")) //Check for Skrell and admins
 								new_species += "Skrell"
 								whitelisted = 1
+							if(is_alien_whitelisted(user, "Vox")) //Check for Skrell and admins
+								new_species += "Vox"
+								whitelisted = 1
+
 
 							if(!whitelisted)
 								alert(user, "You cannot change your species as you need to be whitelisted. If you wish to be whitelisted contact an admin in-game, on the forums, or on IRC.")
@@ -785,6 +804,7 @@ datum/preferences
 							new_species += "Tajaran"
 							new_species += "Unathi"
 							new_species += "Skrell"
+							new_species += "Vox"
 						species = input("Please select a species", "Character Generation", null) in new_species
 
 						if(prev_species != species)
@@ -925,7 +945,7 @@ datum/preferences
 							backbag = backbaglist.Find(new_backbag)
 
 					if("nt_relation")
-						var/new_relation = input(user, "Choose your relation to SI. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
+						var/new_relation = input(user, "Choose your relation to NT. Note that this represents what others can find out about your character by researching your background, not what your character actually thinks.", "Character Preference")  as null|anything in list("Loyal", "Supportive", "Neutral", "Skeptical", "Opposed")
 						if(new_relation)
 							nanotrasen_relation = new_relation
 
@@ -1008,6 +1028,9 @@ datum/preferences
 							gender = FEMALE
 						else
 							gender = MALE
+
+					if("disabilities")				//please note: current code only allows nearsightedness as a disability
+						disabilities = !disabilities//if you want to add actual disabilities, code that selects them should be here
 
 					if("hear_adminhelps")
 						toggles ^= SOUND_ADMINHELP

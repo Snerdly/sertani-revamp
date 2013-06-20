@@ -142,7 +142,7 @@
 
 /obj/item/device/flashlight/flare
 	name = "flare"
-	desc = "A red Mazra Estates issued flare. There are instructions on the side, it reads 'pull cord, make light'."
+	desc = "A red Saris Industries issued flare. There are instructions on the side, it reads 'pull cord, make light'."
 	w_class = 2.0
 	brightness_on = 7 // Pretty bright.
 	icon_state = "flare"

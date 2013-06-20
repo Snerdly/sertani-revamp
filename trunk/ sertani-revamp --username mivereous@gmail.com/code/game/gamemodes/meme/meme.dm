@@ -6,7 +6,7 @@
 	name = "Memetic Anomaly"
 	config_tag = "meme"
 	required_players = 3
-	required_players_secret = 10
+	required_players_secret = 5
 	restricted_jobs = list("AI", "Cyborg")
 	recommended_enemies = 2 // need at least a meme and a host
 	votable = 1 // temporarily disable this mode for voting
@@ -110,9 +110,9 @@
 /datum/game_mode/proc/forge_meme_objectives(var/datum/mind/meme, var/datum/mind/first_host)
 	// meme always needs to attune X hosts
 	var/datum/objective/meme_attune/attune_objective = new
-	attune_objective.owner = meme
-	attune_objective.gen_amount_goal(3,6)
-	meme.objectives += attune_objective
+		attune_objective.owner = meme
+		attune_objective.gen_amount_goal(3,6)
+		meme.objectives += attune_objective
 
 	// generate some random objectives, use standard traitor objectives
 	var/job = first_host.assigned_role

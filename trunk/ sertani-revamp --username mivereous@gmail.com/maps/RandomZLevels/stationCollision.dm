@@ -63,7 +63,7 @@
 obj/item/weapon/gun/energy/laser/retro/sc_retro
 	name ="retro laser"
 	icon_state = "retro"
-	desc = "An older model of the basic lasergun, no longer used by Saris Industries' security or military forces."
+	desc = "An older model of the basic lasergun, no longer used by Saris Industries's security or military forces."
 	projectile_type = "/obj/item/projectile/practice"
 	clumsy_check = 0 //No sense in having a harmless gun blow up in the clowns face
 

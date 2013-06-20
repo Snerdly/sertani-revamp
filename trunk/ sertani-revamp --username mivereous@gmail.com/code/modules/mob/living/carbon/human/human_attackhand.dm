@@ -3,6 +3,13 @@
 		M << "No attacking people at spawn, you jackass."
 		return
 
+	var/datum/organ/external/temp = M:organs_by_name["r_hand"]
+	if (M.hand)
+		temp = M:organs_by_name["l_hand"]
+	if(temp && !temp.is_usable())
+		M << "\red You can't use your [temp.display_name]."
+		return
+
 	..()
 
 	if((M != src) && check_shields(0, M.name))
@@ -96,27 +103,6 @@
 
 		if("hurt")
 
-			if(ELECTRICHANDS in M.augmentations)
-				var/gendertxt = "their"
-				if(M.gender == "male")
-					gendertxt = "his"
-				if(M.gender == "female")
-					gendertxt = "her"
-
-				visible_message("\red <B>[M] has shocked [src] with [gendertxt] bare hands!</B>")
-				M.attack_log += text("\[[time_stamp()]\] <font color='red'>Used Electric Hands nanoaug power on [src.name] ([src.ckey])</font>")
-				src.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been shocked by [M.name] with the Electric Hands nanoaug ([M.ckey])</font>")
-
-				log_admin("ATTACK: [M.name] ([M.ckey]) used Electric Hands nanoaug on [src.name] ([src.ckey]), shocking them .")
-				message_admins("ATTACK: [M.name] ([M.ckey]) used Electric Hands nanoaug on [src.name] ([src.ckey]), shocking them .")
-				log_attack("<font color='red'>[M.name] ([M.ckey]) used Electric Hands nanoaug on [src.name] ([src.ckey]), shocking them </font>")
-
-
-				var/armorblock = run_armor_check(M.zone_sel.selecting, "energy")
-				apply_effects(5,5,0,0,5,0,0,armorblock)
-
-				return
-
 			var/attack_verb
 			if(M.dna)
 				switch(M.dna.mutantrace)
@@ -152,7 +138,7 @@
 			var/armor_block = run_armor_check(affecting, "melee")
 
 			if(HULK in M.mutations)			damage += 5
-			if(SUPRSTR in M.augmentations) 	damage += 5
+
 
 			switch(attack_verb)
 				if("slash")

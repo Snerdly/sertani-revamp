@@ -1,7 +1,7 @@
 
 /obj/item/device/encryptionkey/
 	name = "Standard Encrpytion Key"
-	desc = "An encyption key for a radio headset.  Has no special codes in it.  WHY DOES IT EXIST?  ASK MAZRA ESTATES."
+	desc = "An encyption key for a radio headset.  Has no special codes in it.  WHY DOES IT EXIST?  ASK NANOTRASEN."
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "cypherkey"
 	item_state = ""
@@ -122,6 +122,6 @@
 	icon_state = "cargo_cypherkey"
 	channels = list("Supply" = 1)
 /obj/item/device/encryptionkey/ert
-	name = "Mazra Estates ERT Radio Encryption Key"
+	name = "NanoTrasen ERT Radio Encryption Key"
 	desc = "An encyption key for a radio headset.  Contains cypherkeys."
 	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Mining" = 1, "Cargo" = 1,)

@@ -1,7 +1,7 @@
 /mob/living/silicon/robot
 	name = "Cyborg"
 	real_name = "Cyborg"
-	icon = 'icons/mob/robots.dmi'//
+	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
 	maxHealth = 300
 	health = 300
@@ -28,6 +28,8 @@
 	var/obj/machinery/camera/camera = null
 
 	var/obj/item/device/mmi/mmi = null
+
+	var/obj/item/device/pda/ai/rbPDA = null
 
 	var/opened = 0
 	var/emagged = 0
@@ -101,6 +103,12 @@
 
 	playsound(loc, 'sound/voice/liveagain.ogg', 75, 1)
 
+// setup the PDA and its name
+/mob/living/silicon/robot/proc/setup_PDA()
+	if (!rbPDA)
+		rbPDA = new/obj/item/device/pda/ai(src)
+	rbPDA.set_name_and_job(custom_name,braintype)
+
 //If there's an MMI in the robot, have it ejected when the mob goes away. --NEO
 //Improved /N
 /mob/living/silicon/robot/Del()
@@ -123,7 +131,13 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/standard(src)
 			hands.icon_state = "standard"
-			icon_state = "robot"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Standard")
+			switch(icontype)
+				if("Basic")	icon_state = "robot_old"
+				if("Lucy") icon_state = "rowtree-lucy"
+				else		icon_state = "robot"
 			modtype = "Stand"
 			feedback_inc("cyborg_standard",1)
 
@@ -131,12 +145,15 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/butler(src)
 			hands.icon_state = "service"
-			var/icontype = input("Select an icon!", "Robot", null, null) in list("Waitress", "Bro", "Butler", "Kent", "Rich")
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Waitress", "Bro", "Butler", "Kent", "Rich")
 			switch(icontype)
 				if("Waitress")	icon_state = "Service"
 				if("Kent")		icon_state = "toiletbot"
 				if("Bro")		icon_state = "Brobot"
 				if("Rich")		icon_state = "maximillion"
+				if("Lucy")		icon_state = "rowtree-lucy"
 				else				icon_state = "Service2"
 			modtype = "Butler"
 			feedback_inc("cyborg_service",1)
@@ -145,7 +162,14 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/miner(src)
 			hands.icon_state = "miner"
-			icon_state = "Miner"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Advanced Droid", "Treadhead")
+			switch(icontype)
+				if("Basic")	icon_state = "Miner_old"
+				if("Advanced Droid")	icon_state = "droid-miner"
+				if("Lucy")		icon_state = "rowtree-lucy"
+				else		icon_state = "Miner"
 			modtype = "Miner"
 			feedback_inc("cyborg_miner",1)
 			channels = list("Mining" = 1)
@@ -154,7 +178,15 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/medical(src)
 			hands.icon_state = "medical"
-			icon_state = "surgeon"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Advanced Droid", "Needles", "Hoverbot")
+			switch(icontype)
+				if("Basic")	icon_state = "Medbot"
+				if("Advanced Droid")	icon_state = "droid-medical"
+				if("Needles")	icon_state = "medicalrobot"
+				if("Lucy")		icon_state = "rowtree-medical"
+				else		icon_state = "surgeon"
 			modtype = "Med"
 			status_flags &= ~CANPUSH
 			feedback_inc("cyborg_medical",1)
@@ -164,7 +196,15 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/security(src)
 			hands.icon_state = "security"
-			icon_state = "bloodhound"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Red Knight", "Black Knight", "Bloodhound")
+			switch(icontype)
+				if("Basic")	icon_state = "secborg"
+				if("Red Knight")	icon_state = "Security"
+				if("Black Knight")	icon_state = "securityrobot"
+				if("Lucy")		icon_state = "rowtree-security"
+				else		icon_state = "bloodhound"
 			modtype = "Sec"
 			//speed = -1 Secborgs have nerfed tasers now, so the speed boost is not necessary
 			status_flags &= ~CANPUSH
@@ -175,7 +215,14 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/engineering(src)
 			hands.icon_state = "engineer"
-			icon_state = "landmate"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Antique", "Landmate")
+			switch(icontype)
+				if("Basic")	icon_state = "Engineering"
+				if("Antique") icon_state = "engineerrobot"
+				if("Lucy")		icon_state = "rowtree-engineering"
+				else		icon_state = "landmate"
 			modtype = "Eng"
 			feedback_inc("cyborg_engineering",1)
 			channels = list("Engineering" = 1)
@@ -184,7 +231,14 @@
 			updatename(mod)
 			module = new /obj/item/weapon/robot_module/janitor(src)
 			hands.icon_state = "janitor"
-			icon_state = "mopgearrex"
+			var/icontype
+			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Mopbot", "Zamboni")
+			switch(icontype)
+				if("Basic")	icon_state = "JanBot2"
+				if("Mopbot") icon_state = "janitorrobot"
+				if("Lucy")		icon_state = "rowtree-lucy"
+				else		icon_state = "mopgearrex"
 			modtype = "Jan"
 			feedback_inc("cyborg_janitor",1)
 
@@ -192,9 +246,11 @@
 	radio.config(channels)
 	updateicon()
 
+/
+
 /mob/living/silicon/robot/proc/updatename(var/prefix as text)
 
-	if(istype(mmi, /obj/item/device/posibrain))
+	if(istype(mmi, /obj/item/device/mmi/posibrain))
 		braintype = "Android"
 	else
 		braintype = "Cyborg"
@@ -206,23 +262,34 @@
 		changed_name = "[(prefix ? "[prefix] " : "")][braintype]-[num2text(ident)]"
 	real_name = changed_name
 	name = real_name
+	
+	// if we've changed our name, we also need to update the display name for our PDA
+	setup_PDA()
 
 /mob/living/silicon/robot/verb/Namepick()
 	if(custom_name)
 		return 0
 
-	var/newname
-	newname = input(src,"You are a robot. Enter a name, or leave blank for the default name.", "Name change","") as text
-	if (newname != "")
-		custom_name = newname
+	spawn(0)
+		var/newname
+		newname = input(src,"You are a robot. Enter a name, or leave blank for the default name.", "Name change","") as text
+		if (newname != "")
+			custom_name = newname
 
-	updatename("Default")
-	updateicon()
+		updatename("Default")
+		updateicon()
 
 /mob/living/silicon/robot/verb/cmd_robot_alerts()
 	set category = "Robot Commands"
 	set name = "Show Alerts"
 	robot_alerts()
+
+// this verb lets cyborgs see the stations manifest
+/mob/living/silicon/robot/verb/cmd_station_manifest()
+	set category = "Robot Commands"
+	set name = "Show Station Manifest"
+	show_station_manifest()
+
 
 /mob/living/silicon/robot/proc/robot_alerts()
 	var/dat = "<HEAD><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
@@ -254,35 +321,52 @@
 		return 1
 	return 0
 
+// this function shows information about the malf_ai gameplay type in the status screen
+/mob/living/silicon/robot/show_malf_ai()
+	..()
+	if(ticker.mode.name == "AI malfunction")
+		var/datum/game_mode/malfunction/malf = ticker.mode
+		for (var/datum/mind/malfai in malf.malf_ai)
+			if(connected_ai)
+				if(connected_ai.mind == malfai)
+					if(malf.apcs >= 3)
+						stat(null, "Time until station control secured: [max(malf.AI_win_timeleft/(malf.apcs/3), 0)] seconds")
+			else if(ticker.mode:malf_mode_declared)
+				stat(null, "Time left: [max(ticker.mode:AI_win_timeleft/(ticker.mode:apcs/3), 0)]")
+	return 0
+
+
+// this function displays jetpack pressure in the stat panel
+/mob/living/silicon/robot/proc/show_jetpack_pressure()
+	// if you have a jetpack, show the internal tank pressure
+	var/obj/item/weapon/tank/jetpack/current_jetpack = installed_jetpack()
+	if (current_jetpack)
+		stat("Internal Atmosphere Info", current_jetpack.name)
+		stat("Tank Pressure", current_jetpack.air_contents.return_pressure())
+
+
+// this function returns the robots jetpack, if one is installed
+/mob/living/silicon/robot/proc/installed_jetpack()
+	if(module)
+		return (locate(/obj/item/weapon/tank/jetpack) in module.modules)
+	return 0
+
+
+// this function displays the cyborgs current cell charge in the stat panel
+/mob/living/silicon/robot/proc/show_cell_power()
+	if(cell)
+		stat(null, text("Charge Left: [cell.charge]/[cell.maxcharge]"))
+	else
+		stat(null, text("No Cell Inserted!"))
+
+
+// update the status screen display
 /mob/living/silicon/robot/Stat()
 	..()
 	statpanel("Status")
 	if (client.statpanel == "Status")
-		if(emergency_shuttle.online && emergency_shuttle.location < 2)
-			var/timeleft = emergency_shuttle.timeleft()
-			if (timeleft)
-				stat(null, "ETA-[(timeleft / 60) % 60]:[add_zero(num2text(timeleft % 60), 2)]")
-
-		if(ticker.mode.name == "AI malfunction")
-			var/datum/game_mode/malfunction/malf = ticker.mode
-			for (var/datum/mind/malfai in malf.malf_ai)
-				if(connected_ai)
-					if(connected_ai.mind == malfai)
-						if(malf.apcs >= 3)
-							stat(null, "Time until station control secured: [max(malf.AI_win_timeleft/(malf.apcs/3), 0)] seconds")
-				else if(ticker.mode:malf_mode_declared)
-					stat(null, "Time left: [max(ticker.mode:AI_win_timeleft/(ticker.mode:apcs/3), 0)]")
-
-		if(cell)
-			stat(null, text("Charge Left: [cell.charge]/[cell.maxcharge]"))
-		else
-			stat(null, text("No Cell Inserted!"))
-
-		if(module)
-			internal = locate(/obj/item/weapon/tank/jetpack) in module.modules
-			if(internal)
-				stat("Internal Atmosphere Info", internal.name)
-				stat("Tank Pressure", internal.air_contents.return_pressure())
+		show_cell_power()
+		show_jetpack_pressure()
 
 /mob/living/silicon/robot/restrained()
 	return 0
@@ -806,7 +890,13 @@
 			overlays += "ov-openpanel -c"
 	return
 
-
+//Call when target overlay should be added/removed
+/mob/living/silicon/robot/update_targeted()
+	if(!targeted_by && target_locked)
+		del(target_locked)
+	updateicon()
+	if (targeted_by && target_locked)
+		overlays += target_locked
 
 /mob/living/silicon/robot/proc/installed_modules()
 	if(weapon_lock)

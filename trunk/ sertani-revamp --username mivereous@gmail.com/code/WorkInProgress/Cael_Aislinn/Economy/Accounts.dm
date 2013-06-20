@@ -4,6 +4,7 @@ var/global/datum/money_account/station_account
 var/global/list/datum/money_account/department_accounts = list()
 var/global/next_account_number = 0
 var/global/obj/machinery/account_database/centcomm_account_db
+var/global/datum/money_account/vendor_account
 
 /proc/create_station_account()
 	if(!station_account)
@@ -99,6 +100,9 @@ var/global/obj/machinery/account_database/centcomm_account_db
 	if(department_accounts.len == 0)
 		for(var/department in station_departments)
 			create_department_account(department)
+	if(!vendor_account)
+		create_department_account("Vendor")
+		vendor_account = department_accounts["Vendor"]
 
 	if(!current_date_string)
 		current_date_string = "[num2text(rand(1,31))] [pick("January","February","March","April","May","June","July","August","September","October","November","December")], 2557"
@@ -197,7 +201,7 @@ var/global/obj/machinery/account_database/centcomm_account_db
 					for(var/datum/money_account/M in A.accounts)
 						if(!src.accounts.Find(M))
 							src.accounts.Add(M)
-				usr << "\icon[src] <span class='info'>Accounts synched across all Saris Industries financial databases.</span>"
+				usr << "\icon[src] <span class='info'>Accounts synched across all NanoTrasen financial databases.</span>"
 
 			if("create_account")
 				creating_new_account = 1

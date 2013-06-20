@@ -32,17 +32,24 @@
 		if(!usr.canmove || usr.stat || usr.restrained())
 			return 0
 
-		switch(icon_state)
+		switch(item_state)
 			if("mazrashades")
-				src.icon_state = "mazrashades_open"
+				src.item_state = "mazrashades_open"
+				src.icon_state = "mazrashades_closed"
+				src.vision_flags = 0
 				usr << "The lens slide away from your eyes."
 
 			if("mazrashades_open")
+				src.item_state = "mazrashades"
 				src.icon_state = "mazrashades"
+				src.vision_flags = SEE_TURFS
 				usr << "With a quiet click, your lens snap into place."
 				return
 
+
 /obj/item/clothing/glasses/meson/prescription
+	name = "prescription mesons"
+	desc = "Optical Meson Scanner with prescription lenses."
 	prescription = 1
 
 /obj/item/clothing/glasses/science
@@ -85,6 +92,7 @@
 	desc = "Made by Nerd. Co."
 	icon_state = "glasses"
 	item_state = "glasses"
+	prescription = 1
 
 /obj/item/clothing/glasses/regular/hipster
 	name = "Prescription Glasses"
@@ -138,6 +146,13 @@
 
 		usr.update_inv_glasses()
 
+/obj/item/clothing/glasses/welding/superior
+	name = "superior welding goggles"
+	desc = "Welding goggles made from more expensive materials, strangely smells like potatoes."
+	icon_state = "rwelding-g"
+	item_state = "rwelding-g"
+	icon_action_button = "action_welding_g"
+
 /obj/item/clothing/glasses/sunglasses/blindfold
 	name = "blindfold"
 	desc = "Covers the eyes, preventing sight."
@@ -146,6 +161,7 @@
 	vision_flags = BLIND
 
 /obj/item/clothing/glasses/sunglasses/prescription
+	name = "prescription sunglasses"
 	prescription = 1
 
 /obj/item/clothing/glasses/sunglasses/big

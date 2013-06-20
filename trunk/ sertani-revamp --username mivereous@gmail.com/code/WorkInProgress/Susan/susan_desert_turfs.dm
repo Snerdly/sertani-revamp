@@ -320,13 +320,13 @@ Alien plants should do something if theres a lot of poison
 	icon_state = "toxin"
 	damage = 20
 	damage_type = BRUTE
-/*
+
 /obj/effect/critter/fleshmonster
 	name = "Fleshy Horror"
 	desc = "A grotesque, shambling fleshy horror... was this once a... a person?"
 	icon = 'icons/mob/mob.dmi'
 	icon_state = "horror"
-
+/*
 	health = 120
 	max_health = 120
 	aggressive = 1
@@ -464,135 +464,4 @@ obj/effect/critter/fleshmonster/fleshslime
 	icon = 'biocraps.dmi'
 	icon_state = "livingflesh"
 	desc = "A creature that appears to be made out of living tissue strewn together haphazardly. Some kind of liquid bubbles from its maw."
-/*	health = 170
-	max_health = 170
-	aggressive = 1
-	defensive = 1
-	wanderer = 1
-	opensdoors = 1
-	atkcarbon = 1
-	atksilicon = 1
-	atkcritter = 1
-	atksame = 0
-	atkmech = 1
-	firevuln = 0.5
-	brutevuln = 0.7
-	seekrange = 25
-	armor = 15
-	melee_damage_lower = 12
-	melee_damage_upper = 17
-	angertext = "slops"
-	attacktext = "bites"
-	var/ranged = 0
-	var/rapid = 0
-	proc
-		Shoot(var/target, var/start, var/user, var/bullet = 0)
-		OpenFire(var/thing)//bluh ill rename this later or somethin
-
-
-	Die()
-		if (!src.alive) return
-		src.alive = 0
-		walk_to(src,0)
-		src.visible_message("<b>[src]</b> disintegrates into mush!")
-		playsound(loc, 'sound/voice/hiss6.ogg', 80, 1, 1)
-		var/turf/Ts = get_turf(src)
-		new /obj/effect/decal/cleanable/blood(Ts)
-		del(src)
-
-	seek_target()
-		src.anchored = 0
-		var/T = null
-		for(var/mob/living/C in view(src.seekrange,src))//TODO: mess with this
-			if (src.target)
-				src.task = "chasing"
-				break
-			if((C.name == src.oldtarget_name) && (world.time < src.last_found + 100)) continue
-			if(istype(C, /mob/living/carbon/) && !src.atkcarbon) continue
-			if(istype(C, /mob/living/silicon/) && !src.atksilicon) continue
-			if(C.health < 0) continue
-			if(istype(C, /mob/living/carbon/) && src.atkcarbon)
-				if(C:mind)
-					if(C:mind:special_role == "H.I.V.E")
-						continue
-				src.attack = 1
-			if(istype(C, /mob/living/silicon/) && src.atksilicon)
-				if(C:mind)
-					if(C:mind:special_role == "H.I.V.E")
-						continue
-				src.attack = 1
-			if(src.attack)
-				T = C
-				break
-
-		if(!src.attack)
-			for(var/obj/effect/critter/C in view(src.seekrange,src))
-				if(istype(C, /obj/effect/critter) && !src.atkcritter) continue
-				if(C.health <= 0) continue
-				if(istype(C, /obj/effect/critter) && src.atkcritter)
-					if((istype(C, /obj/effect/critter/hivebot) && !src.atksame) || (C == src))	continue
-					T = C
-					break
-
-			for(var/obj/mecha/M in view(src.seekrange,src))
-				if(istype(M, /obj/mecha) && !src.atkmech) continue
-				if(M.health <= 0) continue
-				if(istype(M, /obj/mecha) && src.atkmech) src.attack = 1
-				if(src.attack)
-					T = M
-					break
-
-		if(src.attack)
-			src.target = T
-			src.oldtarget_name = T:name
-			if(src.ranged)
-				OpenFire(T)
-				return
-			src.task = "chasing"
-		return
-
-
-	OpenFire(var/thing)
-		src.target = thing
-		src.oldtarget_name = thing:name
-		for(var/mob/O in viewers(src, null))
-			O.show_message("\red <b>[src]</b> spits a glob at [src.target]!", 1)
-
-		var/tturf = get_turf(target)
-		if(rapid)
-			spawn(1)
-				Shoot(tturf, src.loc, src)
-			spawn(4)
-				Shoot(tturf, src.loc, src)
-			spawn(6)
-				Shoot(tturf, src.loc, src)
-		else
-			Shoot(tturf, src.loc, src)
-
-		src.attack = 0
-		sleep(12)
-		seek_target()
-		src.task = "thinking"
-		return
-
-
-	Shoot(var/target, var/start, var/user, var/bullet = 0)
-		if(target == start)
-			return
-
-		var/obj/item/projectile/slimeglob/A = new /obj/item/projectile/slimeglob(user:loc)
-		playsound(user, 'sound/weapons/bite.ogg', 100, 1)
-
-		if(!A)	return
-
-		if (!istype(target, /turf))
-			del(A)
-			return
-		A.current = target
-		A.yo = target:y - start:y
-		A.xo = target:x - start:x
-		spawn( 0 )
-			A.process()
-		return
-
-		*/
+	//ranged = 1

@@ -51,7 +51,8 @@
 		"/obj/item/device/flashlight",
 		"/obj/item/weapon/cable_coil",
 		"/obj/item/device/t_scanner",
-		"/obj/item/device/analyzer")
+		"/obj/item/device/analyzer",
+		"/obj/item/taperoll/engineering")
 
 
 /obj/item/weapon/storage/belt/utility/full/New()
@@ -77,7 +78,6 @@
 	name = "badass belt"
 	desc = "Nobody fucks with someone wearing this."
 	icon_state = "badassbelt"
-
 
 /obj/item/weapon/storage/belt/medical
 	name = "medical belt"
@@ -111,6 +111,7 @@
 	item_state = "security"//Could likely use a better one.
 	storage_slots = 7
 	max_w_class = 3
+	max_combined_w_class = 21
 	can_hold = list(
 		"/obj/item/weapon/grenade/flashbang",
 		"/obj/item/weapon/reagent_containers/spray/pepper",

@@ -563,7 +563,7 @@
           <li>Expose the cyborg's internal wiring</li>
           <li>Check to make sure the LawSync and AI Sync lights are lit</li>
           <li>If they are not lit, pulse the LawSync wire using a multitool to enable the cyborg's Law Sync</li>
-          <li>Proceed to a cyborg upload console. Saris Industries usually places these in the same location as AI upload consoles.</li>
+          <li>Proceed to a cyborg upload console. Saris Industries usually places these in the same location as AI uplaod consoles.</li>
           <li>Use a "Reset" upload moduleto reset the cyborg's laws</li>
           <li>Proceed to a Robotics Control console</li>
           <li>Remove the lockdown on the cyborg</li>
@@ -767,7 +767,7 @@
 	dat = {"<html>
 			Nuclear Explosives 101:<br>
 			Hello and thank you for choosing the Syndicate for your nuclear information needs.<br>
-			Today's crash course will deal with the operation of a Fusion Class Mazra Estates made Nuclear Device.<br>
+			Today's crash course will deal with the operation of a Fusion Class Saris Industries made Nuclear Device.<br>
 			First and foremost, DO NOT TOUCH ANYTHING UNTIL THE BOMB IS IN PLACE.<br>
 			Pressing any button on the compacted bomb will cause it to extend and bolt itself into place.<br>
 			If this is done to unbolt it one must completely log in which at this time may not be possible.<br>
@@ -779,7 +779,7 @@
 			<li>Press the E button to log onto the device.</li>
 			You now have activated the device. To deactivate the buttons at anytime for example when you've already prepped the bomb for detonation	remove the auth disk OR press the R on the keypad.<br>
 			Now the bomb CAN ONLY be detonated using the timer. Manual detonation is not an option.<br>
-			Note: Mazra Estates is a pain in the neck.<br>
+			Note: Saris Industries is a pain in the neck.<br>
 			Toggle off the SAFETY.<br>
 			Note: You wouldn't believe how many Syndicate Operatives with doctorates have forgotten this step.<br>
 			So use the - - and + + to set a det time between 5 seconds and 10 minutes.<br>
@@ -790,6 +790,6 @@
 			Toggle off the anchor, move it, and re-anchor.<br><br>
 			Good luck. Remember the order:<br>
 			<b>Disk, Code, Safety, Timer, Disk, RUN!</b><br>
-			Intelligence Analysts believe that normal Mazra Estates procedure is for the Captain to secure the nuclear authorisation disk.<br>
+			Intelligence Analysts believe that normal Saris Industries procedure is for the Captain to secure the nuclear authorisation disk.<br>
 			Good luck!
 			</html>"}

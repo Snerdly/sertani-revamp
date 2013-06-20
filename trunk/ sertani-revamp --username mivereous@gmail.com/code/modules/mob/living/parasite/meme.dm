@@ -265,7 +265,7 @@ mob/living/parasite/meme/verb/Paralyze()
 	set desc     = "Prevents your host from using emote for a while."
 
 	if(!src.host) return
-	if(!host.emote_allowed)
+	if(!host.use_me)
 		usr << "\red Your host already can't use body language.."
 		return
 	if(!use_points(250)) return
@@ -279,11 +279,11 @@ mob/living/parasite/meme/verb/Paralyze()
 		log_admin("[src.key] has meme-paralyzed [src.host]")
 		message_admins("[src.key] has meme-paralyzed [src.host]")
 
-		host.emote_allowed = 0
+		host.use_me = 0
 
 		sleep(1200)
 
-		host.emote_allowed = 1
+		host.use_me = 1
 		host << "\red Your body has feeling again.."
 		usr << "\red [host] can use body language again."
 		log_admin("[src.host] can emote again")
@@ -521,7 +521,6 @@ mob/living/parasite/meme/verb/Attune()
 	src.indoctrinated.Add(host)
 
 	usr << "<b>You successfully indoctrinated [host]."
-	host << "\red You feel sick..."
 
 	log_admin("[src.key] has attuned [host]")
 	message_admins("[src.key] has attuned [host]")

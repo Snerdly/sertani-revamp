@@ -65,6 +65,7 @@
 /var/const/access_sec_doors = 63 // Security front doors
 /var/const/access_psychiatrist = 64 // Psychiatrist's office
 /var/const/access_protector = 65 //Grand protector's office
+/var/const/access_siskin = 66 //Siskin shit
 
 	//BEGIN CENTCOM ACCESS
 	/*Should leave plenty of room if we need to add more access levels.
@@ -490,3 +491,25 @@ proc/FindNameFromID(var/mob/living/carbon/human/H)
 
 		if(ID)
 			return ID.registered_name
+
+proc/get_all_job_icons() //For all existing HUD icons
+	return get_all_jobs() + list("Prisoner")
+
+/obj/proc/GetJobName() //Used in secHUD icon generation
+	if (!istype(src, /obj/item/device/pda) && !istype(src,/obj/item/weapon/card/id))
+		return
+
+	var/jobName
+
+	if(istype(src, /obj/item/device/pda))
+		if(src:id)
+			jobName = src:id:assignment
+	if(istype(src, /obj/item/weapon/card/id))
+		jobName = src:assignment
+
+	if(jobName in get_all_job_icons()) //Check if the job has a hud icon
+		return jobName
+	if(jobName in get_all_centcom_jobs()) //Return with the NT logo if it is a Centcom job
+		return "Centcom"
+	return "Unknown" //Return unknown if none of the above apply
+

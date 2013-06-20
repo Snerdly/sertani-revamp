@@ -64,6 +64,7 @@ There are several things that need to be remembered:
 		update_body()	//Handles updating your mob's icon to reflect their gender/race/complexion etc
 		update_hair()	//Handles updating your hair overlay (used to be update_face, but mouth and
 																			...eyes were merged into update_body)
+		update_targeted() // Updates the target overlay when someone points a gun at you
 
 >	All of these procs update our overlays_lying and overlays_standing, and then call update_icons() by default.
 	If you wish to update several overlays at once, you can set the argument to 0 to disable the update and call
@@ -117,20 +118,21 @@ Please contact me on #coderbus IRC. ~Carn x
 #define L_HAND_LAYER			19
 #define R_HAND_LAYER			20
 #define TAIL_LAYER				21		//bs12 specific. this hack is probably gonna come back to haunt me
-#define TOTAL_LAYERS			21
+#define TARGETED_LAYER			22		//BS12: Layer for the target overlay from weapon targeting system
+#define TOTAL_LAYERS			22
 //////////////////////////////////
 
 /mob/living/carbon/human
 	var/list/overlays_lying[TOTAL_LAYERS]
 	var/list/overlays_standing[TOTAL_LAYERS]
 	var/previous_damage_appearance // store what the body last looked like, so we only have to update it if something changed
-	var/race_icon
+	var/icon/race_icon
+	var/icon/deform_icon
 
 //UPDATES OVERLAYS FROM OVERLAYS_LYING/OVERLAYS_STANDING
 //this proc is messy as I was forced to include some old laggy cloaking code to it so that I don't break cloakers
 //I'll work on removing that stuff by rewriting some of the cloaking stuff at a later date.
 /mob/living/carbon/human/update_icons()
-
 	lying_prev = lying	//so we don't update overlays for lying/standing unless our stance changes again
 	update_hud()		//TODO: remove the need for this
 	overlays.Cut()
@@ -233,18 +235,16 @@ proc/get_damage_icon_part(damage_state, body_part)
 	var/g = "m"
 	if(gender == FEMALE)	g = "f"
 
+	var/datum/organ/external/chest = get_organ("chest")
+	stand_icon = chest.get_icon(g)
 	if(!skeleton)
-		stand_icon = new /icon(race_icon, "torso_[g][fat?"_fat":""]")
 		if(husk)
 			stand_icon.ColorTone(husk_color_mod)
 		else if(hulk)
-//			stand_icon.ColorTone(hulk_color_mod)
 			var/list/TONE = ReadRGB(hulk_color_mod)
 			stand_icon.MapColors(rgb(TONE[1],0,0),rgb(0,TONE[2],0),rgb(0,0,TONE[3]))
 		else if(plant)
 			stand_icon.ColorTone(plant_color_mod)
-	else
-		stand_icon = new /icon(race_icon, "torso")
 
 	var/datum/organ/external/head = get_organ("head")
 	var/has_head = 0
@@ -254,28 +254,22 @@ proc/get_damage_icon_part(damage_state, body_part)
 	for(var/datum/organ/external/part in organs)
 		if(!istype(part, /datum/organ/external/chest) && !(part.status & ORGAN_DESTROYED))
 			var/icon/temp
-			if(istype(part, /datum/organ/external/groin))
-				if(skeleton)
-					temp = new /icon(race_icon, "groin")
-				else
-					temp = new /icon(race_icon, "groin_[g]")
-			else if(istype(part, /datum/organ/external/head))
-				if(skeleton)
-					temp = new /icon(race_icon, "head")
-				else
-					temp = new /icon(race_icon, "head_[g]")
+			if (istype(part, /datum/organ/external/groin) || istype(part, /datum/organ/external/head))
+				temp = part.get_icon(g)
 			else
-				temp = new /icon(race_icon, "[part.icon_name]")
+				temp = part.get_icon()
+
 			if(part.status & ORGAN_ROBOT)
 				temp.GrayScale()
+
 			if(part.status & ORGAN_DEAD)
 				temp.ColorTone(necrosis_color_mod)
 				temp.SetIntensity(0.7)
+
 			else if(!skeleton)
 				if(husk)
 					temp.ColorTone(husk_color_mod)
 				else if(hulk)
-//					temp.ColorTone(hulk_color_mod)
 					var/list/TONE = ReadRGB(hulk_color_mod)
 					temp.MapColors(rgb(TONE[1],0,0),rgb(0,TONE[2],0),rgb(0,0,TONE[3]))
 				else if(plant)
@@ -319,6 +313,8 @@ proc/get_damage_icon_part(damage_state, body_part)
 		//Eyes
 		if(!skeleton)
 			var/icon/eyes_s = new/icon('icons/mob/human_face.dmi', "eyes_s")
+			if(src.get_species()=="Vox")
+				eyes_s = new/icon('icons/mob/human_face.dmi', "vox_eyes_s")
 			eyes_s.Blend(rgb(r_eyes, g_eyes, b_eyes), ICON_ADD)
 			stand_icon.Blend(eyes_s, ICON_OVERLAY)
 
@@ -441,12 +437,21 @@ proc/get_damage_icon_part(damage_state, body_part)
 		switch(dna.mutantrace)
 			if("tajaran")
 				race_icon = 'icons/mob/human_races/r_tajaran.dmi'
+				deform_icon = 'icons/mob/human_races/r_def_tajaran.dmi'
 			if("lizard")
 				race_icon = 'icons/mob/human_races/r_lizard.dmi'
+				deform_icon = 'icons/mob/human_races/r_def_lizard.dmi'
 			if("skrell")
 				race_icon = 'icons/mob/human_races/r_skrell.dmi'
+				deform_icon = 'icons/mob/human_races/r_def_skrell.dmi'
+
+			if("vox")
+				race_icon = 'icons/mob/human_races/r_vox.dmi'
+				deform_icon = 'icons/mob/human_races/r_def_vox.dmi'
+
 			else
 				race_icon = 'icons/mob/human_races/r_human.dmi'
+				deform_icon = 'icons/mob/human_races/r_def_human.dmi'
 	else
 		icon = 'icons/mob/human_races/r_human.dmi'
 
@@ -471,6 +476,19 @@ proc/get_damage_icon_part(damage_state, body_part)
 		update_body(0)
 	update_hair(0)
 	if(update_icons)   update_icons()
+
+//Call when target overlay should be added/removed
+/mob/living/carbon/human/update_targeted(var/update_icons=1)
+	if (targeted_by && target_locked)
+		overlays_lying[TARGETED_LAYER]		= target_locked
+		overlays_standing[TARGETED_LAYER]	= target_locked
+	else if (!targeted_by && target_locked)
+		del(target_locked)
+	if (!targeted_by)
+		overlays_lying[TARGETED_LAYER]		= null
+		overlays_standing[TARGETED_LAYER]	= null
+	if(update_icons)		update_icons()
+
 
 /* --------------------------------------- */
 //For legacy support.
@@ -546,9 +564,13 @@ proc/get_damage_icon_part(damage_state, body_part)
 
 /mob/living/carbon/human/update_inv_wear_id(var/update_icons=1)
 	if(wear_id)
-		overlays_lying[ID_LAYER]	= image("icon" = 'icons/mob/mob.dmi', "icon_state" = "id2")
-		overlays_standing[ID_LAYER]	= image("icon" = 'icons/mob/mob.dmi', "icon_state" = "id")
 		wear_id.screen_loc = ui_id	//TODO
+		if(w_uniform && w_uniform:displays_id)
+			overlays_lying[ID_LAYER]	= image("icon" = 'icons/mob/mob.dmi', "icon_state" = "id2")
+			overlays_standing[ID_LAYER]	= image("icon" = 'icons/mob/mob.dmi', "icon_state" = "id")
+		else
+			overlays_lying[ID_LAYER]	= null
+			overlays_standing[ID_LAYER]	= null
 	else
 		overlays_lying[ID_LAYER]	= null
 		overlays_standing[ID_LAYER]	= null
@@ -858,4 +880,5 @@ proc/get_damage_icon_part(damage_state, body_part)
 #undef L_HAND_LAYER
 #undef R_HAND_LAYER
 #undef TAIL_LAYER
+#undef TARGETED_LAYER
 #undef TOTAL_LAYERS

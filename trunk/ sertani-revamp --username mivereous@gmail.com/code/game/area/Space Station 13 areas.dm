@@ -699,10 +699,6 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Captain's Office"
 	icon_state = "captain"
 
-/area/crew_quarters/command_staff
-	name = "\improper Command Quarters"
-	icon_state = "head_quarters"
-
 /area/crew_quarters/heads/hop
 	name = "\improper Head of Personnel's Quarters"
 	icon_state = "head_quarters"
@@ -871,6 +867,24 @@ proc/process_ghost_teleport_locs()
 /area/holodeck/source_wildlife
 	name = "\improper Holodeck - Wildlife Simulation"
 
+/area/holodeck/source_meetinghall
+	name = "\improper Holodeck - Meeting Hall"
+
+/area/holodeck/source_theatre
+	name = "\improper Holodeck - Theatre"
+
+/area/holodeck/source_picnicarea
+	name = "\improper Holodeck - Picnic Area"
+
+/area/holodeck/source_snowfield
+	name = "\improper Holodeck - Snow Field"
+
+/area/holodeck/source_desert
+	name = "\improper Holodeck - Desert"
+
+/area/holodeck/source_space
+	name = "\improper Holodeck - Space"
+
 
 
 
@@ -908,7 +922,6 @@ proc/process_ghost_teleport_locs()
 	chiefs_apartment
 		name = "\improper Chief Engineer's Apartment"
 		icon_state = "engine_control"
-
 
 //Solars
 
@@ -1152,6 +1165,10 @@ proc/process_ghost_teleport_locs()
 	icon_state = "checkpoint1"
 
 /area/security/vacantoffice
+	name = "\improper Vacant Office"
+	icon_state = "security"
+
+/area/security/vacantoffice2
 	name = "\improper Vacant Office"
 	icon_state = "security"
 
@@ -1606,7 +1623,7 @@ proc/process_ghost_teleport_locs()
 	requires_power = 0
 
 /area/awaymission/spacebattle/cruiser
-	name = "\improper Nanotrasen Cruiser"
+	name = "\improper Saris Industries Cruiser"
 
 /area/awaymission/spacebattle/syndicate1
 	name = "\improper Syndicate Assault Ship 1"

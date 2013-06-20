@@ -250,13 +250,6 @@
 	anchored = 1
 	unacidable = 1//temporary until I decide whether the borg can be removed. -veyveyr
 
-/obj/structure/inkwell
-	name = "inkwell"
-	icon = 'icons/obj/stationobjs.dmi'
-	icon_state = "inkwell"
-	desc = "A small bottle of dark ink."
-
-
 /obj/item/mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 
 /obj/item/weapon/beach_ball

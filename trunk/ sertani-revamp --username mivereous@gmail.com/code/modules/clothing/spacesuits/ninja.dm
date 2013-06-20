@@ -5,6 +5,7 @@
 	item_state = "s-ninja_mask"
 	allowed = list(/obj/item/weapon/cell)
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 30, bio = 30, rad = 25)
+	siemens_coefficient = 0.2
 
 
 /obj/item/clothing/suit/space/space_ninja
@@ -15,6 +16,7 @@
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen,/obj/item/weapon/cell)
 	slowdown = 0
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 30, bio = 30, rad = 30)
+	siemens_coefficient = 0.2
 
 		//Important parts of the suit.
 	var/mob/living/carbon/affecting = null//The wearer.
@@ -57,13 +59,3 @@
 	var/obj/effect/overlay/hologram//Is the AI hologram on or off? Visible only to the wearer of the suit. This works by attaching an image to a blank overlay.
 	var/flush = 0//If an AI purge is in progress.
 	var/s_control = 1//If user in control of the suit.
-
-//Specialized space ninja armor for Space Ninja Felix. Probably won't use this very often. Only for admin bussing and such. I might end up adding new abilities exclusive to this if I can ever get off my ass and learn to code properly.
-
-
-/*obj/item/clothing/suit/space/space_ninja/seto
-	name = "customized ninja suit"
-	desc = "A unique, vaccum-proof suit of nano-enhanced armor designed specifically for Spider Clan assassins. This one, however, has clearly had some major modifications both in appearence and technology."
-	icon_state = "felixninja"
-	item_state = "*/
-

@@ -15,6 +15,15 @@
 		ChangeToHusk()
 	return
 
+/mob/living/carbon/human/getBrainLoss()
+	var/res = brainloss
+	var/datum/organ/internal/brain/sponge = internal_organs["brain"]
+	if (sponge.is_bruised())
+		res += 20
+	if (sponge.is_broken())
+		res += 50
+	res = min(res,maxHealth*2)
+	return res
 
 //These procs fetch a cumulative total damage from all organs
 /mob/living/carbon/human/getBruteLoss()
@@ -54,6 +63,34 @@
 	if(HULK in mutations)	return
 	..()
 
+/mob/living/carbon/human/adjustCloneLoss(var/amount)
+	..()
+	var/heal_prob = max(0, 80 - getCloneLoss())
+	var/mut_prob = min(80, getCloneLoss()+10)
+	if (amount > 0)
+		if (prob(mut_prob))
+			var/list/datum/organ/external/candidates = list()
+			for (var/datum/organ/external/O in organs)
+				if(!(O.status & ORGAN_MUTATED))
+					candidates |= O
+			if (candidates.len)
+				var/datum/organ/external/O = pick(candidates)
+				O.mutate()
+				src << "<span class = 'notice'>Something is not right with your [O.display_name]...</span>"
+				return
+	else
+		if (prob(heal_prob))
+			for (var/datum/organ/external/O in organs)
+				if (O.status & ORGAN_MUTATED)
+					O.unmutate()
+					src << "<span class = 'notice'>Your [O.display_name] is shaped normally again.</span>"
+					return
+
+	if (getCloneLoss() < 1)
+		for (var/datum/organ/external/O in organs)
+			if (O.status & ORGAN_MUTATED)
+				O.unmutate()
+				src << "<span class = 'notice'>Your [O.display_name] is shaped normally again.</span>"
 ////////////////////////////////////////////
 
 //Returns a list of damaged organs
@@ -170,9 +207,6 @@
 
 	if(blocked)
 		damage = (damage/(blocked+1))
-
-	if(DERMALARMOR in augmentations)
-		damage = damage - (round(damage*0.35)) // reduce damage by 35%
 
 	switch(damagetype)
 		if(BRUTE)

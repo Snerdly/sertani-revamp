@@ -16,5 +16,11 @@ turf/unsimulated/wall/splashscreen
 	icon_state = "title"
 	layer = FLY_LAYER
 
+turf/unsimulated/wall/siskin_screen
+	name = "Space Station 13 - Siskin Horror Edition"
+	icon = 'icons/misc/siskin_screen.dmi'
+	icon_state = "title"
+	layer = FLY_LAYER
+
 /turf/unsimulated/wall/other
 	icon_state = "r_wall"

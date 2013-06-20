@@ -71,6 +71,7 @@
 	flags = FPRINT|TABLEPASS|MASKCOVERSMOUTH
 	w_class = 2
 	gas_transfer_coefficient = 0.90
+	siemens_coefficient = 0
 
 /obj/item/clothing/mask/pig
 	name = "pig mask"
@@ -80,6 +81,7 @@
 	flags = FPRINT|TABLEPASS|BLOCKHAIR
 	flags_inv = HIDEFACE
 	w_class = 2
+	siemens_coefficient = 0.9
 
 /obj/item/clothing/mask/horsehead
 	name = "horse head mask"
@@ -90,6 +92,7 @@
 	flags_inv = HIDEFACE
 	w_class = 2
 	var/voicechange = 0
+	siemens_coefficient = 0.9
 
 /obj/item/clothing/mask/collar
 	name = "collar"
@@ -98,3 +101,4 @@
 	item_state = "kinkcollar"
 	flags = FPRINT|TABLEPASS
 	w_class = 1
+	siemens_coefficient = 0.9
