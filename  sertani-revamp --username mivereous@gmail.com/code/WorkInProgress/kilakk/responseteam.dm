@@ -92,7 +92,7 @@ var/sent_emergency_team = 0
 		candidates -= chosen
 		members += chosen
 
-	command_alert("Sensors indicate that [station_name()] has entered Code Red and is in need of assistance. We will prepare and dispatch an emergency response team to deal with the situation.", "NMV Icarus Command")
+	command_alert("Sensors indicate that [station_name()] has entered Code Red and is in need of assistance. We will prepare and dispatch an emergency response team to deal with the situation.", "GHV Tind Command")
 
 	for(var/obj/effect/landmark/L in world)
 		if(L.name == "Response Team")
@@ -175,7 +175,7 @@ var/sent_emergency_team = 0
 				new_member.mind.special_role = "Emergency Response Team"
 				ticker.mode.traitors += new_member.mind // ERTs will show up at the end of the round on the "traitor" list
 
-				new_member << "\blue You are the <b>Emergency Response Team[!leader_selected?"!</b>":" Leader!</b>"] \nAs a response team [!leader_selected?"member":"<b>leader</b>"] you answer directly to [!leader_selected?"your team leader.":"Central Command."] \nYou have been deployed by NanoTrasen Central Command in Tau Ceti to resolve a Code Red alert aboard [station_name()], and have been provided with the following instructions and information regarding your mission: \red [situation]"
+				new_member << "\blue You are the <b>Emergency Response Team[!leader_selected?"!</b>":" Leader!</b>"] \nAs a response team [!leader_selected?"member":"<b>leader</b>"] you answer directly to [!leader_selected?"your team leader.":"Central Command."] \nYou have been deployed by Saris Industries Central Command in Tau Ceti to resolve a Code Red alert aboard [station_name()], and have been provided with the following instructions and information regarding your mission: \red [situation]"
 				new_member.mind.store_memory("<b>Mission Parameters:</b> \red [situation].")
 
 				if(leader_selected)

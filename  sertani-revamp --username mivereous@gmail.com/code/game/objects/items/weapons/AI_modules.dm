@@ -35,7 +35,7 @@ AI MODULES
 			return
 
 		if(ticker && ticker.mode && ticker.mode.name == "blob")
-			usr << "Law uploads have been disabled by NanoTrasen!"
+			usr << "Law uploads have been disabled by Saris Industries!"
 			return
 
 		if (comp.current.stat == 2 || comp.current.control_disabled == 1)
@@ -330,7 +330,7 @@ AI MODULES
 	target.add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
 	target.show_laws()
 
-/******************** NanoTrasen ********************/
+/******************** Saris Industries ********************/
 
 /obj/item/weapon/aiModule/nanotrasen // -- TLE
 	name = "'NT Default' Core AI Module"

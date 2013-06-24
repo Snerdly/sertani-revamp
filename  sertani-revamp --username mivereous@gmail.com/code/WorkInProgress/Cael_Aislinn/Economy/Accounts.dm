@@ -201,7 +201,7 @@ var/global/datum/money_account/vendor_account
 					for(var/datum/money_account/M in A.accounts)
 						if(!src.accounts.Find(M))
 							src.accounts.Add(M)
-				usr << "\icon[src] <span class='info'>Accounts synched across all NanoTrasen financial databases.</span>"
+				usr << "\icon[src] <span class='info'>Accounts synched across all Saris Industries financial databases.</span>"
 
 			if("create_account")
 				creating_new_account = 1

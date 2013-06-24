@@ -36,13 +36,13 @@
 			if("mazrashades")
 				src.item_state = "mazrashades_open"
 				src.icon_state = "mazrashades_closed"
-				src.vision_flags = 0
+				vision_flags = ~SEE_TURFS
 				usr << "The lens slide away from your eyes."
 
 			if("mazrashades_open")
 				src.item_state = "mazrashades"
 				src.icon_state = "mazrashades"
-				src.vision_flags = SEE_TURFS
+				vision_flags = SEE_TURFS
 				usr << "With a quiet click, your lens snap into place."
 				return
 

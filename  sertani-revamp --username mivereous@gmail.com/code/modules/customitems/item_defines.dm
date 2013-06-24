@@ -104,7 +104,7 @@ hi
 
 /obj/item/fluff/victor_kaminsky_1 //chinsky: Victor Kaminski
 	name = "golden detective's badge"
-	desc = "NanoTrasen Security Department detective's badge, made from gold. Badge number is 564."
+	desc = "Saris Industries Security Department detective's badge, made from gold. Badge number is 564."
 	icon_state = "victor_kaminsky_1"
 
 /obj/item/fluff/victor_kaminsky_1/attack_self(mob/user as mob)
@@ -220,7 +220,7 @@ hi
 
 /obj/item/weapon/card/id/fluff/lifetime	//fastler: Fastler Greay; it seemed like something multiple people would have
 	name = "Lifetime ID Card"
-	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of NanoTrasen. It sparkles blue."
+	desc = "A modified ID card given only to those people who have devoted their lives to the better interests of Saris Industries. It sparkles blue."
 	icon = 'custom_items.dmi'
 	icon_state = "lifetimeid"
 
@@ -587,7 +587,7 @@ hi
 
 /obj/item/clothing/under/fluff/jane_sidsuit
 	name = "NT-SID jumpsuit"
-	desc = "A NanoTrasen Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
+	desc = "A Saris Industries Synthetic Intelligence Division jumpsuit, issued to 'volunteers'. On other people it looks fine, but right here a scientist has noted: on you it looks stupid."
 
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "jane_sid_suit"

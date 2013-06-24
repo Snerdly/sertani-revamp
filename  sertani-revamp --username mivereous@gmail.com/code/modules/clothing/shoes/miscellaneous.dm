@@ -54,6 +54,11 @@
 	name = "sandals"
 	icon_state = "wizard"
 
+/obj/item/clothing/shoes/demon_tath
+	desc = "A pair of rather plain, black shoes."
+	name = "black shoes"
+	icon_state = "black"
+
 /obj/item/clothing/shoes/sandal/marisa
 	desc = "A pair of magic, black shoes."
 	name = "magic shoes"

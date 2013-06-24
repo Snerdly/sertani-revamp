@@ -122,6 +122,6 @@
 	icon_state = "cargo_cypherkey"
 	channels = list("Supply" = 1)
 /obj/item/device/encryptionkey/ert
-	name = "NanoTrasen ERT Radio Encryption Key"
+	name = "Saris Industries ERT Radio Encryption Key"
 	desc = "An encyption key for a radio headset.  Contains cypherkeys."
 	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Mining" = 1, "Cargo" = 1,)
