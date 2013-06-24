@@ -1,6 +1,6 @@
 #For multiple objects on a single character, put a comma and a space between the objects
 #Example format --->   atomicdog92: Seth Sealis: /obj/item/clothing/suit/det_suit/fluff/leatherjack
-mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra, /obj/item/weapon/pickaxe/uraniumpickaxe, /obj/item/weapon/gun/energy/meteorgun/pen, /obj/item/weapon/gun/energy/meteorgun/pen
+mivereous: Siraa Mazra: /obj/item/clothing/glasses/meson/siraamazra, /obj/item/weapon/pickaxe/uraniumpickaxe, /obj/item/weapon/gun/energy/meteorgun/pen
 mivereous: Kiriel Seto: /obj/item/weapon/implanter/loyalty
 mivereous: Valerie Siskin: /obj/item/weapon/dnainjector/telemut, /obj/item/weapon/circuitboard/mecha_control, /obj/item/weapon/circuitboard/mecha/ripley/peripherals, /obj/item/weapon/circuitboard/mecha/ripley/main, /obj/item/toy/prize/phazon
 nash2525: Rachel Carter: /obj/item/weapon/storage/secure/briefcase/rachel_carter
@@ -10,7 +10,7 @@ serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/wea
 serveris6: Snow Seto: /obj/item/fluff/snow_seto
 serveris6: Aryus Teso: /obj/item/clothing/suit/armor/hos/jensen/aryus, /obj/item/weapon/card/id/syrus_id
 jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
-sgtnorth: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan
+sgtnorth: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan, /obj/item/clothing/shoes/demon_tath
 mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
 mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
 arur: Adriana Teso: /obj/item/clothing/suit/storage/labcoat/seto/ana,  /obj/item/clothing/tie/fluff/adriana_locket

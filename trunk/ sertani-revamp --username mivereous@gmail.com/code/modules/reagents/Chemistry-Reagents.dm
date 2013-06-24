@@ -3323,7 +3323,7 @@ datum
 			grog
 				name = "Grog"
 				id = "grog"
-				description = "Watered down rum, NanoTrasen approves!"
+				description = "Watered down rum, Saris Industries approves!"
 				reagent_state = LIQUID
 				color = "#664300" // rgb: 102, 67, 0
 
@@ -3351,7 +3351,7 @@ datum
 			acid_spit
 				name = "Acid Spit"
 				id = "acidspit"
-				description = "A drink by NanoTrasen. Made from live aliens."
+				description = "A drink by Saris Industries. Made from live aliens."
 				reagent_state = LIQUID
 				color = "#365000" // rgb: 54, 80, 0
 

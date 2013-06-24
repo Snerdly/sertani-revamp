@@ -270,7 +270,7 @@ proc/move_mining_shuttle()
 
 	uraniumpickaxe					//Another brilliant idea by the Mazra Estates. Should've coded it to give you steady radiation damage...
 		name = "uranium pickaxe"
-		icon_state = "uranium_pickaxe"
+		icon_state = "upickaxe"
 		item_state = "uranium_pickaxe"
 		force = 10
 		digspeed = 5

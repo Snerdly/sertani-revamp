@@ -62,6 +62,15 @@
 	return
 
 
+/obj/item/weapon/implanter/tracking
+	name = "implanter-tracking"
+
+/obj/item/weapon/implanter/tracking/New()
+	src.imp = new /obj/item/weapon/implant/tracking( src )
+	..()
+	update()
+	return
+
 
 /obj/item/weapon/implanter/explosive
 	name = "implanter (E)"

@@ -198,11 +198,11 @@
 			hands.icon_state = "security"
 			var/icontype
 			if (src.name == "Lucy" && src.ckey == "rowtree") icontype = ("Lucy")
-			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Red Knight", "Black Knight", "Bloodhound")
+			else icontype = input("Select an icon!", "Robot", null, null) in list("Basic", "Red Knight",/* "Black Knight",*/ "Bloodhound")
 			switch(icontype)
 				if("Basic")	icon_state = "secborg"
 				if("Red Knight")	icon_state = "Security"
-				if("Black Knight")	icon_state = "securityrobot"
+				//if("Black Knight")	icon_state = "securityrobot"
 				if("Lucy")		icon_state = "rowtree-security"
 				else		icon_state = "bloodhound"
 			modtype = "Sec"
@@ -262,7 +262,7 @@
 		changed_name = "[(prefix ? "[prefix] " : "")][braintype]-[num2text(ident)]"
 	real_name = changed_name
 	name = real_name
-	
+
 	// if we've changed our name, we also need to update the display name for our PDA
 	setup_PDA()
 
