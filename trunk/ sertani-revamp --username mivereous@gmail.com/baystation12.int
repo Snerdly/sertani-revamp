@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\modules\clothing\glasses\hud.dm;code\modules\clothing\glasses\rian.dm;code\modules\clothing\gloves\miscellaneous.dm;icons\mob\hands.dmi;code\modules\clothing\glasses\glasses.dm
+WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\modules\clothing\glasses\hud.dm;code\modules\clothing\gloves\miscellaneous.dm;icons\mob\hands.dmi;code\modules\clothing\glasses\glasses.dm;icons\mob\uniform.dmi;icons\obj\clothing\uniforms.dmi
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\game code\game\gamemodes code\game\gamemodes\events code\game\machinery code\game\machinery\computer code\game\mecha code\game\mecha\medical code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\implants code\modules code\modules\clothing code\modules\clothing\glasses code\modules\clothing\gloves icons icons\mob maps 
-FILE: code\modules\clothing\glasses\glasses.dm
+DIR: code code\game\gamemodes code\game\gamemodes\events code\game\machinery code\game\machinery\computer code\game\mecha code\game\mecha\medical code\game\objects code\game\objects\items code\modules code\modules\clothing code\modules\clothing\glasses code\modules\clothing\gloves icons icons\mob icons\obj icons\obj\clothing maps 
+FILE: icons\mob\uniform.dmi
 LAST_COMPILE_TIME: 1372107555
 AUTO_FILE_DIR: ON
 */
