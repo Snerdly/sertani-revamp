@@ -52,6 +52,8 @@
 		"/obj/item/weapon/cable_coil",
 		"/obj/item/device/t_scanner",
 		"/obj/item/device/analyzer",
+		"/obj/item/weapon/storage/fancy/cigarettes",
+		"/obj/item/weapon/lighter",
 		"/obj/item/taperoll/engineering")
 
 
@@ -98,6 +100,8 @@
 		"/obj/item/weapon/storage/pill_bottle",
 		"/obj/item/stack/medical",
 		"/obj/item/device/flashlight/pen",
+		"/obj/item/weapon/storage/fancy/cigarettes",
+		"/obj/item/weapon/lighter",
 		"/obj/item/clothing/mask/surgical",
 		"/obj/item/clothing/gloves/latex",
         "/obj/item/weapon/reagent_containers/hypospray/autoinjector"
@@ -132,7 +136,11 @@
 		"/obj/item/device/radio/headset",
 		"/obj/item/weapon/melee/baton",
 		"/obj/item/taperoll/police",
-		"/obj/item/weapon/gun/energy/taser"
+		"/obj/item/weapon/gun/energy/taser",
+		"/obj/item/weapon/melee/telebaton",
+		"/obj/item/weapon/storage/fancy/cigarettes",
+		"/obj/item/weapon/lighter",
+		"/obj/item/clothing/mask/gas"
 		)
 
 /obj/item/weapon/storage/belt/soulstone

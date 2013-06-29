@@ -23,5 +23,7 @@
 		"/obj/item/weapon/clipboard",
 		"/obj/item/weapon/anodevice",
 		"/obj/item/clothing/glasses",
+		"/obj/item/weapon/storage/fancy/cigarettes",
+		"/obj/item/weapon/lighter",
 		"/obj/item/weapon/wrench",
 		"/obj/item/weapon/anobattery")

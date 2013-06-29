@@ -14,6 +14,15 @@
 	icon_state = "bluetie"
 	color = "bluetie"
 
+/obj/item/clothing/tie/white
+	name = "white tie"
+	icon_state = "whitetie"
+	color = "whitetie"
+
+/obj/item/clothing/tie/purple
+	name = "purple tie"
+
+
 /obj/item/clothing/tie/red
 	name = "red tie"
 	icon_state = "redtie"

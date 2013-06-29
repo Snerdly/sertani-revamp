@@ -156,6 +156,14 @@ hi
 	icon_on = "blackzippoon"
 	icon_off = "blackzippo"
 
+/obj/item/weapon/lighter/zippo/fluff/brycon_ha_1 //serveris6: Brycon Ha
+	name = "dark zippo"
+	desc = "A pitch black matte lighter. At first glance, it doesn't seem to reflect any light. Weird."
+	icon = 'custom_items.dmi'
+	icon_state = "darkzippo"
+	icon_on = "darkzippoon"
+	icon_off = "darkzippo"
+
 /obj/item/weapon/lighter/zippo/fluff/fay_sullivan_1 //furohman: Fay Sullivan
 	name = "Graduation Lighter"
 	desc = "A silver engraved lighter with 41 on one side and Tharsis University on the other. The lid reads Fay Sullivan, Cybernetic Engineering, 2541"
@@ -583,6 +591,14 @@ hi
 	item_state = "callum_suit"
 	color = "callum_suit"
 
+/obj/item/clothing/under/fluff/mazra_dress
+	name = "elegant dress"
+	desc = "A beautiful neosilk dress, worn by those of high status. This one has the Mazra Estates seal neatly embroidered on the lower hem."
+	icon = 'custom_items.dmi'
+	icon_state = "mazra_dress"
+	item_state = "mazra_dress"
+	color = "mazra_dress"
+
 /////// NT-SID Suit //Zuhayr: Jane Doe
 
 /obj/item/clothing/under/fluff/jane_sidsuit
@@ -757,6 +773,16 @@ hi
 	icon = 'custom_items.dmi'
 	icon_state = "retpoluniform"
 	color = "retpoluniform"
+
+/obj/item/clothing/under/det/fluff/darksuit
+	name = "hard-worn suit"
+	desc = "Someone who wears this means business."
+	icon = 'custom_items.dmi'
+	icon_state = "darksuit"
+	color = "darksuit"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	flags = FPRINT | TABLEPASS
+	siemens_coefficient = 0.9
 
 //////////// Weapons ////////////
 

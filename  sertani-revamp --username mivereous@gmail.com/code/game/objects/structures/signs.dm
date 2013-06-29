@@ -102,6 +102,11 @@
 	desc = "To be Robust is not an action or a way of life, but a mental state. Only those with the force of Will strong enough to act during a crisis, saving friend from foe, are truly Robust. Stay Robust my friends."
 	icon_state = "goldenplaque"
 
+/obj/structure/sign/walkerplaque
+	name = "In Memorium of Captain Walker Alder"
+	desc = "This plaque commmerates the valiant and loyal lifestyle of Captain Alder, a true leader of Sertani Station 6. May all who lead this ship look up to the example, to the legacy that this hero left behind, and hope to one day be as powerful and revered as he still he is today. May you rest in peace, captain."
+	icon_state = "walkerplaque"
+
 /obj/structure/sign/kiddieplaque
 	name = "AI developers plaque"
 	desc = "Next to the extremely long list of names and job titles, there is a drawing of a little child. The child appears to be retarded. Beneath the image, someone has scratched the word \"PACKETS\""

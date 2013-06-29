@@ -114,6 +114,10 @@ obj/structure/sign/poster/New(var/serial)
 		if(10)
 			name += " - Hacking Guide"
 			desc += " This poster details the internal workings of the common Saris Industries airlock."
+
+		if(11)
+			name += " -WANTED"
+			desc += " This poster shows a man in his mid twenties, with long, bleached white hair, and dark blue eyes. Above the picture, WANTED can be seen in bold print, while below it, are a long list of crimes, featuring mostly mass murder and terrorism."
 		else
 			name = "This shit just bugged. Report it to Agouri - polyxenitopalidou@gmail.com"
 			desc = "Why are you still here?"
@@ -189,3 +193,11 @@ obj/structure/sign/poster/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	else
 		D.roll_and_drop(temp_loc)
 	return
+
+obj/structure/sign/poster/wanted/syrusseto
+	name = "poster"
+	desc = "A large piece of space-resistant printed paper. "
+	icon = 'icons/obj/contraband.dmi'
+	icon_state = "poster11"
+	anchored = 1
+	serial_number = 11

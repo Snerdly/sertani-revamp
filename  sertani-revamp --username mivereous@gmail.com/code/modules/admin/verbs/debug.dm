@@ -554,7 +554,8 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 		"emergency rescue team",
 		"nanotrasen representative",
 		"nanotrasen officer",
-		"nanotrasen captain"
+		"nanotrasen captain",
+		"serveris"
 		)
 	var/dresscode = input("Select dress for [M]", "Robust quick dress shop") as null|anything in dresspacks
 	if (isnull(dresscode))
@@ -892,6 +893,18 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			M.equip_to_slot_or_del(new /obj/item/weapon/staff(M), slot_l_hand)
 			M.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack(M), slot_back)
 			M.equip_to_slot_or_del(new /obj/item/weapon/storage/box(M), slot_in_backpack)
+		if("serveris")
+			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/laceup(M), slot_shoes)
+			M.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(M), slot_ears)
+			M.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/internalaffairs(M), slot_wear_suit)
+			M.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel(M), slot_back)
+			M.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/detective(M), slot_belt)
+			M.equip_to_slot_or_del(new /obj/item/clothing/under/det/fluff/darksuit(M), slot_w_uniform)
+			M.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/rianhud(M), slot_glasses)
+			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/rian(M), slot_gloves)
+			M.equip_to_slot_or_del(new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(M), slot_r_store)
+			M.equip_to_slot_or_del(new /obj/item/weapon/pen/fluff/fountainpen(M), slot_l_store)
+
 		if("soviet admiral")
 			M.equip_to_slot_or_del(new /obj/item/clothing/head/hgpiratecap(M), slot_head)
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/combat(M), slot_shoes)
