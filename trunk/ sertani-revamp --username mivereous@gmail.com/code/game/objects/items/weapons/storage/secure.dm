@@ -155,7 +155,6 @@
 	New()
 		..()
 		new /obj/item/weapon/paper(src)
-		new /obj/item/weapon/pen(src)
 
 	attack_hand(mob/user as mob)
 		if ((src.loc == user) && (src.locked == 1))
@@ -186,6 +185,36 @@
 		new /obj/item/weapon/handcuffs/kinky(src)
 		new /obj/item/clothing/mask/collar(src)
 		new /obj/item/weapon/legcuffs(src)
+
+	attack_hand(mob/user as mob)
+		if ((src.loc == user) && (src.locked == 1))
+			usr << "\red [src] is locked and cannot be opened!"
+		else if ((src.loc == user) && (!src.locked))
+			playsound(src.loc, "rustle", 50, 1, -5)
+			if (user.s_active)
+				user.s_active.close(user) //Close and re-open
+			src.show_to(user)
+		else
+			..()
+			for(var/mob/M in range(1))
+				if (M.s_active == src)
+					src.close(M)
+			src.orient2hud(user)
+		src.add_fingerprint(user)
+		return
+/obj/item/weapon/storage/secure/briefcase/brycon_ha
+	name = "secure briefcase"
+	icon_state = "secure"
+	item_state = "sec-case"
+	desc = "An elegant, steel briefcase with an electronic locking mechanism. On the side is an engraving that reads 'Bryston Hadjopoulos.'"
+
+	New()
+		..()
+		new /obj/item/weapon/pen/fluff/fountainpen(src)
+		new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(src)
+		new /obj/item/clothing/glasses/sunglasses/sechud/rianhud(src)
+		new /obj/item/clothing/gloves/rian(src)
+		new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(src)
 
 	attack_hand(mob/user as mob)
 		if ((src.loc == user) && (src.locked == 1))
