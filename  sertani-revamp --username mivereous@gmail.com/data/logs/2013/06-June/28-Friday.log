@@ -1,0 +1,89 @@
+
+
+Starting up. 11:58.14
+---------------------
+Adding game mode AutoTraitor (Extend-A-Traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode blob (blob) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode sandbox (sandbox) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Unknown game mode probability configuration definition: restructuring.
+Unknown game mode probability configuration definition: monkey.
+Unknown game mode probability configuration definition: extend-a-traitormongous.
+Unknown game mode probability configuration definition: epidemic.
+Unknown game mode probability configuration definition: meme.
+Unknown setting in configuration: 'run_delay'
+Unknown setting in configuration: 'walk_delay'
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[11:58:14]ADMIN: Loading Banlistjob
+[11:58:14]ADMIN: Loading jobban_rank
+[11:58:14]ADMIN: jobban_keylist was empty
+[11:58:14]ADMIN: Updating jobbanfile!
+[11:58:14]ADMIN: Loading Banlist
+[11:59:16]ACCESS: Login: Serveris6/(Serveris6) from 127.0.0.1-3795812683 || BYOND v499
+[12:00:12]ADMIN: Serveris6 has started the game.
+[12:00:13]ACCESS: Logout: *no key*/(Serveris6)
+[12:00:13]ACCESS: Login: Serveris6/(Bryceton Hadjopoulos) from 127.0.0.1-3795812683 || BYOND v499
+[12:00:17]DEBUG: Next event in 27.346 minutes.
+[12:00:48]ADMIN: Serveris6/(Bryceton Hadjopoulos) changed the equipment of Serveris6/(Bryceton Hadjopoulos) to serveris.
+[12:01:24]SAY: Runtime/ : Purr!
+[12:01:26]SAY: Commander Clucky/ : BWAAAAARK BWAK BWAK BWAK!
+[12:01:44]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/gloves/rian at (106,157,1)
+[12:01:49]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/glasses/sunglasses/rianhud at (106,157,1)
+[12:02:09]SAY: mouse/ : Squeek?
+[12:02:19]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1 at (106,157,1)
+[12:03:28]SAY: Commander Clucky/ : Bwaak bwak.
+[12:04:37]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/tie/blue at (50,138,1)
+[12:04:44]SAY: mouse/ : Squeek!
+[12:04:50]SAY: mouse/ : Squeek!
+[12:05:25]ACCESS: Logout: Serveris6/(Bryceton Hadjopoulos)
+
+
+Starting up. 12:49.28
+---------------------
+Adding game mode AutoTraitor (Extend-A-Traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode blob (blob) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode sandbox (sandbox) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Unknown game mode probability configuration definition: restructuring.
+Unknown game mode probability configuration definition: monkey.
+Unknown game mode probability configuration definition: extend-a-traitormongous.
+Unknown game mode probability configuration definition: epidemic.
+Unknown game mode probability configuration definition: meme.
+Unknown setting in configuration: 'run_delay'
+Unknown setting in configuration: 'walk_delay'
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[12:49:28]ADMIN: Loading Banlistjob
+[12:49:28]ADMIN: Loading jobban_rank
+[12:49:28]ADMIN: jobban_keylist was empty
+[12:49:28]ADMIN: Updating jobbanfile!
+[12:49:28]ADMIN: Loading Banlist
+[12:50:46]ACCESS: Login: Serveris6/(Serveris6) from 127.0.0.1-3795812683 || BYOND v499
+[12:55:17]ADMIN: Serveris6 has started the game.
+[12:55:18]ACCESS: Logout: *no key*/(Serveris6)
+[12:55:18]ACCESS: Login: Serveris6/(Bryceton Hadjopoulos) from 127.0.0.1-3795812683 || BYOND v499
+[12:55:22]DEBUG: Next event in 27.162 minutes.
+[12:55:47]ADMIN: Serveris6/(Bryceton Hadjopoulos) changed the equipment of Serveris6/(Bryceton Hadjopoulos) to serveris.
+[12:55:49]SAY: Tom/ : SQUEEK!
+[12:56:52]ACCESS: Logout: Serveris6/(Bryceton Hadjopoulos)

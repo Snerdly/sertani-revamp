@@ -1,10 +1,8 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\game\objects\items\weapons\storage\belt.dm;code\game\objects\items\weapons\storage\fancy.dm;code\game\objects\items\weapons\cigs_lighters.dm
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\game code\game\gamemodes code\game\gamemodes\events code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage code\modules code\modules\clothing\under code\modules\customitems code\modules\research code\modules\research\xenoarchaeology code\modules\research\xenoarchaeology\tools icons icons\mob icons\obj icons\obj\clothing maps 
-FILE: code\game\objects\items\weapons\storage\belt.dm
+DIR: code code\game code\game\gamemodes code\game\gamemodes\events code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage code\modules code\modules\clothing\under code\modules\customitems 
 LAST_COMPILE_TIME: 1372543739
 AUTO_FILE_DIR: ON
 */
