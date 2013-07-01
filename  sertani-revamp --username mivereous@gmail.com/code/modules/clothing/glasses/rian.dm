@@ -11,7 +11,7 @@
 
 
 /obj/item/clothing/glasses/sunglasses/sechud/rianhud
-	name = "RIANsunglasses"
+	name = "RIAN sunglasses"
 	desc = "A set of sleek looking sunglasses, with 'RIAN' stenciled in neat, silvery lettering along the arm. They don't look all that simple."
 	icon_state = "rianhud"
 	item_state = "rianhud"
