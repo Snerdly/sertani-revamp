@@ -81,6 +81,11 @@
 	icon_state = "bronze"
 	color = "bronze"
 
+/obj/item/clothing/tie/medal/grasscrown
+	name = "grass crown"
+	desc = "A very prestigious honor. Only awareded to men who either single handedly or almost single handedly have saved an entire army."
+	icon_state = "grass_crown"
+
 /obj/item/clothing/tie/medal/conduct
 	name = "distinguished conduct medal"
 	desc = "A bronze medal awarded for distinguished conduct. Whilst a great honor, this is most basic award given by Saris Industries. It is often awarded by a captain to a member of his crew."

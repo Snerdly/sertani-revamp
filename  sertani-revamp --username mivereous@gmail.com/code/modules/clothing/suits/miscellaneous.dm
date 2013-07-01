@@ -349,3 +349,27 @@
 	icon_state = "swim_red"
 	color = "swim_red"
 	siemens_coefficient = 1
+
+//Syrus' Coat
+/obj/item/clothing/suit/Syrus
+	name = "black coat"
+	desc = "A black coat with a white trim. Inside the collar the words 'Pour mon amour' are stitched."
+	icon_state = "syruscoat"
+	item_state = "syruscoat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	flags_inv = HIDEJUMPSUIT
+	siemens_coefficient = 0.6
+
+
+//Alim's coat
+obj/item/clothing/suit/storage/principe
+	name = "Alim's coat"
+	desc = "An intimidating black coat that is obviously been well worn. Someone who wears this means serious business."
+	icon_state = "alimcoat"
+	item_state = "alimcoat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	allowed = list(/obj/item/weapon/tank/emergency_oxygen, /obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/lighter,/obj/item/device/detective_scanner,/obj/item/device/taperecorder)
+	armor = list(melee = 50, bullet = 10, laser = 25, energy = 10, bomb = 0, bio = 0, rad = 0)

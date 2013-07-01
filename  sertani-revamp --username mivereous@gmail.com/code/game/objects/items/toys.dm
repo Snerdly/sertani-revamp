@@ -9,6 +9,8 @@
  *		Crayons
  *		Snap pops
  *		Water flower
+ *		All Terrain Armored Toy
+ *		Mech prizes
  */
 
 
@@ -557,6 +559,13 @@
 	desc = "Mini-Mecha action figure! Collect them all! 11/11."
 	icon_state = "phazonprize"
 
+//ATAT
+
+/obj/item/toy/prize/ATAT
+	name = "All Terrain Armored Toy"
+	desc = "A huge toy that stands almost as tall as a person! It's based off a long forgotten relic of some ancient galactic war."
+	icon_state = "ATAT"
+
 /obj/item/toy/katana
 	name = "replica katana"
 	desc = "Woefully underpowered in D20."
@@ -577,3 +586,4 @@
 	force = 5
 	w_class = 4.0
 	slot_flags = SLOT_BACK
+
