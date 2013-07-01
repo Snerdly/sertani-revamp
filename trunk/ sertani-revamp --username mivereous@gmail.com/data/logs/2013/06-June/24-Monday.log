@@ -1,0 +1,82 @@
+
+
+Starting up. 16:18.30
+---------------------
+Adding game mode AutoTraitor (Extend-A-Traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode blob (blob) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode sandbox (sandbox) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Unknown game mode probability configuration definition: restructuring.
+Unknown game mode probability configuration definition: monkey.
+Unknown game mode probability configuration definition: extend-a-traitormongous.
+Unknown game mode probability configuration definition: epidemic.
+Unknown game mode probability configuration definition: meme.
+Unknown setting in configuration: 'run_delay'
+Unknown setting in configuration: 'walk_delay'
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[16:18:30]ADMIN: Loading Banlistjob
+[16:18:30]ADMIN: Banlistjob is empty.
+[16:18:30]ADMIN: Banlistjob missing base dir.
+[16:18:30]ADMIN: Loading jobban_rank
+[16:18:30]ADMIN: jobban_keylist was empty
+[16:18:30]ADMIN: Updating jobbanfile!
+[16:18:30]ADMIN: Loading Banlist
+[16:18:30]ADMIN: Banlist is empty.
+[16:18:30]ADMIN: Banlist missing base dir.
+[16:19:13]ACCESS: Login: Serveris6/(Serveris6) from 127.0.0.1-3795812683 || BYOND v499
+[16:22:31]DEBUG: Next event in 24.154 minutes.
+[16:22:38]ACCESS: Logout: *no key*/(Serveris6)
+[16:22:38]ACCESS: Login: Serveris6/(Bryceton Hadjopoulos) from 127.0.0.1-3795812683 || BYOND v499
+[16:23:24]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/glasses/sunglasses/rianhud at (70,141,1)
+[16:24:30]ACCESS: Logout: Serveris6/(Bryceton Hadjopoulos)
+
+
+Starting up. 17:03.22
+---------------------
+Adding game mode AutoTraitor (Extend-A-Traitormongous) to configuration.
+Adding game mode traitor+changeling (traitorchan) to configuration.
+Adding game mode traitor (traitor) to configuration.
+Adding game mode blob (blob) to configuration.
+Adding game mode changeling (changeling) to configuration.
+Adding game mode cult (cult) to configuration.
+Adding game mode extended (extended) to configuration.
+Adding game mode AI malfunction (malfunction) to configuration.
+Adding game mode meteor (meteor) to configuration.
+Adding game mode nuclear emergency (nuclear) to configuration.
+Adding game mode rp-revolution (rp-revolution) to configuration.
+Adding game mode revolution (revolution) to configuration.
+Adding game mode sandbox (sandbox) to configuration.
+Adding game mode wizard (wizard) to configuration.
+Unknown game mode probability configuration definition: restructuring.
+Unknown game mode probability configuration definition: monkey.
+Unknown game mode probability configuration definition: extend-a-traitormongous.
+Unknown game mode probability configuration definition: epidemic.
+Unknown game mode probability configuration definition: meme.
+Unknown setting in configuration: 'run_delay'
+Unknown setting in configuration: 'walk_delay'
+Unknown setting in configuration: 'metroid_delay'
+Saved mode is 'extended'
+[17:03:22]ADMIN: Loading Banlistjob
+[17:03:22]ADMIN: Loading jobban_rank
+[17:03:22]ADMIN: jobban_keylist was empty
+[17:03:22]ADMIN: Updating jobbanfile!
+[17:03:22]ADMIN: Loading Banlist
+[17:03:43]ACCESS: Login: Serveris6/(Serveris6) from 127.0.0.1-3795812683 || BYOND v499
+[17:04:27]ADMIN: Serveris6 has started the game.
+[17:04:28]ACCESS: Logout: *no key*/(Serveris6)
+[17:04:28]ACCESS: Login: Serveris6/(Bryceton Hadjopoulos) from 127.0.0.1-3795812683 || BYOND v499
+[17:04:31]DEBUG: Next event in 19.82 minutes.
+[17:04:55]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/glasses/sunglasses/rianhud at (106,158,1)
+[17:05:10]ADMIN: Serveris6/(Bryceton Hadjopoulos) spawned /obj/item/clothing/gloves/rian at (106,158,1)
+[17:06:00]ACCESS: Logout: Serveris6/(Bryceton Hadjopoulos)
