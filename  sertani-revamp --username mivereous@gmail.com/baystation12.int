@@ -3,8 +3,7 @@
 MAP_ICON_TYPE: 0
 WINDOW: maps\tgstation.2.1.0.0.1.dmm
 LAST_COMPILE_VERSION: 498.1163
-UPDATE_OBJ_TREE: ON
-DIR: code code\game code\game\objects code\game\objects\items code\modules\clothing\glasses icons icons\mob icons\obj icons\obj\clothing maps 
+DIR: code code\modules code\modules\clothing code\modules\clothing\glasses code\modules\clothing\suits code\modules\clothing\under code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly icons icons\mob 
 FILE: maps\tgstation.2.1.0.0.1.dmm
 LAST_COMPILE_TIME: 1372711394
 AUTO_FILE_DIR: ON
