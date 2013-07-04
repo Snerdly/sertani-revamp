@@ -17,6 +17,13 @@
 	color = "captain"
 	flags = FPRINT | TABLEPASS
 
+/obj/item/clothing/under/rank/command //This is also not civillian but two defines don't justify a .dm
+	desc = "It's a blue and black jumpsuit with some gold markings denoting the wearer a member of the command staff."
+	name = "command jumpsuit"
+	icon_state = "commandalt"
+	item_state = "commandalt"
+	color = "commandalt"
+	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/cargo
 	name = "quartermaster's jumpsuit"
@@ -171,3 +178,10 @@
 	icon_state = "miner"
 	item_state = "miner"
 	color = "miner"
+
+/obj/item/clothing/under/rank/mineralt
+	desc = "A black and green jumpsuit that is the standard Mazra mining jumpsuit."
+	name = "miner's jumpsuit"
+	icon_state = "mineralt"
+	item_state = "mineralt"
+	color = "mineralt"

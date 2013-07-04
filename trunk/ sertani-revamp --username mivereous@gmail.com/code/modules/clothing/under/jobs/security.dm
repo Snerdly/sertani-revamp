@@ -49,6 +49,16 @@
 	flags = FPRINT | TABLEPASS
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/under/rank/security3
+	name = "alternate security jumpsuit"
+	desc = "It's made of a slightly sturdier material, to allow for robust protection."
+	icon_state = "secalt"
+	item_state = "secalt"
+	color = "secalt"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	flags = FPRINT | TABLEPASS
+	siemens_coefficient = 0.9
+
 /obj/item/clothing/under/rank/protector
 	name = "protector's attire"
 	desc = "A security officer's uniform, slightly modified and redesigned. It designates the wearer as the station's elite bodyguard."

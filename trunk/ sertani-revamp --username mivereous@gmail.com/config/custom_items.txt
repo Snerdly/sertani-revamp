@@ -14,6 +14,6 @@ sgtnorth: Nathan Tath: /obj/item/clothing/suit/storage/labcoat/seto/nathan, /obj
 mht03110: Jake Green: /obj/item/weapon/gun/projectile/detective/liberty, /obj/item/weapon/paper/carlpoem
 mht03110: Samantha Clark: /obj/item/weapon/paper/carlpoem
 arur: Sophia Decius: /obj/item/clothing/head/kitty,  /obj/item/clothing/tie/fluff/adriana_locket
+arur: Alim Nassar: obj/item/clothing/suit/storage/principe, /obj/item/clothing/tie/medal/grasscrown
 bar27262: Adolf Wilhelm: /obj/item/clothing/under/fluff/adolfwehrmacht
 nalarac: Ann Green: /obj/item/clothing/gloves/nal_gloves
-arur: Alim Nassar: obj/item/clothing/suit/storage/principe, /obj/item/clothing/tie/medal/grasscrown

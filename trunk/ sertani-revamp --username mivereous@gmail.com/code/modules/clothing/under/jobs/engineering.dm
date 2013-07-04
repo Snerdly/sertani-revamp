@@ -25,6 +25,15 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 10)
 	flags = FPRINT | TABLEPASS
 
+/obj/item/clothing/under/rank/engineeralt
+	desc = "It's an orange and black jumpsuit worn by engineers. It has minor radiation shielding."
+	name = "engineering jumpsuit"
+	icon_state = "engineeralt"
+	item_state = "engineeralt"
+	color = "engineeralt"
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 10)
+	flags = FPRINT | TABLEPASS
+
 /obj/item/clothing/under/rank/roboticist
 	desc = "It's a slimming black with reinforced seams; great for industrial work."
 	name = "roboticist's jumpsuit"
