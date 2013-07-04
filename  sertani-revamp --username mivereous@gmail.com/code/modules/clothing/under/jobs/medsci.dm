@@ -20,6 +20,15 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 10, bio = 0, rad = 0)
 	flags = FPRINT | TABLEPASS
 
+/obj/item/clothing/under/rank/scientistalt
+	desc = "It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer as a member of Research and Development."
+	name = "science jumpsuit"
+	icon_state = "sciencealt"
+	item_state = "sciencealt"
+	color = "sciencealt"
+	permeability_coefficient = 0.50
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 10, bio = 0, rad = 0)
+	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/chemist
 	desc = "It's made of a special fiber that gives special protection against biohazards. It has a chemist rank stripe on it."
@@ -117,6 +126,16 @@
 	desc = "It's made of a special fiber that provides minor protection against biohazards. This one is in deep purple."
 	icon_state = "scrubspurple"
 	color = "scrubspurple"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/rank/medical
+	desc = "It's made of a special fiber that provides minor protection against biohazards. It has a cross on the chest and back denoting that the wearer is trained medical personnel."
+	name = "medical jumpsuit"
+	icon_state = "medicalalt"
+	item_state = "medicalalt"
+	color = "medicalalt"
+	permeability_coefficient = 0.50
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	flags = FPRINT | TABLEPASS
 
 

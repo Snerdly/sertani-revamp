@@ -3,9 +3,10 @@
 MAP_ICON_TYPE: 0
 WINDOW: maps\tgstation.2.1.0.0.1.dmm
 LAST_COMPILE_VERSION: 498.1163
-DIR: code code\modules code\modules\clothing code\modules\clothing\glasses code\modules\clothing\suits code\modules\clothing\under code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly icons icons\mob 
+UPDATE_OBJ_TREE: ON
+DIR: code code\game code\game\objects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\storage icons icons\obj icons\obj\clothing maps 
 FILE: maps\tgstation.2.1.0.0.1.dmm
-LAST_COMPILE_TIME: 1372711394
+LAST_COMPILE_TIME: 1372895084
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

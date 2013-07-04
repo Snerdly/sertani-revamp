@@ -80,6 +80,7 @@
 	name = "badass belt"
 	desc = "Nobody fucks with someone wearing this."
 	icon_state = "badassbelt"
+	item_state = "security"
 
 /obj/item/weapon/storage/belt/medical
 	name = "medical belt"
