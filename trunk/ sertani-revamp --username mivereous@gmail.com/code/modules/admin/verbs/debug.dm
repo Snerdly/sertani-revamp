@@ -900,7 +900,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			M.equip_to_slot_or_del(new /obj/item/weapon/storage/backpack/satchel(M), slot_back)
 			M.equip_to_slot_or_del(new /obj/item/weapon/gun/projectile/detective(M), slot_belt)
 			M.equip_to_slot_or_del(new /obj/item/clothing/under/det/fluff/darksuit(M), slot_w_uniform)
-			M.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/rianhud(M), slot_glasses)
+			M.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/sunglasses/sechud/rianhud(M), slot_glasses)
 			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/rian(M), slot_gloves)
 			M.equip_to_slot_or_del(new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(M), slot_r_store)
 			M.equip_to_slot_or_del(new /obj/item/weapon/pen/fluff/fountainpen(M), slot_l_store)

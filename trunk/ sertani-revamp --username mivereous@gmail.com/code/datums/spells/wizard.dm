@@ -165,6 +165,22 @@
 	summon_type = list(/obj/structure/constructshell)
 
 
+/obj/effect/proc_holder/spell/aoe_turf/conjure/reaper
+	name = "Summon Reaper"
+	desc = "This spell conjures a scythe-like weapon"
+
+	school = "conjuration"
+	charge_max = 1200
+	clothes_req = 0
+	invocation = "Pulse, Eien Hikari."
+	invocation_type = "whisper"
+	summon_amt = 1
+	range = 0
+
+	summon_type = list(/obj/item/weapon/scythe/demon_tath)
+	summon_lifespan = 3000
+
+
 /obj/effect/proc_holder/spell/aoe_turf/conjure/creature
 	name = "Summon Creature Swarm"
 	desc = "This spell tears the fabric of reality, allowing horrific daemons to spill forth"

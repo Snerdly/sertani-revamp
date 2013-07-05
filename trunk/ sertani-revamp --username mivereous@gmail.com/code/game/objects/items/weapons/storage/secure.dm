@@ -212,7 +212,7 @@
 		..()
 		new /obj/item/weapon/pen/fluff/fountainpen(src)
 		new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(src)
-		new /obj/item/clothing/glasses/sunglasses/sechud/rianhud(src)
+		new /obj/item/clothing/glasses/hud/sunglasses/sechud/rianhud(src)
 		new /obj/item/clothing/gloves/rian(src)
 		new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(src)
 

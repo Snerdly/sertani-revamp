@@ -22,7 +22,7 @@
 
 /obj/item/clothing/under/rank/scientistalt
 	desc = "It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer as a member of Research and Development."
-	name = "science jumpsuit"
+	name = "scientist's jumpsuit"
 	icon_state = "sciencealt"
 	item_state = "sciencealt"
 	color = "sciencealt"

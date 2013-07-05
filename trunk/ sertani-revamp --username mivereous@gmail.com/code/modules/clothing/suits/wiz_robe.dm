@@ -5,6 +5,13 @@
 	//Not given any special protective value since the magic robes are full-body protection --NEO
 	siemens_coefficient = 0.8
 
+/obj/item/clothing/head/wizard/demon_tath
+	name = "surgical cap"
+	desc = "A cap surgeons wear during operations. Keeps thier hair from tickling your internal organs. This one is baby blue"
+	icon_state = "surgcap_blue"
+	flags = FPRINT | TABLEPASS | BLOCKHAIR
+	siemens_coefficient = 0.8
+
 /obj/item/clothing/head/wizard/red
 	name = "red wizard hat"
 	desc = "Strange-looking, red, hat-wear that most certainly belongs to a real magic user."
@@ -54,6 +61,34 @@
 	icon_state = "redwizard"
 	item_state = "redwizrobe"
 
+
+/obj/item/clothing/suit/wizrobe/demon_tath
+	name = "SETO Labcoat"
+	desc = "A custom tailored labcoat issued to Saris Exploration Member Nathan Nath, as evidenced by the stiching on the front. Has dark crimson highlights."
+	icon_state = "setocoat_open"
+	item_state = "setocoat"
+	allowed = list(/obj/item/device/analyzer,/obj/item/stack/medical,/obj/item/weapon/dnainjector,/obj/item/weapon/reagent_containers/dropper,/obj/item/weapon/reagent_containers/syringe,/obj/item/weapon/reagent_containers/hypospray,/obj/item/device/healthanalyzer,/obj/item/device/flashlight/pen)
+	flags_inv = ~HIDEJUMPSUIT
+
+	verb/toggle()
+		set name = "Toggle Labcoat Buttons"
+		set category = "Object"
+		set src in usr
+
+		if(!usr.canmove || usr.stat || usr.restrained())
+			return 0
+
+		switch(icon_state)
+			if("setocoat_open")
+				src.icon_state = "setocoat"
+				usr << "You button up the labcoat."
+			if("setocoat")
+				src.icon_state = "setocoat_open"
+				usr << "You unbutton the labcoat."
+			else
+				usr << "You attempt to button-up the velcro on your [src], before promptly realising how retarded you are."
+				return
+		usr.update_inv_wear_suit()	//so our overlays update
 
 /obj/item/clothing/suit/wizrobe/marisa
 	name = "Witch Robe"

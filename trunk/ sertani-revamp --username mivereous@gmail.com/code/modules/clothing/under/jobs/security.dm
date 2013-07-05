@@ -40,7 +40,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security2
-	name = "security officer's uniform"
+	name = "security officer's jumpsuit"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "redshirt2"
 	item_state = "r_suit"
@@ -50,7 +50,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security3
-	name = "alternate security jumpsuit"
+	name = "security officer's jumpsuit"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "secalt"
 	item_state = "secalt"

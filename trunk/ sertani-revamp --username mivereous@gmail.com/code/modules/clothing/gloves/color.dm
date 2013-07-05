@@ -34,6 +34,18 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECITON_TEMPERATURE
 
+/obj/item/clothing/gloves/rian
+	name = "forensic glove"
+	desc = "A single, black glove, made of a very silky smooth and reflective material. It has a network of small sensors and feeds running over the palm, fingers, and fingertips."
+	icon_state = "rianglove"
+	item_state = "rianglove"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECITON_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECITON_TEMPERATURE
+
 /obj/item/clothing/gloves/black
 	desc = "These gloves are fire-resistant."
 	name = "black gloves"
@@ -66,6 +78,13 @@
 	icon_state = "red"
 	item_state = "redgloves"
 	color = "red"
+
+/obj/item/clothing/gloves/fingerless
+	name = "fingerless gloves"
+	desc = "A pair of gloves, minus the fingers."
+	icon_state = "fingerless"
+	item_state = "bgloves"
+	color="brown"
 
 /obj/item/clothing/gloves/rainbow
 	name = "rainbow gloves"

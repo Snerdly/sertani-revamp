@@ -18,33 +18,38 @@
 	origin_tech = "magnets=2;engineering=2"
 	vision_flags = SEE_TURFS
 
-/obj/item/clothing/glasses/meson/siraamazra    //Mivereous's glasses that were a pain in the ass to code.
+/obj/item/clothing/glasses/siraamazra    //Mivereous's glasses that were a pain in the ass to code.
 	name = "Meson Implants"
 	desc = "Specially designed by the Mazra Estates. An optical augmentation that allows the user to conventiently see meson fields through polarized lens. Cool!"
 	item_state = "mazrashades"
 	icon_state = "mazrashades"
+	icon_action_button = "action_meson_implant"
+	vision_flags = SEE_TURFS
+	canremove = 0
+	var/up = 0
 
 	verb/toggle()
 		set name = "Toggle Lens"
 		set category = "Object"
 		set src in usr
 
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return 0
-
-		switch(item_state)
-			if("mazrashades")
+		if(usr.canmove && !usr.stat && !usr.restrained())
+			if(src.up)
+				src.up = !src.up
 				src.item_state = "mazrashades_open"
 				src.icon_state = "mazrashades_closed"
-				vision_flags = ~SEE_TURFS
+				src.flags &= ~HEADCOVERSEYES
+				vision_flags &= ~SEE_TURFS
 				usr << "The lens slide away from your eyes."
-
-			if("mazrashades_open")
+			else
+				src.up = !src.up
 				src.item_state = "mazrashades"
 				src.icon_state = "mazrashades"
-				vision_flags = SEE_TURFS
+				src.flags |= GLASSESCOVERSEYES
+				vision_flags |= SEE_TURFS
 				usr << "With a quiet click, your lens snap into place."
-				return
+
+			usr.update_inv_glasses()
 
 
 /obj/item/clothing/glasses/meson/prescription

@@ -6145,7 +6145,7 @@
 "coi" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/grille,/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
 "coj" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
 "cok" = (/obj/machinery/atmospherics/pipe/vent{tag = "icon-intact (NORTH)"; icon_state = "intact"; dir = 1},/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
-"col" = (/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
+"col" = (/obj/machinery/power/supermatter,/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
 "com" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/simulated/floor/engine/vacuum,/area/engine/engineering)
 "con" = (/obj/machinery/power/emitter{dir = 8},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/turf/simulated/floor/plating,/area/engine/engineering)
 "coo" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0; tag = ""},/obj/machinery/atmospherics/pipe/manifold{color = "blue"; dir = 8; icon_state = "manifold-b-f"; level = 1; name = "pipe manifold"},/turf/simulated/floor/plating,/area/engine/engineering)

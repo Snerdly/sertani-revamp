@@ -45,7 +45,7 @@
 		switch(owner.icon_action_button)
 			if("action_hardhat", "action_welding")
 				usr.update_inv_head()
-			if("action_welding_g")
+			if("action_welding_g", "action_meson_implant")
 				usr.update_inv_glasses()
 			if("action_jetpack")
 				usr.update_inv_back()
@@ -572,7 +572,7 @@
 		return
 	else
 		if(alert(src,"You sure you want to sleep for a while?","Sleep","Yes","No") == "Yes")
-			usr.sleeping = 20 //Short nap
+			usr.sleeping = 40 //Short nap
 
 /mob/living/verb/lay_down()
 	set name = "Rest"
