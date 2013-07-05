@@ -37,6 +37,14 @@
 	deliveryamt = 5
 	origin_tech = "materials=3;magnets=4;syndicate=4"
 
+/obj/item/weapon/grenade/spawnergrenade/pokemon/umbreon
+	name = "pocket munster carrier"
+	desc = "A carrier device that somehow has some sort of creature shoved into it. Wanna try?"
+	icon_state = "pokeball"
+	spawner_type = /mob/living/simple_animal/hostile/mimic/umbreon
+	deliveryamt = 1
+	origin_tech = "materials=3;magnets=4;bluespace=4"
+
 /obj/item/weapon/grenade/spawnergrenade/spesscarp
 	name = "carp delivery grenade"
 	spawner_type = /mob/living/simple_animal/hostile/carp

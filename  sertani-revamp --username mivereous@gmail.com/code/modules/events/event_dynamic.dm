@@ -48,7 +48,6 @@ var/list/event_last_fired = list()
 	possibleEvents[/datum/event/trivial_news] = 300
 	possibleEvents[/datum/event/mundane_news] = 200
 
-	possibleEvents[/datum/event/pda_spam] = max(min(25, player_list.len) * 4, 200)
 	possibleEvents[/datum/event/money_lotto] = max(min(5, player_list.len), 50)
 	if(account_hack_attempted)
 		possibleEvents[/datum/event/money_hacker] = max(min(25, player_list.len) * 4, 200)
@@ -63,11 +62,11 @@ var/list/event_last_fired = list()
 	possibleEvents[/datum/event/ionstorm] = active_with_role["AI"] * 25 + active_with_role["Cyborg"] * 25 + active_with_role["Engineer"] * 10 + active_with_role["Scientist"] * 5
 	possibleEvents[/datum/event/grid_check] = 25 + 20 * active_with_role["Engineer"]
 	possibleEvents[/datum/event/electrical_storm] = 10 * active_with_role["Janitor"] + 5 * active_with_role["Engineer"]
-	possibleEvents[/datum/event/wallrot] = 30 * active_with_role["Engineer"] + 50 * active_with_role["Botanist"]
+	possibleEvents[/datum/event/wallrot] = 30 * active_with_role["Engineer"] + 50 * active_with_role["Scientist"]
 
 	if(!spacevines_spawned)
 		possibleEvents[/datum/event/spacevine] = 5 + 5 * active_with_role["Engineer"]
-	if(minutes_passed >= 30) // Give engineers time to set up engine
+	if(minutes_passed >= 15) // Give engineers time to set up engine
 		possibleEvents[/datum/event/meteor_wave] = 10 * active_with_role["Engineer"]
 		possibleEvents[/datum/event/meteor_shower] = 40 * active_with_role["Engineer"]
 		possibleEvents[/datum/event/blob] = 20 * active_with_role["Engineer"]
@@ -92,7 +91,7 @@ var/list/event_last_fired = list()
 		var/time_passed = world.time - event_last_fired[event_type]
 		var/full_recharge_after = 60 * 60 * 10 * 3 // 3 hours
 		var/weight_modifier = max(0, (full_recharge_after - time_passed) / 300)
-		
+
 		possibleEvents[event_type] = max(possibleEvents[event_type] - weight_modifier, 0)
 
 	var/picked_event = pickweight(possibleEvents)
@@ -107,7 +106,7 @@ var/list/event_last_fired = list()
 		debug_message += "[V]:[possibleEvents[V]]"
 	debug_message += "|||Picked:[picked_event]"
 	log_debug(debug_message)
-
+	world.log << "## EVENT: [picked_event]"
 	if(!picked_event)
 		return
 

@@ -46,6 +46,40 @@
 	visible_message("\red <b>[src]</b> stops moving!")
 	del(src)
 
+//Umbreon
+/mob/living/simple_animal/hostile/mimic/umbreon
+	name = "pocket munster"
+	desc = "Some sort of weird black and yellow cat."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "Umbreon"
+	icon_living = "Umbreon"
+
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/carpmeat
+	response_help = "touches the"
+	response_disarm = "shifts the"
+	response_harm = "kicks the"
+	speed = 4
+	maxHealth = 150
+	health = 150
+
+	harm_intent_damage = 2
+	melee_damage_lower = 3
+	melee_damage_upper = 5
+	attacktext = list("bashes", "claws", "bites", "tackles")
+	attack_sound = 'sound/weapons/bite.ogg'
+
+	min_oxy = 0
+	max_oxy = 0
+	min_tox = 0
+	max_tox = 0
+	min_co2 = 0
+	max_co2 = 0
+	min_n2 = 0
+	max_n2 = 0
+	minbodytemp = 0
+
+	faction = "Station"
+	move_to_delay = 8
 
 
 //
@@ -70,7 +104,7 @@
 
 /mob/living/simple_animal/hostile/mimic/crate/DestroySurroundings()
 	..()
-	if(prob(90))
+	if(prob(10))
 		icon_state = "[initial(icon_state)]open"
 	else
 		icon_state = initial(icon_state)
