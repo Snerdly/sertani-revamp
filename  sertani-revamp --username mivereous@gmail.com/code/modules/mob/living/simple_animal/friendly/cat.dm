@@ -66,3 +66,23 @@
 	desc = "Its fur has the look and feel of velvet, and it's tail quivers occasionally."
 
 
+//An Umbreon that wont kill me... I hope.
+/mob/living/simple_animal/cat/Umbreon
+	name = "Umbreon"
+	desc = "Some sort of weird black and yellow cat."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "Umbreon"
+	icon_living = "Umbreon"
+	speak = list("Meow!","Umbreon!","Purr!","HSSSSS")
+	speak_emote = list("purrs", "meows")
+	emote_hear = list("meows","mews")
+	emote_see = list("shakes its head", "shivers")
+	speak_chance = 1
+	turns_per_move = 5
+	see_in_dark = 6
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/carpmeat
+	response_help  = "pets the"
+	response_disarm = "gently pushes aside the"
+	response_harm   = "kicks the"
+	attacktext = "tackles"
+	attack_sound = 'sound/weapons/bite.ogg'

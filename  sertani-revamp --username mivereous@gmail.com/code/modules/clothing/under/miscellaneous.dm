@@ -371,3 +371,11 @@
 	item_state = "sundress"
 	color = "sundress"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/guiltycrowndress
+	name = "flowering dress"
+	desc = "Makes you think of a wild flower blossoming."
+	icon_state = "guiltycrown"
+	item_state = "guiltycrown"
+	color = "guiltycrown"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
