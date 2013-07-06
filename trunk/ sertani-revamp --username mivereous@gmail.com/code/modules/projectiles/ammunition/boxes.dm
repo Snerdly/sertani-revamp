@@ -13,6 +13,20 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/c38t
+	name = "speed loader (.38T)"
+	icon_state = "T38"
+	ammo_type = "/obj/item/ammo_casing/c38t"
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c357
+	name = "speed loader (.357)"
+	icon_state = "357s"
+	ammo_type = "/obj/item/ammo_casing/a357"
+	max_ammo = 6
+	multiple_sprites = 1
+
 
 
 /obj/item/ammo_magazine/a418

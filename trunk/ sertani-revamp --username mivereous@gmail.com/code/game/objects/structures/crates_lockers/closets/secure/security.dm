@@ -249,6 +249,8 @@
 		new /obj/item/clothing/suit/armor/det_suit(src)
 		new /obj/item/ammo_magazine/c38(src)
 		new /obj/item/ammo_magazine/c38(src)
+		new /obj/item/ammo_magazine/c38t(src)
+		new /obj/item/ammo_magazine/c38t(src)
 		new /obj/item/weapon/gun/projectile/detective(src)
 		new /obj/item/clothing/tie/holster/armpit(src)
 		return
