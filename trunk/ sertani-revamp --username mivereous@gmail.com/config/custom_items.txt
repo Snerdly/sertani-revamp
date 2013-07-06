@@ -9,6 +9,7 @@ nash2525: Crystal Dellfield: /obj/item/weapon/dnainjector/stuttmut
 serveris6: Syrus Seto: /obj/item/weapon/gun/projectile/m1911/luna, /obj/item/weapon/gun/projectile/m1911/sol
 serveris6: Snow Seto: /obj/item/fluff/snow_seto
 serveris6: Aryus Teso: /obj/item/clothing/suit/armor/hos/jensen/aryus, /obj/item/weapon/card/id/syrus_id
+serveris6: Lazarus Decius: /obj/item/clothing/suit/Syrus
 jason456: Emma Hanson: /obj/item/weapon/storage/belt/utility/full/badass
 sgtnorth: Nathan Tath: /obj/item/clothing/shoes/demon_tath, /obj/item/clothing/suit/wizrobe/demon_tath, /obj/item/clothing/head/wizard/demon_tath
 sgtnorth: Nick Tath: /obj/item/clothing/head/welding/fluff/alice_mccrea_1

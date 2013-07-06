@@ -1,12 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\modules\clothing\glasses\glasses.dm;code\modules\clothing\glasses\hud.dm
-LAST_COMPILE_VERSION: 499.1187
-UPDATE_OBJ_TREE: ON
-DIR: code code\__HELPERS code\controllers code\datums code\game code\game\gamemodes code\game\gamemodes\wizard code\game\jobs code\game\jobs\job code\game\machinery code\game\objects code\game\objects\effects code\game\objects\items code\game\objects\items\weapons code\game\objects\items\weapons\grenades code\game\objects\items\weapons\storage code\modules code\modules\admin code\modules\admin\verbs code\modules\assembly code\modules\awaymissions code\modules\awaymissions\maploader code\modules\clothing code\modules\clothing\glasses code\modules\clothing\gloves code\modules\events code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\human code\modules\mob\living\parasite code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly code\modules\mob\living\simple_animal\hostile icons icons\mob icons\obj icons\obj\clothing 
-FILE: code\modules\clothing\glasses\hud.dm
-LAST_COMPILE_TIME: 1373023600
+WINDOW: icons\mob\mob.dmi;icons\mob\human.dmi;icons\obj\clothing\uniforms.dmi;icons\mob\uniform.dmi
+LAST_COMPILE_VERSION: 498.1163
+DIR: code\game code\game\gamemodes code\game\gamemodes\revolution code\game\gamemodes\wizard code\game\jobs code\game\objects code\game\objects\effects code\modules code\modules\clothing code\modules\clothing\under code\modules\mob code\modules\mob\living code\modules\mob\living\carbon code\modules\mob\living\carbon\monkey icons icons\mob icons\obj icons\obj\clothing maps 
+FILE: icons\mob\uniform.dmi
+LAST_COMPILE_TIME: 1373074297
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

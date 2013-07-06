@@ -353,12 +353,12 @@
 //Syrus' Coat
 /obj/item/clothing/suit/Syrus
 	name = "black coat"
-	desc = "A custom made black coat with a white trim. Inside the collar the words 'Pour mon amour' are stitched."
+	desc = "A custom made black coat that is durable, yet comfortable. Inside the collar the words 'Pour mon amour' are stitched."
 	icon_state = "syruscoat"
 	item_state = "syruscoat"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor = list(melee = 65, bullet = 30, laser = 50, energy = 15, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 65, bullet = 40, laser = 50, energy = 15, bomb = 25, bio = 0, rad = 0)
 	allowed = list(/obj/item/weapon/tank/emergency_oxygen, /obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/lighter,/obj/item/device/detective_scanner,/obj/item/device/taperecorder)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
