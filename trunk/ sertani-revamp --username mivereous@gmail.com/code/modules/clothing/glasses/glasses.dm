@@ -28,28 +28,27 @@
 	canremove = 0
 	var/up = 0
 
-	verb/toggle()
-		set name = "Toggle Lens"
-		set category = "Object"
-		set src in usr
+/obj/item/clothing/glasses/siraamazra/attack_self()
+	toggle()
 
-		if(usr.canmove && !usr.stat && !usr.restrained())
-			if(src.up)
-				src.up = !src.up
-				src.item_state = "mazrashades_open"
-				src.icon_state = "mazrashades_closed"
-				src.flags &= ~HEADCOVERSEYES
-				vision_flags &= ~SEE_TURFS
-				usr << "The lens slide away from your eyes."
-			else
-				src.up = !src.up
-				src.item_state = "mazrashades"
-				src.icon_state = "mazrashades"
-				src.flags |= GLASSESCOVERSEYES
-				vision_flags |= SEE_TURFS
-				usr << "With a quiet click, your lens snap into place."
+/obj/item/clothing/glasses/siraamazra/verb/toggle()
+	set name = "Toggle Lens"
+	set category = "Object"
+	set src in usr
 
-			usr.update_inv_glasses()
+	if(usr.canmove && !usr.stat && !usr.restrained())
+		if(src.up)
+			src.up = !src.up
+			src.item_state = "mazrashades_open"
+			src.icon_state = "mazrashades_closed"
+			usr << "The lens slide away from your eyes."
+		else
+			src.up = !src.up
+			src.item_state = "mazrashades"
+			src.icon_state = "mazrashades"
+			usr << "With a quiet click, your lens snap into place."
+
+		usr.update_inv_glasses()
 
 
 /obj/item/clothing/glasses/meson/prescription

@@ -24,16 +24,48 @@
 	attacktext = "attacks"
 	attack_sound = 'sound/items/bikehorn.ogg'
 
-	min_oxy = 5
+	min_oxy = 0
 	max_oxy = 0
 	min_tox = 0
-	max_tox = 1
+	max_tox = 0
 	min_co2 = 0
-	max_co2 = 5
+	max_co2 = 0
 	min_n2 = 0
 	max_n2 = 0
-	minbodytemp = 270
-	maxbodytemp = 370
-	heat_damage_per_tick = 15	//amount of damage applied if animal's body temperature is higher than maxbodytemp
-	cold_damage_per_tick = 10	//same as heat_damage_per_tick, only if the bodytemperature it's lower than minbodytemp
-	unsuitable_atoms_damage = 10
+	minbodytemp = 0
+
+/mob/living/simple_animal/hostile/retaliate/umbreon
+	name = "pocket munster"
+	desc = "Some sort of weird black and yellow cat."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "Umbreon"
+	icon_living = "Umbreon"
+	icon_gib = "clown_gib"
+	speak_chance = 0
+	turns_per_move = 5
+	response_help = "pets the"
+	response_disarm = "gently pushes aside the"
+	response_harm = "kicks the"
+	speak = list("Bre, bre!", "Umbreon!", "Yoooooooooo.")
+	emote_see = list("stares", "shuffles", "skitters")
+	speak_chance = 1
+	a_intent = "harm"
+	stop_automated_movement_when_pulled = 0
+	maxHealth = 200
+	health = 200
+	speed = 2
+	harm_intent_damage = 2
+	melee_damage_lower = 3
+	melee_damage_upper = 6
+	attacktext = "bites"
+	attack_sound = 'sound/weapons/bite.ogg'
+
+	min_oxy = 0
+	max_oxy = 0
+	min_tox = 0
+	max_tox = 0
+	min_co2 = 0
+	max_co2 = 0
+	min_n2 = 0
+	max_n2 = 0
+	minbodytemp = 0

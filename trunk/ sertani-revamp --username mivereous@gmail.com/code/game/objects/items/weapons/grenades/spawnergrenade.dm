@@ -41,7 +41,7 @@
 	name = "pocket munster carrier"
 	desc = "A carrier device that somehow has some sort of creature shoved into it. Wanna try?"
 	icon_state = "pokeball"
-	spawner_type = /mob/living/simple_animal/hostile/mimic/umbreon
+	spawner_type = /mob/living/simple_animal/hostile/retaliate/umbreon
 	deliveryamt = 1
 	origin_tech = "materials=3;magnets=4;bluespace=4"
 
