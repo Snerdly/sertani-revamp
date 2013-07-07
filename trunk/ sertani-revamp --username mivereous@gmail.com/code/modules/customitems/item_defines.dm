@@ -98,7 +98,7 @@ hi
 
 /obj/item/weapon/pen/fluff/fountainpen //paththegreat: Eli Stevens
 	name = "Engraved Fountain Pen"
-	desc = "An expensive looking pen with the initials E.S. engraved into the side."
+	desc = "An expensive looking pen."
 	icon = 'custom_items.dmi'
 	icon_state = "fountainpen"
 
@@ -108,6 +108,17 @@ hi
 	icon_state = "victor_kaminsky_1"
 
 /obj/item/fluff/victor_kaminsky_1/attack_self(mob/user as mob)
+	for(var/mob/O in viewers(user, null))
+		O.show_message(text("[] shows you: \icon[] [].", user, src, src.name), 1)
+	src.add_fingerprint(user)
+
+/obj/item/fluff/brycon_ha_2
+	name = "Mazra Estates Security Badge"
+	desc = "A detective's badge, made from gold, and showing the emblem of Mazra Estates rather than that of Saris Industries. Badge number is R239."
+	icon_state = "brycon_ha_1"
+	slot_flags = SLOT_BELT
+
+/obj/item/fluff/brycon_ha_2/attack_self(mob/user as mob)
 	for(var/mob/O in viewers(user, null))
 		O.show_message(text("[] shows you: \icon[] [].", user, src, src.name), 1)
 	src.add_fingerprint(user)
@@ -520,6 +531,15 @@ hi
 	icon_state = "leatherjack"
 	item_state = "leatherjack"
 	color = "leatherjack"
+
+/obj/item/clothing/suit/storage/forensics/fluff/mazratech //serveris6: Bryston Hadjopoulos
+	name = "Mazra Estates forensic jacket"
+	desc = "A black forensics technician jacket, with a green side-stripe. The Mazra Estates emblem is embroderied on the breast."
+	icon = 'custom_items.dmi'
+	icon_state = "forensics_mazra"
+	item_state = "forensics_mazra"
+	color = "forensics_mazra"
+
 
 /obj/item/clothing/suit/storage/labcoat/fluff/burnt //Jamini: Edwin Atweeke
 	name = "burnt labcoat"

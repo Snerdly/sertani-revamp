@@ -51,3 +51,9 @@
 
 /obj/item/projectile/bullet/a762
 	damage = 25
+
+/obj/item/projectile/bullet/experimental
+	name = "chloranium bullet"
+	drowsy = 20
+	agony = 10
+	eyeblur = 5
