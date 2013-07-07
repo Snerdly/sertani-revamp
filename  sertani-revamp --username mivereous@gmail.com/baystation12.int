@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;icons\mob\suit.dmi;code\modules\admin\admin_verbs.dm;baystation12.dme
+WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\hub.dm
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\game\objects\effects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\PDA code\game\objects\structures code\modules code\modules\admin maps 
-FILE: code\modules\admin\admin_verbs.dm
-LAST_COMPILE_TIME: 1373179093
+DIR: code code\game\objects\effects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\PDA code\game\objects\structures maps sound 
+FILE: code\hub.dm
+LAST_COMPILE_TIME: 1373181107
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
