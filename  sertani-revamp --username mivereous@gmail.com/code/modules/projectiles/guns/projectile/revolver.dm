@@ -174,3 +174,12 @@
 	caliber = "38"
 	origin_tech = "combat=2;materials=2"
 	ammo_type = "/obj/item/ammo_casing/c38"
+
+/obj/item/weapon/gun/projectile/diamondback
+	desc = "An impressive looking Colt Diamondback replica, forged with Mazra carbonsteel. Uses .22 rounds."
+	name = "diamondback"
+	icon_state = "diamondback"
+	max_shells = 6
+	caliber = "22"
+	origin_tech = "combat=2;materials=5"
+	ammo_type = "/obj/item/ammo_casing/c22e"
