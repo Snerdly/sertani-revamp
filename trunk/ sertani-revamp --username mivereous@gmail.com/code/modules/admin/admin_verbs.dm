@@ -7,6 +7,8 @@ var/list/admin_verbs_default = list(
 	/client/proc/hide_most_verbs,		/*hides all our hideable adminverbs*/
 	/client/proc/debug_variables,		/*allows us to -see- the variables of any instance in the game. +VAREDIT needed to modify*/
 	/client/proc/check_antagonists,		/*shows all antags*/
+	/client/proc/CarbonCopy,
+	/client/proc/radioalert,
 	/client/proc/deadchat				/*toggles deadchat on/off*/
 	)
 var/list/admin_verbs_admin = list(
@@ -737,3 +739,39 @@ var/list/admin_verbs_mod = list(
 		usr << "You now will get debug log messages"
 	else
 		usr << "You now won't get debug log messages"
+
+
+
+/client/proc/CarbonCopy(atom/movable/O as mob|obj in world)
+	set category = "Admin"
+	var/atom/movable/NewObj = new O.type(usr.loc)
+	for(var/V in O.vars)
+		if (issaved(O.vars[V]))
+			if(V == "contents")
+				for(var/atom/movable/C in O.contents)
+					C.CarbonCopy2(NewObj)
+			else
+				NewObj.vars[V] = O.vars[V]
+	return NewObj
+
+/atom/proc/CarbonCopy2(atom/movable/O as mob|obj in world)
+	var/atom/movable/NewObj = new type(O)
+	for(var/V in vars)
+		if (issaved(vars[V]))
+			if(V == "contents")
+				for(var/atom/movable/C in contents)
+					C.CarbonCopy2(NewObj)
+			else
+				NewObj.vars[V] = vars[V]
+	return NewObj
+
+
+/client/proc/radioalert()
+	set category = "Fun"
+	set name = "Create Radio Alert"
+	var/message = input("Choose a message! (Don't forget the \"says, \" or similar at the start.)", "Message") as text|null
+	var/from = input("From whom? (Who's saying this?)", "From") as text|null
+	if(message && from)
+		var/obj/item/device/radio/intercom/a = new /obj/item/device/radio/intercom(null)
+		a.autosay(message,from)
+		del(a)

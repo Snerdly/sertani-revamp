@@ -20,7 +20,7 @@
 
 /obj/item/weapon/reagent_containers/hypospray/New() //comment this to make hypos start off empty
 	..()
-	reagents.add_reagent("doctorsdelight", 30)
+	reagents.add_reagent("tricordrazine", 30)
 	return
 
 /obj/item/weapon/reagent_containers/hypospray/attack(mob/M as mob, mob/user as mob)
@@ -50,3 +50,45 @@
 			user.attack_log += text("\[[time_stamp()]\] <font color='red'>Used the [src.name] to inject [M.name] ([M.ckey]) with [contained]</font>")
 
 	return
+
+
+
+
+	////////////////////////////////////////////////////
+	//////////THE AUTOINJECTOR/////////////////////
+	//////////////////////////////////////////
+
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector
+	name = "autoinjector"
+	desc = "A rapid and safe way to administer small amounts of drugs by untrained or trained personnel."
+	icon_state = "autoinjector"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 5
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)
+	reagents.add_reagent("inaprovaline", 5)
+	update_icon()
+	return
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/attack(mob/M as mob, mob/user as mob)
+	..()
+	update_icon()
+	return
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/update_icon()
+	if(reagents.total_volume > 0)
+		icon_state = "[initial(icon_state)]1"
+	else
+		icon_state = "[initial(icon_state)]0"
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/examine()
+	..()
+	if(reagents && reagents.reagent_list.len)
+		for(var/datum/reagent/R in reagents.reagent_list)
+			usr << "\blue It currently has [R.volume] units of [R.name] stored."
+	else
+		usr << "\blue It is currently empty."
