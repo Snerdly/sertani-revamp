@@ -77,6 +77,12 @@
 	desc = "A heads-up display that scans the humans in view and provides accurate data about their ID status and security records."
 	icon_state = "securityhud"
 
+/obj/item/clothing/glasses/hud/tsugumi
+	name = "Purple Goggles"
+	desc = "Purple goggles with an even darker purple node on the back."
+	icon_state = "purple"
+	item_state = "glasses"
+
 /obj/item/clothing/glasses/hud/security/jensenshades
 	name = "Augmented shades"
 	desc = "Polarized bioneural eyewear, designed to augment your vision."
