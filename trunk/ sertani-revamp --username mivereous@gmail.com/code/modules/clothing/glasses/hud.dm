@@ -157,6 +157,7 @@
 	desc = "A set of sleek looking sunglasses, with 'RIAN' stenciled in neat, silvery lettering along the arm. They don't look all that simple."
 	icon_state = "rianhud"
 	item_state = "rianhud"
+	flags = GLASSESCOVERSEYES
 	vision_flags = SEE_OBJS|SEE_MOBS
 	invisa_view = 2
 	proc

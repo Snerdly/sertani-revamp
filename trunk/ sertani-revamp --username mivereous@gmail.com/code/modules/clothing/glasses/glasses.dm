@@ -24,7 +24,6 @@
 	item_state = "mazrashades"
 	icon_state = "mazrashades"
 	icon_action_button = "action_meson_implant"
-	vision_flags = SEE_TURFS
 	canremove = 0
 	var/up = 0
 
@@ -41,11 +40,13 @@
 			src.up = !src.up
 			src.item_state = "mazrashades_open"
 			src.icon_state = "mazrashades_closed"
+			src.vision_flags &= ~SEE_TURFS
 			usr << "The lens slide away from your eyes."
 		else
 			src.up = !src.up
 			src.item_state = "mazrashades"
 			src.icon_state = "mazrashades"
+			src.vision_flags |= SEE_TURFS
 			usr << "With a quiet click, your lens snap into place."
 
 		usr.update_inv_glasses()

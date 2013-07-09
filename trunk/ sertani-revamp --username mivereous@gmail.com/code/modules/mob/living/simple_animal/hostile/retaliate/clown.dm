@@ -40,6 +40,7 @@
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "Umbreon"
 	icon_living = "Umbreon"
+	icon_dead = "Umbreon_dead"
 	icon_gib = "clown_gib"
 	speak_chance = 0
 	turns_per_move = 5

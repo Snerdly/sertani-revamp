@@ -114,9 +114,8 @@ obj/structure/sign/poster/New(var/serial)
 		if(10)
 			name += " - Hacking Guide"
 			desc += " This poster details the internal workings of the common Saris Industries airlock."
-
 		if(11)
-			name += " -WANTED"
+			name += " - WANTED"
 			desc += " This poster shows a man in his mid twenties, with long, bleached white hair, and dark blue eyes. Above the picture, WANTED can be seen in bold print, while below it, are a long list of crimes, featuring mostly mass murder and terrorism."
 		else
 			name = "This shit just bugged. Report it to Agouri - polyxenitopalidou@gmail.com"

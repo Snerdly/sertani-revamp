@@ -73,6 +73,7 @@
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "Umbreon"
 	icon_living = "Umbreon"
+	icon_dead = "Umbreon_dead"
 	speak = list("Meow!","Umbreon!","Purr!","HSSSSS")
 	speak_emote = list("purrs", "meows")
 	emote_hear = list("meows","mews")

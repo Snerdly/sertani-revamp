@@ -37,6 +37,19 @@
 		for(var/image/I in overlays_standing)
 			overlays += I
 
+/mob/living/carbon/monkey/punpun/update_icons()
+	update_hud()
+	lying_prev = lying//so we don't update overlays for lying/standing unless our stance changes again
+	overlays.Cut()
+	if(lying)
+		icon_state = "punpun0"
+		for(var/image/I in overlays_lying)
+			overlays += I
+	else
+		icon_state = "punpun1"
+		for(var/image/I in overlays_standing)
+			overlays += I
+
 
 ////////
 /mob/living/carbon/monkey/update_inv_wear_mask(var/update_icons=1)

@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: maps\tgstation.2.1.0.0.1.dmm;code\hub.dm
+WINDOW: code\modules\clothing\glasses\glasses.dm;maps\tgstation.2.1.0.0.1.dmm;code\world.dm
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\game\objects\effects code\game\objects\items code\game\objects\items\devices code\game\objects\items\devices\PDA code\game\objects\structures maps sound 
-FILE: code\hub.dm
-LAST_COMPILE_TIME: 1373181107
+DIR: code code\modules code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly code\modules\mob\living\simple_animal\hostile code\modules\mob\living\simple_animal\hostile\retaliate icons icons\mob maps maps\RandomZLevels 
+FILE: code\world.dm
+LAST_COMPILE_TIME: 1373342286
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
