@@ -559,14 +559,14 @@
 	icon_state = "scythe0"
 	name = "\improper Reaper"
 	desc = "It requires feeding. Now."
-	force = 8.0
-	throwforce = 5.0
+	force = 10.0
+	throwforce = 13.0
 	throw_speed = 1
 	throw_range = 7
 	w_class = 4.0
 	flags = FPRINT | TABLEPASS | NOSHIELD
 	slot_flags = SLOT_BACK | SLOT_BELT
-	origin_tech = "materials=2;combat=2;syndicate=3;bluespace=5"
+	origin_tech = "materials=1;combat=2;syndicate=3;bluespace=5"
 	attack_verb = list("sliced", "cut", "reaped", "claimed")
 
 /obj/item/weapon/scythe/afterattack(atom/A, mob/user as mob)
@@ -814,7 +814,7 @@
 
 /obj/item/weapon/ectoplasm
 	name = "ectoplasm"
-	desc = "spooky"
+	desc = "Spooky."
 	gender = PLURAL
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "ectoplasm"
