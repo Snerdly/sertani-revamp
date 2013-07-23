@@ -190,6 +190,37 @@
 		return
 
 
+/obj/structure/closet/secure_closet/protector
+	name = "Grand Protector's Locker"
+	req_access = list(access_security)
+	icon_state = "gp1"
+	icon_closed = "gp"
+	icon_locked = "gp1"
+	icon_opened = "gpopen"
+	icon_broken = "gpoff"
+	icon_off = "gpoff"
+
+	New()
+		..()
+		sleep(2)
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/satchel(src)
+		else
+			new /obj/item/weapon/storage/backpack/satchel_sec(src)
+		new /obj/item/clothing/suit/armor/vest/protector(src)
+		new /obj/item/clothing/head/chaplain_hood/protector(src)
+		new /obj/item/device/radio/headset/heads/hos(src)
+		new /obj/item/weapon/katana/cyber(src)
+		new /obj/item/ammo_magazine/mc45(src)
+		new /obj/item/ammo_magazine/mc45(src)
+		new /obj/item/ammo_magazine/mc45(src)
+		new /obj/item/weapon/reagent_containers/spray/pepper(src)
+		new /obj/item/clothing/glasses/sunglasses/sechud(src)
+		return
+
+
+
+
 /obj/structure/closet/secure_closet/security/cargo
 
 	New()

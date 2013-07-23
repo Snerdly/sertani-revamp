@@ -365,6 +365,13 @@ proc/process_ghost_teleport_locs()
 /area/centcom/holding
 	name = "\improper Holding Facility"
 
+
+/area/centcom/rian
+	name = "Cyber Reality"
+
+/area/centcom/rian/insertion
+	name = "Focus point"
+
 //SYNDICATES
 
 /area/syndicate_mothership
