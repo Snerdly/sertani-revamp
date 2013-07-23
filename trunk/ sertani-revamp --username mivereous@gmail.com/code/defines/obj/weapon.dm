@@ -12,6 +12,11 @@
 	attack_verb = list("called", "rang")
 	hitsound = 'sound/weapons/ring.ogg'
 
+/obj/item/weapon/phone/black
+	name = "black phone"
+	desc = "Only to be used in the most severe of situations."
+	icon_state = "black_phone"
+
 /obj/item/weapon/rsp
 	name = "\improper Rapid-Seed-Producer (RSP)"
 	desc = "A device used to rapidly deploy seeds."

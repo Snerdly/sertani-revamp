@@ -24,14 +24,15 @@ emp_act
 					P.agony=P.agony*C.siemens_coefficient
 		apply_effect(P.agony,AGONY,0)
 		del P
-					/* Commenting out new-old taser nerf.
+					 /*Yeah. This used to be the old-new taser code. Miv really needs to patch this shit.
 					if(C.siemens_coefficient == 0) //If so, is that clothing shock proof?
 						if(prob(deflectchance))
 							visible_message("\red <B>The [P.name] gets deflected by [src]'s [C.name]!</B>") //DEFLECT!
 							visible_message("\red <B> Taser hit for [P.damage] damage!</B>")
 							del P
 */
-/* Commenting out old Taser nerf
+
+ /*Old taser nerf-Serv. Tested this being enabled in game. Na-da. Tasers still broken.
 	if(wear_suit && istype(wear_suit, /obj/item/clothing/suit/armor))
 		if(istype(P, /obj/item/projectile/energy/electrode))
 			visible_message("\red <B>The [P.name] gets deflected by [src]'s [wear_suit.name]!</B>")
