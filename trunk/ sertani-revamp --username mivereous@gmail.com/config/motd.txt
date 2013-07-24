@@ -1,17 +1,14 @@
 <h1>Welcome to Sertani Station 6!</h1>
 <br>
-<h2><strong>Check out the <a href="http://sertani.webs.com/">forums</a> and <a href="http://steamcommunity.com/groups/sarisindustries">Steam group</a>!</strong></h2>
+<strong>Check out the <a href="http://sertani.webs.com/">forums</a> and <a href="http://steamcommunity.com/groups/sarisindustries">Steam group</a>!</strong>
 <br>
 <strong>Rules and roleplaying tips:</strong> <a href="http://baystation12.net/wiki/index.php/Rules">http://baystation12.net/wiki/index.php/Rules</a> or the Rules command.
 <br><br>
 <h3>This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. </h3>
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<h3><strong>Last Updated:</strong> <i>7/8/2013</i></h3>
-<br>-Engineering Dorms are back
-<br>-Stasis Bag in armoury
+<h3><strong>Last Updated:</strong> <i>7/11/2013</i></h3>
+<br>-Began Saris logo assimilation (status displays)
 <br>-50/50 chance of spawning with alt uniform
-<br>-Fingerless gloves are back
-<br>-Pun Pun is looking visible and snazzy (danke Jasorn)
 <br>-Fixed lots of atmospherics leaks
 

@@ -1,6 +1,7 @@
 Create a databse at the same location where the server MySQL databse is. (as defined in config/dbconfig.txt under ADDRESS and PORT) It can be a separate database or the same one, as you wish. Create the following table in it: (name needs to remain as 'erro_feedback')
  
 
+
 CREATE TABLE IF NOT EXISTS `erro_feedback` (
 
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -19,7 +20,8 @@ CREATE TABLE IF NOT EXISTS `erro_feedback` (
 
 );
 
- 
+
+
 
 Open the file config/dbconfig.txt and edit the following lines:
 

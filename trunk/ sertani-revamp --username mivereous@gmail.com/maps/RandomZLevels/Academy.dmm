@@ -166,7 +166,7 @@
 "dj" = (/turf/simulated/floor{icon_state = "white"},/area/awaymission/academy/classrooms)
 "dk" = (/obj/machinery/gibber,/turf/simulated/floor{icon_state = "white"},/area/awaymission/academy/classrooms)
 "dl" = (/obj/machinery/mech_bay_recharge_port,/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/turf/simulated/floor/plating,/area/awaymission/academy/classrooms)
-"dm" = (/turf/simulated/floor/mech_bay_recharge_floor,/area/awaymission/academy/classrooms)
+"dm" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/mech_bay_recharge_floor,/area/awaymission/academy/classrooms)
 "dn" = (/obj/machinery/computer/mech_bay_power_console,/obj/structure/cable{icon_state = "0-2"; pixel_y = 1; d2 = 2},/turf/simulated/floor/greengrid,/area/awaymission/academy/classrooms)
 "do" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/academy/classrooms)
 "dp" = (/obj/structure/stool/bed/chair/wood/normal{dir = 1},/turf/simulated/floor/wood,/area/awaymission/academy/classrooms)
