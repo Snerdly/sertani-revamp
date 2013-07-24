@@ -1579,6 +1579,14 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Strange Station"
 	icon_state = "away"
 
+/area/awaymission/sertani3/atmos
+ 	name = "Atmospherics"
+ 	icon_state = "atmos"
+
+/area/awaymission/sertani3/engine
+	name = "Sertani Station 3 Power Room"
+	icon_state = "engine_smes"
+
 /area/awaymission/wwmines
 	name = "\improper Wild West Mines"
 	icon_state = "away1"

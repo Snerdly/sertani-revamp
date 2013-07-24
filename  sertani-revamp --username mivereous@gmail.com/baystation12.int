@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\modules\clothing\glasses\glasses.dm;maps\tgstation.2.1.0.0.1.dmm;code\world.dm
+WINDOW: code\modules\clothing\glasses\glasses.dm;maps\tgstation.2.1.0.0.1.dmm;maps\Nal's Help\Nal Work (1).dmm
 LAST_COMPILE_VERSION: 499.1187
-DIR: code code\modules code\modules\mob code\modules\mob\living code\modules\mob\living\simple_animal code\modules\mob\living\simple_animal\friendly code\modules\mob\living\simple_animal\hostile code\modules\mob\living\simple_animal\hostile\retaliate icons icons\mob maps maps\RandomZLevels 
-FILE: code\world.dm
-LAST_COMPILE_TIME: 1373342286
+DIR: code code\game code\game\gamemodes code\game\machinery code\game\machinery\computer code\game\machinery\doors code\game\machinery\kitchen code\game\objects code\game\objects\closets code\game\objects\items code\game\objects\items\devices code\modules code\modules\clothing code\modules\clothing\glasses maps maps\Nal's Help 
+FILE: maps\tgstation.2.1.0.0.1.dmm
+LAST_COMPILE_TIME: 1374679939
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
