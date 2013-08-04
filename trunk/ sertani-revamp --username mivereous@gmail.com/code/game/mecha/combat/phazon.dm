@@ -17,7 +17,7 @@
 	internal_damage_threshold = 25
 	force = 15
 	var/phasing = 0
-	var/phasing_energy_drain = 200
+	var/phasing_energy_drain = 50
 	max_equip = 4
 
 

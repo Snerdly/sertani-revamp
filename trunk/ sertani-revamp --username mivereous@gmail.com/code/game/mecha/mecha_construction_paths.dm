@@ -1371,7 +1371,7 @@
 					user.visible_message("[user] secures external armor layer.", "You secure external armor layer.")
 					holder.icon_state = "durand16"
 				else
-					user.visible_message("[user] pries external armor layer from [holder].", "You prie external armor layer from [holder].")
+					user.visible_message("[user] pries external armor layer from [holder].", "You pry external armor layer from [holder].")
 					var/obj/item/stack/sheet/metal/MS = new /obj/item/stack/sheet/metal(get_turf(holder))
 					MS.amount = 5
 					holder.icon_state = "durand14"
