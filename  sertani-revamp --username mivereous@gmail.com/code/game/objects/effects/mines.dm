@@ -1,6 +1,6 @@
 /obj/effect/mine
 	name = "Mine"
-	desc = "I Better stay away from that thing."
+	desc = "I better stay away from that thing."
 	density = 1
 	anchored = 1
 	layer = 3
