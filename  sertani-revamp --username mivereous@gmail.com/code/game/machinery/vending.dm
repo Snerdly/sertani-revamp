@@ -666,11 +666,11 @@
 	product_ads = "Refreshing!;Hope you're thirsty!;Over 1 million drinks sold!;Thirsty? Why not cola?;Please, have a drink!;Drink up!;The best drinks in space."
 	products = list(/obj/item/weapon/reagent_containers/food/drinks/cola = 10,/obj/item/weapon/reagent_containers/food/drinks/space_mountain_wind = 10,
 					/obj/item/weapon/reagent_containers/food/drinks/dr_gibb = 10,/obj/item/weapon/reagent_containers/food/drinks/starkist = 10,
-					/obj/item/weapon/reagent_containers/food/drinks/space_up = 10)
+					/obj/item/weapon/reagent_containers/food/drinks/space_up = 10,/obj/item/weapon/reagent_containers/food/drinks/energy = 10,/obj/item/weapon/reagent_containers/food/drinks/nukacola = 10)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/thirteenloko = 5)
 	prices = list(/obj/item/weapon/reagent_containers/food/drinks/cola = 20,/obj/item/weapon/reagent_containers/food/drinks/space_mountain_wind = 20,
 					/obj/item/weapon/reagent_containers/food/drinks/dr_gibb = 20,/obj/item/weapon/reagent_containers/food/drinks/starkist = 20,
-					/obj/item/weapon/reagent_containers/food/drinks/space_up = 20)
+					/obj/item/weapon/reagent_containers/food/drinks/space_up = 20,/obj/item/weapon/reagent_containers/food/drinks/energy = 30,/obj/item/weapon/reagent_containers/food/drinks/nukacola = 20)
 
 //This one's from bay12
 /obj/machinery/vending/cart
@@ -707,7 +707,10 @@
 	products = list(/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = 4,
 					/obj/item/weapon/reagent_containers/glass/bottle/stoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/toxin = 4,
 					/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/syringe = 12,
-					/obj/item/device/healthanalyzer = 5,/obj/item/weapon/reagent_containers/glass/beaker = 4, /obj/item/weapon/reagent_containers/dropper = 2)
+					/obj/item/device/healthanalyzer = 5,/obj/item/weapon/reagent_containers/glass/beaker = 4, /obj/item/weapon/reagent_containers/dropper = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/dexalin = 6, /obj/item/weapon/reagent_containers/hypospray/autoinjector/tramadol = 6,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/dylovene = 6, /obj/item/weapon/reagent_containers/hypospray/autoinjector/ryetalyn = 6,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/tricordrazine = 6)
 	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3,/obj/item/weapon/reagent_containers/pill/stox = 4,/obj/item/weapon/reagent_containers/pill/antitox = 6)
 
 
