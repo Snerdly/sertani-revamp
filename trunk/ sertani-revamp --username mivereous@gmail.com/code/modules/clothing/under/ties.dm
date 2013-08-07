@@ -170,6 +170,12 @@
 	icon_state = "medgreen"
 	color = "medgreen"
 
+/obj/item/clothing/tie/armband/raiding
+	name = "raiding guard armband"
+	desc = "An armband, worn by the station's security forces to announce that they are currently running a department or property raid, or other-such high profile operation. This one is red, with a black stripe and a small skull."
+	icon_state = "raid"
+	color = "red"
+
 /obj/item/clothing/tie/holster
 	name = "shoulder holster"
 	desc = "A handgun holster."
@@ -187,4 +193,4 @@
 	name = "shoulder holster"
 	desc = "A handgun holster. Made of expensive leather."
 	icon_state = "holster"
-	color = "holster_low"
+	color = "holster_waist"

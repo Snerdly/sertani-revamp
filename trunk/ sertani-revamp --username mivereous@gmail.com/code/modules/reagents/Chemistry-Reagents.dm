@@ -2177,7 +2177,7 @@ datum
 
 			on_mob_life(var/mob/living/M as mob)
 				M.nutrition += nutriment_factor
-				if(istype(M, /mob/living/carbon/human) && M.job in list("Security Officer", "Head of Security", "Detective", "Warden"))
+				if(istype(M, /mob/living/carbon/human) && M.job in list("Security Officer", "Head of Security", "Detective", "Grand Protect", "Warden"))
 					if(!M) M = holder.my_atom
 					M.heal_organ_damage(1,1)
 					M.nutrition += nutriment_factor
@@ -2498,7 +2498,7 @@ datum
 				nutriment_factor = 2 * FOOD_METABOLISM
 				color = "#403010" // rgb: 64, 48, 16
 				adj_temp = 5
-
+//Serveristag
 			coffee
 				name = "Coffee"
 				id = "coffee"
@@ -2623,6 +2623,22 @@ datum
 					reagent_state = LIQUID
 					color = "#100800" // rgb: 16, 8, 0
 					adj_drowsy 	= 	-3
+
+				energydrink
+					name = "Red Rain"
+					id = "redrain"
+					description = "A delicious mixture of carbonated citrus, packed with sugar and caffiene."
+					reagent_state = LIQUID
+					color = "#102000" // rgb: 16, 32, 0
+					adj_sleepy = -5
+
+					on_mob_life(var/mob/living/M as mob)
+						M.make_jittery(5)
+						M.hallucination = 0
+						M.drowsyness = 0
+						..()
+						return
+
 
 				nuka_cola
 					name = "Nuka Cola"
@@ -3460,3 +3476,5 @@ datum
 					M.confused = max(M.confused+15,15)
 				..()
 				return
+
+

@@ -366,6 +366,42 @@
 	New()
 		..()
 		reagents.add_reagent("sodawater", 50)
+
+/obj/item/weapon/reagent_containers/food/drinks/energy
+	name = "Red Rain"
+	desc = "A fizzy, tropical citrus combination. Lightning in a green can."
+	icon_state = "energy_drink"
+	New()
+		..()
+		reagents.add_reagent("redrain", 50)
+
+/obj/item/weapon/reagent_containers/food/drinks/waterbottle
+	name = "bottled water"
+	desc = "A bottle of treated Artem Terrarian spring water. You've never seen water so clear."
+	icon_state = "water"
+	New()
+		..()
+		reagents.add_reagent("water", 50)
+
+/obj/item/weapon/reagent_containers/food/drinks/coffeepot
+	name = "Coffee pot"
+	desc = "A warm, aluminum pot of coffee. It feels pleasantly warm to the touch."
+	icon_state = "shaker"
+	amount_per_transfer_from_this = 10
+	volume = 100
+	New()
+		..()
+		reagents.add_reagent("coffee", 100)
+
+/obj/item/weapon/reagent_containers/food/drinks/nukacola
+	name = "Nuka-Cola"
+	desc = "Cola, cola never changes."
+	icon_state = "nuka_colaglass"
+	amount_per_transfer_from_this = 5
+	volume = 50
+	New()
+		..()
+		reagents.add_reagent("nuka_cola", 45)
 //////////////////////////drinkingglass and shaker//
 //Note by Darem: This code handles the mixing of drinks. New drinks go in three places: In Chemistry-Reagents.dm (for the drink
 //	itself), in Chemistry-Recipes.dm (for the reaction that changes the components into the drink), and here (for the drinking glass
@@ -400,4 +436,10 @@
 	name = "cup"
 	desc = "A cup with the british flag emblazoned on it."
 	icon_state = "britcup"
+	volume = 30
+
+/obj/item/weapon/reagent_containers/food/drinks/mug
+	name = "cup"
+	desc = "A black matte coffee mug."
+	icon_state = "coffeecup"
 	volume = 30

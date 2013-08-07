@@ -27,7 +27,7 @@
 				charge_cost = 100
 				fire_sound = 'sound/weapons/Taser.ogg'
 				user << "\red [src.name] is now set to stun."
-				projectile_type = "/obj/item/projectile/energy/electrode"
+				projectile_type = "/obj/item/projectile/bullet/stunshot"
 				modifystate = "energystun"
 		update_icon()
 

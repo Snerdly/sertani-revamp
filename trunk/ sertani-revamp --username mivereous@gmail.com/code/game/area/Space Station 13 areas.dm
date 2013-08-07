@@ -1126,6 +1126,10 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Grand Protector's Office"
 	icon_state = "security"
 
+/area/security/apartments
+	name = "\improper Security Apartments"
+	icon_state = "security"
+
 /*
 	New()
 		..()

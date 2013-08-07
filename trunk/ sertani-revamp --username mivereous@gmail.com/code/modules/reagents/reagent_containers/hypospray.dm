@@ -57,15 +57,13 @@
 	////////////////////////////////////////////////////
 	//////////THE AUTOINJECTOR/////////////////////
 	//////////////////////////////////////////
-
-
 /obj/item/weapon/reagent_containers/hypospray/autoinjector
 	name = "autoinjector"
 	desc = "A rapid and safe way to administer small amounts of drugs by untrained or trained personnel."
 	icon_state = "autoinjector"
 	item_state = "autoinjector"
 	amount_per_transfer_from_this = 5
-	volume = 5
+	volume = 15
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/New()
 	..()
@@ -92,3 +90,116 @@
 			usr << "\blue It currently has [R.volume] units of [R.name] stored."
 	else
 		usr << "\blue It is currently empty."
+
+
+
+
+
+
+
+
+//Tramadol autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/tramadol
+	name = "Med-X"
+	desc = "A rapid and safe way to administer an analgesic pain reliever for untrained personnel. Patented and developed by Saris Industries."
+	icon_state = "medx"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 15
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/tramadol/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)//Autoinjectors don't need this shit.
+	reagents.remove_reagent("inaprovaline", 5)//Med-X doesn't need THIS shit/
+	reagents.add_reagent("tramadol", 5)//There we go. The desired stimpak chemical.
+	update_icon()
+	return
+
+
+//Dexalin autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/dexalin
+	name = "resusitation autoinjector"
+	desc = "A rapid and safe way to administer an emergency revival agent for untrained personnel. Patented and developed by Saris Industries."
+	icon_state = "dexalin"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 15
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/dexalin/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)//Autoinjectors don't need this shit.
+	reagents.remove_reagent("inaprovaline", 5)//Our special autoinjectors doesn't need THIS shit.
+	reagents.add_reagent("dexalinp", 5)//There we go. The desired stimpak chemical.
+	update_icon()
+	return
+
+
+//Hyperzine Autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/hyperzine
+	name = "EVAid autoinjector"
+	desc = "A rapid injector for stimulants designed to assist the user in EVA work. Patented and developed by Saris Industries."
+	icon_state = "evaid"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 15
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/hyperzine/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)//Autoinjectors don't need this shit.
+	reagents.remove_reagent("inaprovaline", 5)//Med-X doesn't need THIS shit/
+	reagents.add_reagent("hyperzine", 5)//There we go. The desired stimpak chemical.
+	update_icon()
+	return
+
+
+//Dylovene Autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/dylovene
+	name = "purge autoinjector"
+	desc = "An autoinjector filled with reactants designed to flush non-natural chemicals from the body. Patented and developed by Saris Industries."
+	icon_state = "antitoxins"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 15
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/dylovene/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)//Autoinjectors don't need this shit.
+	reagents.remove_reagent("inaprovaline", 5)//Med-X doesn't need THIS shit/
+	reagents.add_reagent("anti_toxin", 5)//There we go. The desired stimpak chemical.
+	update_icon()
+	return
+
+
+//Ryetalyn Autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/ryetalyn
+	name = "RGene autoinjector"
+	desc = "A rapid and safe way to administer genetic stability for untrained personnel. Patented and developed by Saris Industries."
+	icon_state = "autoinjector"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 15
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/ryetalyn/New()
+	..()
+	reagents.remove_reagent("tricordrazine", 30)//Autoinjectors don't need this shit.
+	reagents.remove_reagent("inaprovaline", 5)//Med-X doesn't need THIS shit.
+	reagents.add_reagent("ryetalyn", 5)//There we go. The desired stimpak chemical.
+	update_icon()
+	return
+
+
+//Tricordrazine Autoinjector
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/tricordrazine
+	name = "stimpak"
+	desc = "A rapid and safe way to administer omnipotent healing medication for untrained personnel. Patented and developed by Saris Industries."
+	icon_state = "stimpak"
+	item_state = "autoinjector"
+	amount_per_transfer_from_this = 5
+	volume = 30//No, you don't need to check the volumes of the rest of the autoinjectors after seeing the variable amount for this one.
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/tricordrazine/New()
+	..()
+	reagents.remove_reagent("inaprovaline", 5)//..We actually do need this one. Kinda the component of the autoinjector.
+	update_icon()
+	return
+

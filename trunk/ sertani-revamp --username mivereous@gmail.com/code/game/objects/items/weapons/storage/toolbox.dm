@@ -23,11 +23,14 @@
 	name = "emergency toolbox"
 	icon_state = "red"
 	item_state = "toolbox_red"
+	force = 1.0
+	throwforce = 0
 
 	New()
 		..()
 		new /obj/item/weapon/crowbar/red(src)
 		new /obj/item/weapon/extinguisher/mini(src)
+		new /obj/item/weapon/reagent_containers/hypospray/autoinjector/tricordrazine
 		if(prob(50))
 			new /obj/item/device/flashlight(src)
 		else

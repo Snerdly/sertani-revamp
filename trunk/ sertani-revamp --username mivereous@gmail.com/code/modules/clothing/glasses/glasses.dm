@@ -18,7 +18,7 @@
 	origin_tech = "magnets=2;engineering=2"
 	vision_flags = SEE_TURFS
 
-/obj/item/clothing/glasses/siraamazra    //Mivereous's glasses that were a pain in the ass to code.
+/*/obj/item/clothing/glasses/siraamazra    //Mivereous's glasses that were a pain in the ass to code.
 	name = "Meson Implants"
 	desc = "Specially designed by the Mazra Estates. An optical augmentation that allows the user to conventiently see meson fields through polarized lens. Cool!"
 	item_state = "mazrashades"
@@ -42,14 +42,15 @@
 			src.icon_state = "mazrashades_closed"
 			src.vision_flags &= ~SEE_TURFS
 			usr << "The lens slide away from your eyes."
-		else
+		return
+
 			src.up = !src.up
 			src.item_state = "mazrashades"
 			src.icon_state = "mazrashades"
 			src.vision_flags |= SEE_TURFS
 			usr << "With a quiet click, your lens snap into place."
 
-		usr.update_inv_glasses()
+		usr.update_inv_glasses()*/
 
 
 /obj/item/clothing/glasses/meson/prescription

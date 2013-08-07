@@ -107,6 +107,33 @@
 	desc = "A blue forensics technician jacket."
 	icon_state = "forensics_blue"
 
+//Ass-kicking
+/obj/item/clothing/suit/storage/raiding
+	name = "raid vest"
+	desc = "A padded kevlar vest outfitted with pockets for department raids and other situations where plated vests aren't enough, and riot suits are too much."
+	icon_state = "raidersec"
+	item_state = "raidersec"
+	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen)
+	armor = list(melee = 40, bullet = 20, laser = 15, energy = 15, bomb = 5, bio = 0, rad = 0)
+	storage_slots = 6
+	can_hold = list(
+		"/obj/item/weapon/gun",
+		"/obj/item/ammo_magazine",
+		"/obj/item/ammo_casing",
+		"/obj/item/weapon/handcuffs",
+		"/obj/item/weapon/tank/emergency_oxygen",
+		"/obj/item/weapon/melee/telebaton",
+		"/obj/item/weapon/grenade/empgrenade",
+		"/obj/item/weapon/grenade/flashbang",
+		"/obj/item/weapon/grenade/smokebomb",
+		"/obj/item/device/hailer",
+		"/obj/item/device/radio",
+		"/obj/item/device/taperecorder",
+		"/obj/item/device/flashlight",
+		"/obj/item/device/flash",
+		"/obj/item/taperoll/police")
+
+
 //Engineering
 /obj/item/clothing/suit/storage/hazardvest
 	name = "hazard vest"
