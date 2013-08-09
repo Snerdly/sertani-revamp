@@ -97,7 +97,7 @@
 
 /obj/machinery/computer/security/telescreen/entertainment
 	name = "entertainment monitor"
-	desc = "Damn, they better have /tg/thechannel on these things."
+	desc = "Damn, they better have the Sertani Network on these things."
 	icon = 'icons/obj/status_display.dmi'
 	icon_state = "entertainment"
 	network = list("thunder")
@@ -122,6 +122,5 @@
 	name = "Apartment Cameras"
 	desc = "Used to see the inside of the Head of Security's Apartment."
 	icon_state = "telescreen"
-	network = list("HoSApartment")
 	density = 0
 	circuit= null
