@@ -225,3 +225,13 @@
 	icon = 'icons/obj/clothing/belts.dmi'
 	icon_state = "suspenders"
 	blood_overlay_type = "armor" //it's the less thing that I can put here
+
+//Reporter
+/obj/item/clothing/suit/storage/report_suit
+	name = "grey coat"
+	desc = "A stylish coat commonly worn by reporters all across space. The label reads 'Made by LexCorp clothing division'."
+	icon_state = "reporter"
+	item_state = "reporter"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	allowed = list(/obj/item/weapon/tank/emergency_oxygen,/obj/item/device/flashlight,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/lighter,/obj/item/device/taperecorder,/obj/machinery/camera,/obj/item/weapon/pen,/obj/item/weapon/paper)
