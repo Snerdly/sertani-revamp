@@ -696,6 +696,16 @@
 	premium = list(/obj/item/clothing/mask/cigarette/cigar/havana = 2)
 	prices = list(/obj/item/weapon/storage/fancy/cigarettes = 60,/obj/item/weapon/storage/box/matches = 10,/obj/item/weapon/lighter/random = 60)
 
+/obj/machinery/vending/journalism
+	name = "Journalism machine"//Can someone get me a better name for this?..
+	desc = "For all your snooping needs."
+	product_slogans = "The truth won't find itself! Get to it!;No smearing!;Write!;Made with recycled materials!;Cup of joe not sold.;Hot off the presses!"
+	vend_delay = 34
+	icon_state = "reporter"
+	products = list(/obj/item/weapon/pen/red = 3,/obj/item/weapon/pen/blue = 3, /obj/item/weapon/paper_bin = 2, /obj/item/weapon/folder = 5, /obj/item/device/camera = 2,/obj/item/device/camera_film = 10, /obj/item/device/toner = 10, /obj/item/device/taperecorder = 4)
+	contraband = list(/obj/item/weapon/stamp = 2, /obj/item/weapon/stamp/denied = 2)
+	premium = list(/obj/item/pizzabox/margherita = 2, /obj/item/pizzabox/meat = 2, /obj/item/pizzabox/mushroom = 2, /obj/item/pizzabox/vegetable = 2)
+
 
 /obj/machinery/vending/medical
 	name = "NanoMed Plus"

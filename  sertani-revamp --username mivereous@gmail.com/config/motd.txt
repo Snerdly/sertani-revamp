@@ -8,18 +8,17 @@
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
 <h3><strong>Last Updated:</strong> <i>8/7/2013</i></h3>
-<br>-Added Security Apartments. These are on the port-side branch from the fore primary hallway.
-<br>-Engineering and Security Staff will now spawn in their respective apartments at the beginning of rounds.
-<br>-Added specialized task gear to the armory.
-<br>-Tasers and electrodes have been fixed.
-<br>-Various atmospheric fixes.
-<br>-All departments now have an EFTPOS Scanner somewhere inside of them. If you're unsure how to use one, consult an administrator.
-<br>-As per Mht03110's request, more ATMs have been mapped around the station.
-<br>-Nanomed machines now dispense autoinjectors and stimpaks.
-<br>-New armory equipment.
-<br>-Tramadol bottle re-added to medbay.
-<br>-Nuka-cola and energy drinks have been added to vending machines.
-<br>-Server rules are currently under slight revision. Keep an eye on the rules page for any changes.
-<br>-Nalarac has been admitted to the moderator team.
+<br>-Tweaked Security Apartments.
+<br>-Removed a bulletproof vest and a laser rifle from the armory, because fuck you.
+<br>-Removed the extra Grand Protector gear, because fuck you.
+<br>-Fixed the Grand Protector showing up as a head of staff on the crew manifest. You're security, you insubordinate little shits.
+<br>-Tasers and electrodes have been more thouroughly fixed.
+<br>-Various electrical fixes.
+<br>-.45 magazines' icons have been fixed.
+<br>-Added the News Office to the library.
+<br>-Added the reporter job.
+<br>-Fixed the internal affairs shutters.
+<br>-Tweaked a variety of custom items.
+
 
 

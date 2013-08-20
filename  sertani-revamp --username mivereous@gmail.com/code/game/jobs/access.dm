@@ -66,6 +66,7 @@
 /var/const/access_psychiatrist = 64 // Psychiatrist's office
 /var/const/access_protector = 65 //Grand protector's office
 /var/const/access_siskin = 66 //Siskin shit
+/var/const/access_reporter = 67//Reporter's office
 
 	//BEGIN CENTCOM ACCESS
 	/*Should leave plenty of room if we need to add more access levels.

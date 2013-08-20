@@ -194,12 +194,13 @@
 	desc = "A rapid and safe way to administer omnipotent healing medication for untrained personnel. Patented and developed by Saris Industries."
 	icon_state = "stimpak"
 	item_state = "autoinjector"
-	amount_per_transfer_from_this = 5
+	amount_per_transfer_from_this = 30
 	volume = 30//No, you don't need to check the volumes of the rest of the autoinjectors after seeing the variable amount for this one.
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/tricordrazine/New()
 	..()
-	reagents.remove_reagent("inaprovaline", 5)//..We actually do need this one. Kinda the component of the autoinjector.
+	reagents.remove_reagent("inaprovaline", 5)
+	reagents.add_reagent("tricordrazine", 30)//..We actually do need this one. Kinda the component of the stimpak.
 	update_icon()
 	return
 

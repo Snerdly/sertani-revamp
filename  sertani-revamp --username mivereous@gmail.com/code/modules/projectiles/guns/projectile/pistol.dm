@@ -169,12 +169,13 @@
 	empty_mag = new /obj/item/ammo_magazine/mc45/empty(src)
 	return
 
-/obj/item/weapon/gun/projectile/pistol/m1911/afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
+/obj/item/weapon/gun/projectile/m1911/afterattack(atom/target as mob|obj|turf|area, mob/living/user as mob|obj, flag)
 	..()
 	if(!loaded.len && empty_mag)
 		empty_mag.loc = get_turf(src.loc)
 		empty_mag = null
 	return
+
 //Syrus Seto's two custom M1911's.
 /obj/item/weapon/gun/projectile/m1911/luna
 	name = "\improper M1911"

@@ -94,7 +94,7 @@
 	desc = "A forensics technician jacket."
 	item_state = "det_suit"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	allowed = list(/obj/item/weapon/tank/emergency_oxygen, /obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/device/detective_scanner,/obj/item/device/taperecorder)
+	allowed = list(/obj/item/weapon/tank/emergency_oxygen, /obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/device/detective_scanner,/obj/item/device/taperecorder,/obj/item/fluff/brycon_ha_2)
 	armor = list(melee = 10, bullet = 10, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/forensics/red
@@ -227,11 +227,5 @@
 	blood_overlay_type = "armor" //it's the less thing that I can put here
 
 //Reporter
-/obj/item/clothing/suit/storage/report_suit
-	name = "grey coat"
-	desc = "A stylish coat commonly worn by reporters all across space. The label reads 'Made by LexCorp clothing division'."
-	icon_state = "reporter"
-	item_state = "reporter"
-	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	allowed = list(/obj/item/weapon/tank/emergency_oxygen,/obj/item/device/flashlight,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/lighter,/obj/item/device/taperecorder,/obj/machinery/camera,/obj/item/weapon/pen,/obj/item/weapon/paper)
+/*Relocated to civilian.dm, felt it was more at home there, with all there other civilian-related job things. -Serveris.
+*/

@@ -91,6 +91,14 @@
 	armor = list(melee = 50, bullet = 5, laser = 25,energy = 10, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/head/servfedora
+	name = "classy fedora"
+	desc = "'One who would wear a fedora, would wear the mantle of a god.'"
+	icon_state = "servfedora"
+	item_state = "servfedora"
+	armor = list(melee = 50, bullet = 5, laser = 25, energy = 80, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+
 /*
  * Head of Security
  */

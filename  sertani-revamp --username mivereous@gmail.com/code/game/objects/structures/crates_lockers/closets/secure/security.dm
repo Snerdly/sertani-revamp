@@ -210,7 +210,6 @@
 		new /obj/item/clothing/suit/armor/vest/protector(src)
 		new /obj/item/clothing/head/chaplain_hood/protector(src)
 		new /obj/item/device/radio/headset/heads/hos(src)
-		new /obj/item/weapon/katana/cyber(src)
 		new /obj/item/ammo_magazine/mc45(src)
 		new /obj/item/ammo_magazine/mc45(src)
 		new /obj/item/ammo_magazine/mc45(src)
@@ -341,6 +340,22 @@
 		new /obj/item/clothing/head/powdered_wig (src)
 		new /obj/item/weapon/storage/briefcase(src)
 		return
+
+/obj/structure/closet/secure_closet/reporter
+	name = "Reporter's locker"
+	req_access = list(access_reporter)
+
+	New()
+		..()
+		sleep(2)
+		new /obj/item/clothing/under/det/fluff/darksuit(src)
+		new /obj/item/clothing/shoes/black(src)
+		new /obj/item/clothing/head/reporter(src)
+		new /obj/item/clothing/tie(src)
+		new /obj/item/clothing/tie/purple(src)
+		new /obj/item/clothing/tie/red(src)
+		new /obj/item/clothing/tie/white(src)
+
 
 /obj/structure/closet/secure_closet/wall
 	name = "wall locker"

@@ -54,6 +54,49 @@
 
 /obj/item/projectile/bullet/experimental
 	name = "chloranium bullet"
-	drowsy = 20
-	agony = 10
-	eyeblur = 5
+	damage = 8
+	stun = 15
+	weaken = 20
+	stutter = 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

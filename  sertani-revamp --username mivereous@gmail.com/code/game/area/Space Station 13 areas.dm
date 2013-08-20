@@ -307,6 +307,14 @@ proc/process_ghost_teleport_locs()
 	icon_state = "shuttle2"
 
 /area/shuttle/research/outpost
+
+/area/shuttle/researchres
+	name = "\improper Residential Shuttle"
+
+/area/shuttle/researchres/station
+	icon_state = "shuttle2"
+
+/area/shuttle/researchres/ressector
 	icon_state = "shuttle"
 
 /area/airtunnel1/      // referenced in airtunnel.dm:759
@@ -819,6 +827,10 @@ proc/process_ghost_teleport_locs()
 /area/library
  	name = "\improper Library"
  	icon_state = "library"
+
+/area/library/reporter
+	name = "Reporter's Office"
+	icon_state = "library"
 
 /area/chapel/main
 	name = "\improper Chapel"

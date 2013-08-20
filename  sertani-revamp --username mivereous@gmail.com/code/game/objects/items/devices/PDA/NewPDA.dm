@@ -2,7 +2,7 @@
  *Arur's super spectacular PDA project. First time really doing any intesne coding so we'll see how it goes!
  */
 
-/obj/item/devices/pda/newpda //This is going to be a test of an idea I have.
+/obj/item/device/pda/newpda //This is going to be a test of an idea I have.
 	name = "PDA"
 	desc = "A portable microcomputer by Thinktronic Systems, LTD. Functionality determined by a preprogrammed ROM cartridge."
 	icon = 'icons/obj/pda.dmi'
