@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\modules\clothing\glasses\glasses.dm;maps\tgstation.2.1.0.0.1.dmm;code\game\machinery\computer\camera.dm;icons\obj\vending.dmi
-LAST_COMPILE_VERSION: 499.1187
-DIR: code code\defines\obj code\game code\game\machinery code\game\machinery\computer code\modules\clothing\glasses icons icons\mob icons\obj 
-FILE: icons\obj\vending.dmi
-LAST_COMPILE_TIME: 1376006655
+WINDOW: code\modules\clothing\glasses\glasses.dm;maps\tgstation.2.1.0.0.1.dmm;code\game\machinery\vending.dm
+LAST_COMPILE_VERSION: 499.1202
+DIR: code code\defines\obj code\game code\game\machinery code\game\machinery\computer code\modules code\modules\clothing code\modules\clothing\glasses icons icons\mob icons\obj maps 
+FILE: code\game\machinery\vending.dm
+LAST_COMPILE_TIME: 1377028861
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game. In this case it will read "tgstation: station_name" where station_name is the randomly generated name of the station for the round. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice
-# SERVERNAME [RP] Saris Ind.
+SERVERNAME [RP] Saris Ind.
 
 ## Alert levels
 ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
@@ -94,7 +94,7 @@ PROBABILITY EPIDEMIC 0
 PROBABILITY MEME 0
 
 ## Hash out to disable random events during the round.
-ALLOW_RANDOM_EVENTS
+#ALLOW_RANDOM_EVENTS
 
 ## if amount of traitors scales or not
 TRAITOR_SCALING
@@ -203,7 +203,7 @@ GATEWAY_DELAY 6000
 #CONTINUOUS_ROUNDS
 
 ## Uncomment to restrict non-admins from using humanoid alien races
-USEALIENWHITELIST
+#USEALIENWHITELIST
 
 ## Location of the nudge.py script
 NUDGE_SCRIPT_PATH nudge.py
