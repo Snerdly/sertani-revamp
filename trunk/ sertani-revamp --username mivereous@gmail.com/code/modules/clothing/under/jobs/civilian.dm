@@ -185,3 +185,37 @@
 	icon_state = "mineralt"
 	item_state = "mineralt"
 	color = "mineralt"
+
+
+/*
+ * Reporter
+ */
+ /obj/item/clothing/suit/storage/reporter
+	name = "grey coat"
+	desc = "A stylish coat commonly worn by reporters all across space. The label reads 'Made by LexCorp clothing division'."
+	icon = 'icons/obj/clothing/suits.dmi'
+	icon_state = "reportercoat"
+	item_state = "reporter"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	allowed = list(/obj/item/weapon/tank/emergency_oxygen,/obj/item/device/flashlight,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/lighter,/obj/item/device/taperecorder,/obj/machinery/camera,/obj/item/weapon/pen,/obj/item/weapon/paper)
+
+/obj/item/clothing/head/reporter
+	name = "aged hat"
+	desc = "An aged, gray fedora."
+	icon_state = "reporter"
+	item_state = "reporter"
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/tie/presspass
+	name = "press pass"
+	desc = "A reporter's authentication holocard, protected by a clear, plastic flip case."
+	icon = 'items.dmi'
+	icon_state = "presspass"
+	item_state = "card-id"
+	w_class = 1
+
+	attack_self(mob/user)
+		if(user.r_hand == src || user.l_hand == src)
+			for(var/mob/O in viewers(user, null))
+				O.show_message(text("\blue [] flips open the [] with a sense of familiarity, presenting it clearly before you.", user, src), 1)
+		return

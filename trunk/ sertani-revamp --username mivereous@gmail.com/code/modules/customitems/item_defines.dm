@@ -539,6 +539,7 @@ hi
 	icon_state = "forensics_mazra"
 	item_state = "forensics_mazra"
 	color = "forensics_mazra"
+	storage_slots = 5
 
 
 /obj/item/clothing/suit/storage/labcoat/fluff/burnt //Jamini: Edwin Atweeke

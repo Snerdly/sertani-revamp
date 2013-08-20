@@ -12,6 +12,16 @@
 	flags = FPRINT | TABLEPASS
 	slot_flags = SLOT_BELT
 
+/obj/item/weapon/clipboard/notebook
+	name = "notebook"
+	desc = "Holds paper and pens. Feels very noire."
+	icon_state = "notebook00"
+
+/obj/item/weapon/clipboard/notebook/serveris
+	name = "notebook"
+	desc = "Holds paper and pens. Feels very worn in."
+	icon_state = "blackbook00"
+
 /obj/item/weapon/clipboard/New()
 	update_icon()
 

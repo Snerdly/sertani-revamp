@@ -146,7 +146,7 @@
 	item_state = "stun_blade"
 	flags = FPRINT | TABLEPASS
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 40
+	force = 15
 	throwforce = 10
 	w_class = 3
 	var/charges = 20
@@ -201,7 +201,7 @@
 		H.visible_message("<span class='danger'>[M] has been slashed with the [src] by [user]!</span>")
 		playsound(src.loc, "swing_hit", 50, 1, -1)
 	else if(!status)
-		H.visible_message("<span class='warning'>[M] has been gently tapped with the [src] by [user]. Nothing happens.</span>")
+		H.visible_message("<span class='warning'>[M] has been jabbed with the [src] by [user]. Owch! Pointy!</span>")
 		return
 
 	if(status)
@@ -229,7 +229,7 @@
 	add_fingerprint(user)
 
 /obj/item/weapon/katana/cyber/throw_impact(atom/hit_atom)
-	if (prob(25))//Because the area of impact is smaller than that of a baton.
+	if (prob(90))//Because the area of impact is larger than that of a baton.
 		if(istype(hit_atom, /mob/living))
 			var/mob/living/carbon/human/H = hit_atom
 			if(status)

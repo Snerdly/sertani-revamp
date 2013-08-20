@@ -904,6 +904,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			M.equip_to_slot_or_del(new /obj/item/clothing/gloves/rian(M), slot_gloves)
 			M.equip_to_slot_or_del(new /obj/item/weapon/lighter/zippo/fluff/brycon_ha_1(M), slot_r_store)
 			M.equip_to_slot_or_del(new /obj/item/weapon/pen/fluff/fountainpen(M), slot_l_store)
+			M.equip_to_slot_or_del(new /obj/item/clothing/head/servfedora/(M), slot_head)
 			M.equip_to_slot_or_del(new /obj/item/fluff/brycon_ha_2(M), slot_r_hand)
 
 		if("soviet admiral")

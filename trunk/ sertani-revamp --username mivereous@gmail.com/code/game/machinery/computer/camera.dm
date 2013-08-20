@@ -117,10 +117,3 @@
 	icon_state = "miningcameras"
 	network = list("MINE")
 	circuit = "/obj/item/weapon/circuitboard/mining"
-
-/obj/machinery/computer/security/telescreen/panicroom
-	name = "Apartment Cameras"
-	desc = "Used to see the inside of the Head of Security's Apartment."
-	icon_state = "telescreen"
-	density = 0
-	circuit= null
