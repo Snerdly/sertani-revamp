@@ -2,20 +2,18 @@
 <br>
 <strong>Check out the <a href="http://sertani.webs.com/">forums</a> and <a href="http://steamcommunity.com/groups/sarisindustries">Steam group</a>!</strong>
 <br>
-<strong>Rules and roleplaying tips:</strong> <a href="http://sertani.webs.com/rules">http://sertani.webs.com/rules</a> or the Rules command.
+<strong>Rules and roleplaying tips:</strong> <a href="http://baystation12.net/wiki/index.php/Rules">http://baystation12.net/wiki/index.php/Rules</a> or the Rules command.
 <br><br>
 <h3>This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. </h3>
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<h3><strong>Last Updated:</strong> <i>8/20/2013</i></h3>
-<br>-Grand Protector is no longer a Head of Staff
-<br>-Tasers and electrodes have been more thouroughly fixed
-<br>-Various electrical fixes
-<br>-.45 magazines' icons have been fixed
-<br>-Added the News Office to the library
-<br>-Added the Reporter job
-<br>-Fixed the Internal Affairs shutters
-<br>-Tweaked a variety of custom items
+<h3><strong>Last Updated:</strong> <i>8/7/2013</i></h3>
+<br>-Tweaked Security Apartments further.
+<br>-Removed a bulletproof vest and a laser rifle from the armory, because fuck you.
+<br>-Added Research Apartments.
+<br>-Electrode based firearms and weapons have now been totally fixed. I swear.
+<br>-Added some fun. You don't need to know what it is, exactly.
+
 
 
 
