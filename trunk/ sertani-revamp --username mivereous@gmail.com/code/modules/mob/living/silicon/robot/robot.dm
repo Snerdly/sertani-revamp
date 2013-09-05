@@ -620,7 +620,7 @@
 					lawupdate = 0
 					connected_ai = null
 					user << "You emag [src]'s interface."
-//					message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)].  Laws overridden.")
+					message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)].  Laws overridden.")
 					log_game("[key_name(user)] emagged cyborg [key_name(src)].  Laws overridden.")
 					clear_supplied_laws()
 					clear_inherent_laws()
@@ -632,11 +632,11 @@
 					sleep(5)
 					src << "\red Initiating diagnostics..."
 					sleep(20)
-					src << "\red SynBorg v1.7 loaded."
+					src << "\red SynBorg v2.3 loaded."
 					sleep(5)
 					src << "\red LAW SYNCHRONISATION ERROR"
 					sleep(5)
-					src << "\red Would you like to send a report to NanoTraSoft? Y/N"
+					src << "\red Would you like to send a report to Sararas? Y/N"
 					sleep(10)
 					src << "\red > N"
 					sleep(20)

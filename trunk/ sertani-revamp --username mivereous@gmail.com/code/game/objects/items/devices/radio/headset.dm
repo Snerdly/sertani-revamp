@@ -109,7 +109,7 @@
 
 /obj/item/device/radio/headset/heads/hos
 	name = "head of security's headset"
-	desc = "The headset of the man who protects your worthless lifes. To access the security channel, use :s. For command, use :c."
+	desc = "The headset of the man who protects your worthless lives. To access the security channel, use :s. For command, use :c."
 	icon_state = "com_headset"
 	item_state = "headset"
 	keyslot2 = new /obj/item/device/encryptionkey/heads/hos

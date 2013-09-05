@@ -7,13 +7,12 @@
 <h3>This is a <strong>HEAVY</strong> roleplaying server, so don't forget to remain in character while playing. </h3>
 <br>Make sure to read and abide by the rules and if you have any questions, feel free to adminhelp!
 <br>
-<h3><strong>Last Updated:</strong> <i>8/7/2013</i></h3>
-<br>-Tweaked Security Apartments further.
-<br>-Removed a bulletproof vest and a laser rifle from the armory, because fuck you.
-<br>-Added Research Apartments.
-<br>-Electrode based firearms and weapons have now been totally fixed. I swear.
-<br>-Added some fun. You don't need to know what it is, exactly.
-
-
-
-
+<h3><strong>Last Updated:</strong> <i>9/5/2013</i></h3>
+<br>-Added the News Office to the library
+<br>-Added the Reporter job
+<br>-More bots are available on-station, namely the floorbot and farmbot
+<br>-Auto-cloners, the alien artifact, now have an icon
+<br>-Tweaked Security Apartments further
+<br>-Removed a bulletproof vest and a laser rifle from the armory
+<br>-Added Research Apartments
+<br>-Electrode based firearms and weapons have now been totally fixed, Serveris claims
