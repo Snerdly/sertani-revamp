@@ -9,7 +9,7 @@
 
 /obj/machinery/computer/dna
 	name = "DNA operations computer"
-	desc = "A Computer used to advanced DNA stuff."
+	desc = "A computer used to do advanced DNA stuff."
 	icon_state = "dna"
 	var/obj/item/weapon/card/data/scan = null
 	var/obj/item/weapon/card/data/modify = null

@@ -115,6 +115,9 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "gcircuit"
 
+/turf/simulated/floor/redgrid
+	icon = 'icons/turf/floors.dmi'
+	icon_state = "rcircuit"
 
 /turf/simulated/shuttle
 	name = "shuttle"

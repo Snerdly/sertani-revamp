@@ -9,6 +9,8 @@
 		return 1
 	if (istype(other, /mob/living/silicon/pai))
 		return 1
+//	if (istype(other, /obj/machinery/bot/secbot))
+//		return 1
 //	if (istype(other, /mob/living/silicon/hivebot))
 //		return 1
 	return ..()
